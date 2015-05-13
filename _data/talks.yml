@@ -1,0 +1,72 @@
+- name: The problem (keynote)
+  type: talk
+  speaker: Nir Cohen
+  start: "09:00"
+  end:   "09:45"
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+
+- name: Intro to Monitoring
+  type: talk
+  start: "10:00"
+  end:   "10:45"
+  speaker: Yoav Abrahami
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+
+- name: Break
+  type: break
+  start: "10:45"
+  end:   "11:15"
+
+- name: Monitoring with Riemann
+  type: talk
+  start: "11:15"
+  end:   "11:45"
+  speaker: Itai Frenkel
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+
+- name: Monitoring - A Top down approach
+  type: talk
+  start: "12:15"
+  end:   "13:00"
+  speaker: Shahar Keidar
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+
+- name: Lunch
+  type: break
+  start: "13:00"
+  end:   "14:00"
+
+- name: Data analysis with Graphite
+  type: workshop
+  start: "14:00"
+  end:   "16:00"
+  speaker: Avishai Ish-Shalom
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+
+- name: Monitoring with ELK
+  type: workshop
+  start: "14:00"
+  end:   "16:00"
+  speaker: TBD
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+
+- name: Break
+  type: break
+  start: "16:00"
+  end:   "16:30"
+
+- name: Linux Metrics
+  type: workshop
+  start: "16:30"
+  end:   "18:30"
+  speaker: Nati Cohen-Tzemach
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+
+- name: Monitoring for Developers
+  type: workshop
+  start: "16:30"
+  end:   "18:30"
+  speaker: Roman Landenberg
+  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+
+

@@ -1,27 +1,3 @@
-<?php
- if (isset($_REQUEST['email']))  {
-    //Email information
-    $admin_email = "info@statscraft.org.il";
-    $email = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
-    $phone = $_REQUEST['phone'];
-    $feedback = $_REQUEST['feedback'];
-
-    if (!$email || !$name || !$phone || !$feedback) {
-      $mailError = true;
-    } else {
-      //send email
-      try {
-        mail($admin_email, "Feedback from Statscraft", "phone: $phone\nname: $name\nfeedback:\n$feedback", "From:" . $email);
-        $mailSent = true;
-      } catch (Exception $e) {
-        $mailError = true;
-      }
-    }
-  }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

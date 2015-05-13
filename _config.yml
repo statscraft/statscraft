@@ -1,0 +1,2 @@
+destination: "output"
+exclude : [.travis.yml, s3_website.yml, .gititnore, Gemfile]
