@@ -1,9 +1,9 @@
 language: ruby
 rvm:
 - 2.0.0
-#branches:
-#  only:
-#  - master
+branches:
+  only:
+  - master
 script: bundle exec jekyll build
 install: bundle install
 after_success: bundle exec s3_website push
