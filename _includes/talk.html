@@ -1,0 +1,22 @@
+<div class="two columns">
+    <span class="time">{{ talk.start }} - {{ talk.end }}</span>
+    <span class="item {{ talk.type }}">{{talk.type | capitalize }}</span>
+</div>
+<div class="nine columns">
+    <a href="#" class="toggle ">toggle</a>
+    <h1>{{ talk.name }}</h1>
+    <span class="author">{{ talk.speaker }}</span>
+    <div class="comment-box-wrap" style="display:none;">
+        <div class="comment-box row">
+            <div class="avatar">
+                <img src="images/{{talk.speaker | downcase | replace:' ','' }}.jpg" alt="Avatar">
+            </div>
+            <div class="eight columns">
+                {% include speaker.html speaker=talk.speaker %}
+            </div>
+        </div>
+        <h3>Summary</h3>
+        <p class="discription">{{ talk.summary }}</p>
+    </div>
+</div>
+

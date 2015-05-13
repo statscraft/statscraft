@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>StatsCraft</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/social-share-kit.css">
+
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <!-- Application-specific meta tags -->
+  <meta name="application-name" content="Application Name">
+  <meta name="msapplication-TileColor" content="">
+  <meta name="msapplication-TileImage" content="">
+  <meta name="msapplication-square150x150logo" content="">
+  <meta name="msapplication-square310x310logo" content="">
+  <meta name="msapplication-square70x70logo" content="">
+  <meta name="msapplication-wide310x150logo" content="">
+  <meta name="twitter:card" content="">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+</head>
+<body>
+    {{ content }}
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/modernizr-2.8.3.min.js"></script>
+<script src="js/menu.js"></script> 
+<script src="js/main.js"></script>
+<script src="js/social-share-kit.js"></script>
+<script>
+  $('.toggle, .toggle + h1').click(function(){
+    $(this).parent().children('.comment-box-wrap').slideToggle('slow');
+    $(this).toggleClass('active');
+    return false
+  });
+  SocialShareKit.init();
+</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+<script>
+	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	e.src='//www.google-analytics.com/analytics.js';
+	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+ --> 
+</body>
+</html>

@@ -1,0 +1,4 @@
+{% assign speaker = site.data.speakers[include.speaker] %}
+<h2><a href="#" title="{{ include.speaker }}">{{ include.speaker }}</a></h2>
+<span class="designation">{{ speaker.title }}</span>
+<p>{{ speaker.about }}</p>
