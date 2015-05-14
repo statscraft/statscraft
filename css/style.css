@@ -1822,3 +1822,8 @@ h4.language {
   margin: 0 11px;
   color: red;
 }
+
+
+.hidden {
+  display:none;
+}

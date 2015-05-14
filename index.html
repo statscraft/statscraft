@@ -148,33 +148,8 @@ layout: default
       </ul>
     </div>
   </div><!-- .sponsors ends -->  
+  {% include contact.html %}
   
-  <div id="contact" class="contact text-center">
-    <div class="container">
-      <h2>Contact</h2>
-      <form method="post" id="contact-form" class="contact-form">
-        <div class="inline">
-          <div class="form-row">
-            <input type="text" id="contact-name" name="name" class="form-control" placeholder="Name">
-          </div><!-- form-row -->
-          
-          <div class="form-row">
-            <input type="email" id="contact-email" name="email" class="form-control" placeholder="Email">
-          </div><!-- form-row -->
-          
-          <div class="form-row">
-            <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="Phone">
-          </div><!-- form-row -->
-        </div><!-- inline -->
-        <div class="form-row">
-          <textarea id="contact-feedback" name="feedback" class="form-control" placeholder="Sponsor us - Ask us - Provide feedback"></textarea>
-        </div><!-- form-row -->
-        <input type="submit" id="contact-submit" class="contact-submit" name="submit" value="Send"> 
-        <?php if($mailSent): ?><h3 class="emailSuccess">Message Sent!</h3><?php endif; ?>
-        <?php if($mailError): ?><h3 class="emailError">Error! Please verify all of the fields and try again.</h3><?php endif; ?>
-      </form>
-
-    </div>
   </div><!-- container -->
 </main><!-- main ends -->
 

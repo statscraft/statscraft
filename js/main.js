@@ -27,6 +27,26 @@ $(document).ready(function() {
 		if (window.focus) {newwindow.focus()}
 		return false;
 	}
+  $("form").submit(function(event){
+    event.preventDefault();
+    var $form = $(this);
+    $(".emailError")
+      .add(".emailSuccess")
+      .toggleClass("hidden", true);
+    $.ajax({
+    //    url: $form.attr('action'),
+        url: "https://statscraft.wufoo.com/api/v3/forms/z1kivo4c108m4t6/entries.json",
+        type: 'post',
+        data: $form.serialize(),
+        success: function(data) {
+          $(".emailSuccess").removeClass("hidden");
+        },
+        error: function(data){
+          $(".emailError").removeClass("hidden");
+        }
+    });
+    return false;
+  });
 });
 
 
