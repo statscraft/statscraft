@@ -13,7 +13,8 @@ deploy:
   secret_access_key:
     secure: f31R+LdgzU7zSBFQ1Rd+j+ennyevLILLWFd+tbm6flP2/pDqGoAxFQJbv+G3s18tjKXyQM8gddy/vDc/KQhnt1LHTBjv3pqRDLPnt6z17pSnYvBXfdtrvGuNCBDjgfzIfh9XrbDXXp53vK/BDuPSQLY0EBvcWxD9xi71FLua6jQSU4R2t1xkCy1yDt4VMXirGDwr+93mRNXEbmAjseZDGLATG6ki0VWjnWLNgea86MrMsIFcQX+bDu6/plwAWAETdt9ftAo1Zs1PDe0eP1Pq29WCMy7HoP/YLd6xbj5IPpXlaJX/VHavuQuKo4mRqy4knYyHTtkO8FbPQG3mwBbpT9OxJOUCigMLsKIh82FDrilVvuLpACy4JUWJs+8EoMy1uCuwFQVm3zSbVFW/pId75FG1KEcw37GyPtoz6yAVDuLYTxzcLdODcVU+j+0TNR5/X6ODWVmM77mCnR6u7ToNBz9e0RtFJWAzX7AhJAT+SfK+VP+szanebUGDVg+Tfo3DLf5+P9Ab/SI6DzlWx+0rAjMvCgTHpxwu2NOO20TK/2m4gw38ub4dvnTe1P0Yb2PkxR5jGT0QCyCnNgMP69lvTc4dmEmnNhoT34AVeAsVO8EBB+wIaCvVW9Hj/2kWAHxwAtbhmotllQ8pTL5h2x0QknrEPGWWfhCuTZ2MqqV5N2g=
   bucket: www.statscraft.org.il
-  local_dir: output
+  local-dir: output
+  no_cleanup: true
   acl: public_read
   on:
     repo: erikzaadi/statscraft
