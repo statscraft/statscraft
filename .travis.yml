@@ -4,7 +4,7 @@ rvm:
 branches:
   only:
   - master
-script: ./travis.sh
+script: bundle exec jekyll build
 install: bundle install
 deploy:
   provider: s3
