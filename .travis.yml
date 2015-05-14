@@ -19,5 +19,5 @@ deploy:
   acl: public_read
   on:
     repo: erikzaadi/statscraft
-  region: eu-central-1
-  endpoint: www.statscraft.org.il.s3.eu-central-1.amazonaws.com
+  region: eu-west-1
+  endpoint: www.statscraft.org.il.s3-eu-west-1.amazonaws.com
