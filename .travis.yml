@@ -15,6 +15,7 @@ deploy:
   bucket: www.statscraft.org.il
   local_dir: _site
   no_cleanup: true
+  skip_cleanup: true
   acl: public_read
   on:
     repo: erikzaadi/statscraft
