@@ -1779,6 +1779,7 @@ there.
 @media (min-width: 1440px) {
   .top-head {
     background: url('images/hero-bg.png') no-repeat center bottom;
+    background-size: 100% auto;
   }
   .organizers br {
     display: none;
