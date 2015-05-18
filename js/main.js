@@ -47,6 +47,16 @@ $(document).ready(function() {
   //  });
   //  return false;
   //});
+
+  Eventbrite({'access_token': "BV6LSN5U7MHR3HTQ4BSC"}, function(eb_client){ 
+    eb_client.event_get( {'id': '16933629943'}, function ( res ) { 
+      var tickets = res.event.tickets,
+          ticket = tickets[0].ticket,
+          tickets_left = ticket.quantity_available - ticket.quantity_sold;
+        $("#tickets_left").html(tickets_left);
+    })
+  });
+
 });
 
 
