@@ -628,7 +628,7 @@ header .menu nav ul {
 
 .committee {
   text-align: center;
-  padding: 60px 0 20px 0;
+  padding: 50px 0 20px 0;
 }
 .committee .organizers a {
   color:black;
@@ -691,7 +691,6 @@ p.description {
   line-height: 1.7;
 }
 .agenda {
-  margin-top: 70px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -1009,7 +1008,7 @@ p.description {
   padding-bottom: 80px;
 }
 .contact h2 {
-  margin-bottom: 64px;
+  margin-bottom: 36px;
 }
 .contact-form {
   width: 73%;
@@ -1351,8 +1350,11 @@ there.
 */
 
 @media (max-width: 650px) {
+  h3 {
+    font-size:26px;
+  }
     h4.language {
-    margin-top:auto!important;
+    margin-top:-23px!important
   }
   .footer-bottom br {
     display: none;
@@ -1426,7 +1428,6 @@ there.
     font-size: 18px;
   }
   .agenda {
-    margin-top: 29px;
     padding-bottom: 20px;
   }
   .agenda h1 {
@@ -1503,7 +1504,7 @@ there.
     font-size: 26px;
   }
   .venue {
-    padding: 45px 0;
+    padding: 45px 0 75px 0
   }
   .venue h3 {
     font-size: 26px;
@@ -1801,13 +1802,18 @@ there.
     display: none;
   }
 }
-@media (max-width: 533px) {
+@media (max-width: 450px) {
+  .committee .organizers .organizer {
+    transform:scale(0.8);
+    font-size: 18px;
+    margin:20px 5px!important;
+  }
 }
  .scrolloff {
 	         pointer-events: none;
 		     }
 h4.language {
-    font-size: 14px;
+    font-size: 16px;
   text-align: center;
   margin-top: -77px;
   margin-bottom: 77px;

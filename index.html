@@ -32,7 +32,7 @@ layout: default
       <h2>Agenda</h2>
       <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
       {% for talk in site.data.talks %}
-      <div class="row{% if forloop.index0 == 0 %} first-border{%endif %}">
+      <div class="{% if talk.hidetime %}hidetime {%endif%}row{% if forloop.index0 == 0 %} first-border{%endif %}">
           {% include {{talk.type}}.html talk=talk %}
       </div><!-- .row ends -->
       {% endfor %}
@@ -83,7 +83,7 @@ layout: default
       </div>
     </div>
   </div><!-- venue -->
-  <div class="committee">
+  <div class="committee" id="committee">
     <h2>Organizing Committee</h2>
     <div class="row container">
       <p class="description">
