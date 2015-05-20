@@ -1,5 +1,6 @@
 ---
 layout: default
+padding: true
 ---
 
 ##Code of Conduct

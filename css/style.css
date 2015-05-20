@@ -296,7 +296,9 @@ body {
   color: #222;
 }
 
-
+body.withPadding {
+  padding:20px;
+}
 /* Typography
 -------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
@@ -1008,7 +1010,7 @@ p.description {
   padding-bottom: 80px;
 }
 .contact h2 {
-  margin-bottom: 36px;
+  margin-bottom: 36ץןצפpx;
 }
 .contact-form {
   width: 73%;
@@ -1410,7 +1412,7 @@ there.
     font-size: 20px;
   }
   .important-note {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     padding: 21px 15px 30px;
   }
   .important-note span {
@@ -1580,7 +1582,9 @@ there.
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 650px) {
-
+  .committee h2 {
+    margin-bottom: 40px;
+  }
     .imageContainer {
     width:357px;
   }
@@ -1635,6 +1639,9 @@ there.
 /* Larger than tablet */
 @media (min-width: 850px) {
 
+  .agenda {
+    margin-top: 35px;
+  }
   header {
    padding-top: 29px;
   }
@@ -1673,6 +1680,9 @@ there.
     text-align: center;
     padding: 57px 84px 52px 50px;
     background: url('images/ipad-ticket-bg.png') no-repeat 0 0;
+  }
+  .ticket-alert:hover .your-ticket span {
+    color: #009F4D;
   }
   .ticket-alert .left-tickets {
     width: 160px;
@@ -1817,6 +1827,7 @@ h4.language {
   text-align: center;
   margin-top: -77px;
   margin-bottom: 77px;
+  font-weight: 400;
 }
 .emailSuccess {
   display: inline;
