@@ -6,6 +6,7 @@ branches:
   only:
   - master
 script: ./travis.sh
+after_script: find _site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' \) -exec gzip -9 -n {} \; -exec mv {}.gz {} \;
 deploy:
   provider: s3
   access_key_id:
@@ -17,6 +18,7 @@ deploy:
   no_cleanup: true
   skip_cleanup: true
   acl: public_read
+  detect_encoding: true
   on:
     repo: erikzaadi/statscraft
   region: eu-west-1
