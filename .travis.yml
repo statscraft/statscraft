@@ -6,7 +6,6 @@ branches:
   only:
   - master
 script: ./travis.sh
-install: bundle install
 deploy:
   provider: s3
   access_key_id:
