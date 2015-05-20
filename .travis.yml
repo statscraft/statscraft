@@ -19,7 +19,7 @@ deploy:
   skip_cleanup: true
   acl: public_read
   detect_encoding: true
-  cache_control: "max-age=3600"
+  cache_control: "max-age=86400"
   on:
     repo: erikzaadi/statscraft
   region: eu-west-1
