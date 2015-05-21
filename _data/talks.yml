@@ -1,9 +1,9 @@
-- name: The problem (keynote)
+- name: The Problem (keynote)
   type: talk
   speaker: Nir Cohen
   start: "09:00"
   end:   "09:45"
-  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare lorem ut erat consequat facilisis. Nullam semper vel nibh ac pellentesque. Nam condimentum cursus tortor a facilisis. Nam accumsan a dolor vitae scelerisque. Fusce lacus neque, efficitur et finibus at, facilisis eu diam."
+  summary: "Monitoring is hard. It's non-functional, but at the same time, resource hungry. Monitoring requires the right people. Monitoring sucks because we're doing it wrong. We'll review the problem, which, as always, originates with people, not tools."
 
 - name: Intro to Monitoring
   type: talk
