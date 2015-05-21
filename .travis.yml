@@ -21,6 +21,6 @@ deploy:
   detect_encoding: true
   cache_control: "max-age=86400"
   on:
-    repo: erikzaadi/statscraft
+    repo: statscraft/statscraft
   region: eu-west-1
   endpoint: www.statscraft.org.il.s3-eu-west-1.amazonaws.com
