@@ -3,7 +3,7 @@
       <h2>Sponsors</h2>
       <ul>
         {% for sponsor in site.data.sponsors %}
-        <li><img src="images/sponsors-{{sponsor | downcase | replace:' ','' }}.png" alt="{{ sponsor.alt }}"></li>
+        <li><a href={{ sponsor.url }}><img src="images/sponsors-{{ sponsor.name | downcase | replace:' ','' }}.png" alt="{{ sponsor.alt }}"></a></li>
         {% endfor %}
       </ul>
     </div>
