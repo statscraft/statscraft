@@ -53,7 +53,10 @@
   start: "14:00"
   end:   "16:00"
   speaker: Avishai Ish-Shalom
-  summary: "Will be updated soon!"
+  summary: |
+    "With great power comes great confusion"
+    It is not enough to generate, collect and store metrics; One needs to know how look and analyse them to get the full benefit of metrics. In this workshop we will learn how to use metrics to detect problems, correlate and investigate issues.
+    This is a hands-on workshop. Although the workshop will use Graphite the methods are not Graphite specific.
 
 - name: Monitoring with ELK
   type: workshop
