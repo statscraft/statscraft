@@ -1,0 +1,10 @@
+<div class="sponsors" id="sponsors">
+    <div class="container">
+      <h2>Sponsors</h2>
+      <ul>
+        {% for sponsor in site.data.sponsors %}
+        <li><img src="images/sponsors-{{sponsor | downcase | replace:' ','' }}.png" alt="{{ sponsor.alt }}"></li>
+        {% endfor %}
+      </ul>
+    </div>
+</div><!-- .sponsors ends -->  
