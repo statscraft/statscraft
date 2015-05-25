@@ -611,6 +611,33 @@ header .menu nav ul {
 }
 /* Main
 -------------------------------------------------- */
+.sociallinks {
+  margin-bottom: 32px;
+  margin-top: 5px;
+}
+.sociallinks .github {
+  background: url("../images/sociallinks.png");
+  height: 16px;
+  width: 16px;
+  background-position: 16px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3px;
+}
+.sociallinks .github:hover { 
+  background-position: 16px 16px;
+}
+.sociallinks .linkedin {
+  display: inline-block;
+  vertical-align: top;
+  background: url("../images/sociallinks.png");
+  height: 16px;
+  width: 16px;
+  background-position: 0px 0;
+}
+.sociallinks .linkedin:hover { 
+  background-position: 0px 16px;
+}
 .content-list {
   list-style: none;
 }
@@ -823,7 +850,6 @@ p.description {
   color: #868686;
   display: block;
   font-size: 20px;
-  margin-bottom: 32px;
 }
 .comment-box p {
   color: #333;
