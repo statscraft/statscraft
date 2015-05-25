@@ -1,6 +1,9 @@
 Nir Cohen:
   title: "Problem Solver @ Gigaspaces"
   about: "Nir Cohen was the Ops Team Leader at fring and now works for Gigaspaces. He's a relatively short, brown eyed human being who loves animals and holds true to Ethics as a life path. He also likes to walk long distances, breathe and eat lettuce salad. You can find Nir at work, on the street or at home."
+  github: "http://example.com"
+  linkedin: "http://example.com"
+
 Yoav Abrahami:
   title: "Chief Architect @ Wix"
   about : "Yoav Abrahami is the Chief Architect at Wix.com, working with developers and operations on building wix future products as well as accelerating and improving development processes. Prior to joining Wix.com, Yoav was an Architect at Amdocs Cramer OSS division. Yoav has a MS in Physics and BS in Computer Science from Tel Aviv University."
@@ -19,6 +22,6 @@ TBD:
 Nati Cohen-Tzemach:
   title: "Solütions Engineers @ Fewbytes"
   about: "Bio"
-Roman Landenberg:
-  title: "TBD"
-  about: "TBD"
+Roman Landenband:
+  title: "Independent consultant"
+  about: "Back when doing fancy things on the web was called DHTML and just before the first high-tech bubble, Roman was already working the industry. He got to do backends, frontends and mobile apps. These days he does projects for Big-Co's and part time startup / open source / silly apps. Follow him on Github github.com/romansky and checkout his blog www.uniformlyrandom.com"
