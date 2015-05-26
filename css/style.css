@@ -615,19 +615,18 @@ header .menu nav ul {
   margin-bottom: 32px;
   margin-top: 5px;
 }
-.sociallinks .github {
+.sociallinks .linkedin {
   background: url("../images/sociallinks.png");
   height: 16px;
   width: 16px;
   background-position: 16px 0;
   display: inline-block;
   vertical-align: top;
-  margin-left: 3px;
 }
-.sociallinks .github:hover { 
+.sociallinks .linkedin:hover { 
   background-position: 16px 16px;
 }
-.sociallinks .linkedin {
+.sociallinks .github {
   display: inline-block;
   vertical-align: top;
   background: url("../images/sociallinks.png");
@@ -635,8 +634,21 @@ header .menu nav ul {
   width: 16px;
   background-position: 0px 0;
 }
-.sociallinks .linkedin:hover { 
+.sociallinks .github:hover { 
   background-position: 0px 16px;
+}
+
+.sociallinks .twitter {
+  display: inline-block;
+  vertical-align: top;
+  background: url("../images/sociallinks.png");
+  height: 16px;
+  width: 16px;
+  margin:0 3px;
+  background-position: 32px 0;
+}
+.sociallinks .twitter:hover { 
+  background-position: 32px 16px;
 }
 .content-list {
   list-style: none;
