@@ -2,44 +2,51 @@ Nir Cohen:
   title: "Problem Solver @ Gigaspaces"
   about: "Nir Cohen was the Ops Team Leader at fring and now works for Gigaspaces. He's a relatively short, brown eyed human being who loves animals and holds true to Ethics as a life path. He also likes to walk long distances, breathe and eat lettuce salad. You can find Nir at work, on the street or at home."
   github: "http://github.com/nir0s"
+  twitter: "https://twitter.com/thinkops"
   linkedin: "https://il.linkedin.com/in/nir0s"
 
 Yoav Abrahami:
   title: "Chief Architect @ Wix"
   about : "Yoav Abrahami is the Chief Architect at Wix.com, working with developers and operations on building Wix's future products as well as accelerating and improving development processes. Prior to joining Wix.com, Yoav was an Architect at Amdocs Cramer OSS division. Yoav has a MS in Physics and BS in Computer Science from Tel Aviv University."
-  github: https://github.com/yoavaa
-  linkedin: https://il.linkedin.com/in/yoavabrahami
+  github: "https://github.com/yoavaa"
+  twitter: "https://twitter.com/yoavabrahami"
+  linkedin: "https://il.linkedin.com/in/yoavabrahami"
 
 Itai Frenkel:
   title: "Software Developer @ Forter"
   about: "I am a software engineer at Forter doing architecture/developement/ops/blogging/videos/ et al... I've been doing monitoring of Microsoft's Telecom group, GigaSpaces In-Memory-Data-Grid and now Forter's Fraud Prevention SaaS."
   github: https://github.com/itaifrenkel
-  linkedin: https://il.linkedin.com/in/itaifrenkel
+  twitter: "https://twitter.com/itaifrenkel"
+  linkedin: "https://il.linkedin.com/in/itaifrenkel"
 
 Shahar Kedar:
   title: "Director of Engineering @ BigPanda"
   about: "With over 10 years of experience, Shahar has been doing everything from hands on programming to complete system architecture. As Director of Engineering at BigPanda, He's responsible for designing and building the IT and software infrastructure that makes BigPanda tick. His passions in life (in this order): his wife and son, gourmet, cinema and code as craft."
-  github: https://github.com/shaharke
-  linkedin: https://il.linkedin.com/in/shaharke
+  github: "https://github.com/shaharke"
+  twitter: "https://twitter.com/shahar_kedar"
+  linkedin: "https://il.linkedin.com/in/shaharke"
 
 Avishai Ish-Shalom:
   title: "CTO @ Fewbytes"
   about: "Avishai is a veteran ops and a survivor of many prod skirmishes. Currently masquerading as the CTO of Fewbytes - a consulting company for Ops and architecture"
-  github: https://github.com/avishai-ish-shalom
-  linkedin: https://il.linkedin.com/in/nukemberg
-
-TBD:
-  title: "TBD"
-  about: "TBD"
+  github: "https://github.com/avishai-ish-shalom"
+  twitter: "https://twitter.com/nukemberg"
+  linkedin: "https://il.linkedin.com/in/nukemberg"
 
 Nati Cohen-Tzemach:
   title: "Solütions Engineers @ Fewbytes"
   about: "Bio"
-  github: https://github.com/natict
-  linkedin: http://il.linkedin.com/in/natict/
+  github: "https://github.com/natict"
+  twitter: "https://twitter.com/nocoot"
+  linkedin: "http://il.linkedin.com/in/natict/"
 
 Roman Landenband:
   title: "Independent consultant"
   about: "Back when doing fancy things on the web was called DHTML and just before the first high-tech bubble, Roman was already working the industry. He got to do backends, frontends and mobile apps. These days he does projects for Big-Co's and part time startup / open source / silly apps. Follow him on Github github.com/romansky and checkout his blog www.uniformlyrandom.com"
-  github: https://github.com/romansky
-  linkedin: https://il.linkedin.com/in/romanlandenband
+  github: "https://github.com/romansky"
+  twitter: "https://twitter.com/RomanLandenband"
+  linkedin: "https://il.linkedin.com/in/romanlandenband"
+
+TBD:
+  title: "TBD"
+  about: "TBD"
