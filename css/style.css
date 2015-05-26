@@ -1,5 +1,5 @@
 /* Table of contents
--------------------------------------------------- 
+--------------------------------------------------
 - Grid
 - Base Styles
 - Typography
@@ -206,7 +206,7 @@ th {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 .column,
 .columns {
@@ -218,11 +218,11 @@ th {
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; 
+    width: 80%;
   }
   .column,
   .columns {
-    margin-left: 4%; 
+    margin-left: 4%;
   }
   .column:first-child,
   .columns:first-child {
@@ -286,7 +286,7 @@ th {
 /* Base Styles
 -------------------------------------------------- */
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
 }
 body {
   font-size: 1.5em;
@@ -304,7 +304,7 @@ body.withPadding {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300; 
+  font-weight: 300;
 }
 h1 { font-size: 4.0rem; line-height: 1.2;}
 h2 { font-size: 3.6rem; line-height: 1.25;}
@@ -324,12 +324,12 @@ h6 { font-size: 1.5rem; line-height: 1.6;}
 }
 
 p {
-  margin-top: 0; 
+  margin-top: 0;
 }
 /* Links
 -------------------------------------------------- */
 a {
-  color: #1EAEDB; 
+  color: #1EAEDB;
 }
 a:hover {
   color: #0FA0CE;
@@ -404,7 +404,7 @@ header .logo img {
   display: block;
 }
 header h1{
-  
+
   font-size: 50px;
   margin:40px 0;
   font-family: 'Lato', sans-serif;
@@ -541,10 +541,10 @@ header .menu nav ul {
 .toggle-switch-ht {
     background-color: #868686;
 }
-.toggle-switch-ht:hover { 
+.toggle-switch-ht:hover {
     background-color: #333;
 }
-.toggle-switch-ht span:before, 
+.toggle-switch-ht span:before,
 .toggle-switch-ht span:after {
     transition-duration: 0.3s, 0.3s;
 }
@@ -623,7 +623,7 @@ header .menu nav ul {
   display: inline-block;
   vertical-align: top;
 }
-.sociallinks .linkedin:hover { 
+.sociallinks .linkedin:hover {
   background-position: 16px 16px;
 }
 .sociallinks .github {
@@ -634,7 +634,7 @@ header .menu nav ul {
   width: 16px;
   background-position: 0px 0;
 }
-.sociallinks .github:hover { 
+.sociallinks .github:hover {
   background-position: 0px 16px;
 }
 
@@ -647,7 +647,7 @@ header .menu nav ul {
   margin:0 3px;
   background-position: 32px 0;
 }
-.sociallinks .twitter:hover { 
+.sociallinks .twitter:hover {
   background-position: 32px 16px;
 }
 .content-list {
@@ -775,6 +775,9 @@ p.description {
 .agenda .workshop {
   background-color: #f6be00;
 }
+.agenda .break {
+  background-color: #0055ff;
+}
 .agenda h1 {
   color: #333;
   font-size: 40px;
@@ -874,9 +877,9 @@ p.description {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
-.separator { 
-  width: 82%; 
-  clear: both; 
+.separator {
+  width: 82%;
+  clear: both;
   float: right;
   height: 1px;
   border: 0 none;
@@ -934,12 +937,12 @@ p.description {
 }
 .your-ticket {
   width: 67px;
-  height: 67px; 
+  height: 67px;
   color: #333;
   float: left;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
   border-radius: 100px;
   background-color: #fff;
 }
@@ -967,10 +970,10 @@ p.description {
   color: #333;
   float: right;
   width: 67px;
-  height: 67px; 
+  height: 67px;
   padding: 17px 14px;
   font-family: 'Lato', sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
   border-radius: 100px;
   background-color: #fff;
 }
@@ -1025,7 +1028,7 @@ p.description {
   text-align: center;
   background-color: #f1f2ee
 }
-.sponsors ul { 
+.sponsors ul {
   margin-bottom: 0;
 }
 .sponsors li {
@@ -1130,7 +1133,7 @@ input[type="button"] {
   background-color: #868686;
   border: 1px solid #868686;
   cursor: pointer;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 .button:hover,
 button:hover,
@@ -1144,7 +1147,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   background-color: #333;
   border-color: #888;
-  outline: 0; 
+  outline: 0;
 }
 .button.button-primary,
 button.button-primary,
@@ -1153,7 +1156,7 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color: #33C3F0;
-  border-color: #33C3F0; 
+  border-color: #33C3F0;
 }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -1189,7 +1192,7 @@ select {
   border-right: 0;
   border-bottom: 0;
   border-top: 5px solid #e0e1dd;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
@@ -1202,12 +1205,12 @@ input[type="password"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; 
+          appearance: none;
 }
 textarea {
   min-height: 210px;
   padding-top: 6px;
-  padding-bottom: 6px; 
+  padding-bottom: 6px;
 }
 input[type="email"]:focus,
 input[type="number"]:focus,
@@ -1219,7 +1222,7 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   border-color: #33C3F0;
-  outline: 0; 
+  outline: 0;
 }
 label,
 legend {
@@ -1230,22 +1233,22 @@ legend {
 }
 fieldset {
   padding: 0;
-  border-width: 0; 
+  border-width: 0;
 }
 input[type="checkbox"],
 input[type="radio"] {
-  display: inline; 
+  display: inline;
 }
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;
-  font-weight: normal; 
+  font-weight: normal;
 }
 
 /* Lists
 -------------------------------------------------- */
 ul {
-  list-style: circle inside; 
+  list-style: circle inside;
 }
 ol {
   list-style: decimal inside;
@@ -1273,12 +1276,12 @@ code {
   white-space: nowrap;
   background: #F1F1F1;
   border: 1px solid #E1E1E1;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; 
+  white-space: pre;
 }
 
 
@@ -1294,7 +1297,7 @@ td {
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
-  padding-left: 0; 
+  padding-left: 0;
 }
 th:last-child,
 td:last-child {
@@ -1306,7 +1309,7 @@ td:last-child {
 -------------------------------------------------- */
 button,
 .button {
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
 input,
 textarea,
@@ -1323,23 +1326,23 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; 
+  margin-bottom: 2.5rem;
 }
 /* Utilities
 -------------------------------------------------- */
 .u-full-width {
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 .u-max-full-width {
   max-width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 .u-pull-right {
   float: right;
 }
 .u-pull-left {
-  float: left; 
+  float: left;
 }
 /* Misc
 -------------------------------------------------- */
@@ -1347,7 +1350,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; 
+  border-top: 1px solid #E1E1E1;
 }
 
 /* Clearing
@@ -1412,7 +1415,7 @@ there.
   header .menu ul li {
 	 padding:5px 0;
   }
-  .footer-info p { 
+  .footer-info p {
 	  font-size:20px;
 
 	 }
@@ -1735,10 +1738,10 @@ there.
     color: #333;
     float: right;
     width: 88px;
-    height: 87px; 
+    height: 87px;
     padding: 22px 17px;
     font-family: 'Lato', sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
     border-radius: 100px;
     background-color: #fff;
   }
@@ -1800,10 +1803,10 @@ there.
     color: #333;
     float: right;
     width: 114px;
-    height: 114px; 
+    height: 114px;
     padding: 36px 22px;
     font-family: 'Lato', sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
     border-radius: 100px;
     background-color: #fff;
   }

@@ -16,6 +16,7 @@
   type: break
   start: "10:45"
   end:   "11:15"
+  speaker: "Coffee, anyone?"
 
 - name: Monitoring with Riemann
   type: talk
@@ -35,6 +36,7 @@
   type: break
   start: "13:00"
   end:   "14:00"
+  speaker: Yay! Food!
 
 - name: Data analysis with Graphite
   type: workshop
@@ -55,6 +57,7 @@
   type: break
   start: "16:00"
   end:   "16:30"
+  speaker: More? No problem!
 
 - name: Linux Metrics
   type: workshop
