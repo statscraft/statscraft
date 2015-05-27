@@ -56,7 +56,7 @@ $(document).ready(function() {
    return false;
   });
 
-  Eventbrite({'access_token': "BV6LSN5U7MHR3HTQ4BSC"}, function(eb_client){ 
+  Eventbrite({'access_token': "ONOTGVFR47AZUS63IOMF"}, function(eb_client){ 
     eb_client.event_get( {'id': '16933629943'}, function ( res ) { 
       var tickets = res.event.tickets,
           ticket = tickets[0].ticket,
