@@ -1021,6 +1021,20 @@ p.description {
   background-color: #E5E3DF;
 }
 
+.overlay {
+   background:transparent;
+   position:relative;
+   width:100%;
+   height:480px; /* your iframe height */
+   z-index: 20;
+}
+
+#map_canvas1 {
+  margin-top:-480px;  /* your iframe height */
+  position: relative;
+  top: -18px;
+}
+
 /* CONTACT
 -------------------------------------------------- */
 .sponsors {
@@ -1749,7 +1763,7 @@ there.
     font-size: 21px;
   }
   .venue .map {
-    height:495px;
+    height:480px;
   }
   .inline .form-row {
     float: left;
