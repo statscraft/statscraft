@@ -8,8 +8,8 @@
   <div class="row organizers">
       {% for organizer in site.data.organizers %}
       <a href="{{organizer.linkedin}}" target="_blank">
-      <div class="organizer {{organizer.name}}">
-        <div class="img">"../images/organizing-committee.jpg"</div>
+      <div class="organizer {{organizer.id}}">
+        <div class="img"></div>
         <div class="name">{{organizer.name}}</div>
         <div class="company">{{organizer.company}}</div>
       </div>
