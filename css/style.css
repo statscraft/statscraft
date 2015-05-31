@@ -650,6 +650,12 @@ header .menu nav ul {
 .sociallinks .twitter:hover {
   background-position: 32px 16px;
 }
+.sociallinks a {
+  color: #2B2B2B;
+}
+.sociallinks a:hover {
+  color: #1EAEDB;
+}
 .content-list {
   list-style: none;
 }

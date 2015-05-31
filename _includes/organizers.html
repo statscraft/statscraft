@@ -1,0 +1,20 @@
+<div class="committee" id="committee">
+  <h2>Organizing Committee</h2>
+  <div class="row container">
+    <p class="description">
+      This conference is a community effort by and for people who do monitoring daily and care about monitoring. The organizing committee are all volunteers and sponsorships cover the direct costs of the conference.
+    </p>
+  </div>
+  <div class="row organizers">
+      {% for organizer in site.data.organizers %}
+      <a href="{{organizer.linkedin}}" target="_blank">
+      <div class="organizer {{organizer.id}}">
+        <div class="img"></div>
+        <div class="name">{{organizer.name}}</div>
+        <div class="company">{{organizer.company}}</div>
+      </div>
+      </a>
+      {% endfor %}
+
+  </div>
+</div>
