@@ -39,8 +39,8 @@
   summary: >
     Monitoring should not be about tools but rather about choice. For two decades,
     the choice of what should be measured and monitored was dictated by the tools avaialble.
-    Now however, with the exlposion of Open-Source and SaaS, the question should no longer be 'What can I monitor?',
-    but rather 'What should I monitor?' - a much harder but more important question to answer."
+    Now however, with the exlposion of Open-Source and SaaS, the question should no longer be "What can I monitor?",
+    but rather "What should I monitor?" - a much harder but more important question to answer.
 
 - name: Lunch
   type: break
@@ -53,7 +53,10 @@
   start: "14:00"
   end:   "16:00"
   speaker: Avishai Ish-Shalom
-  summary: "Will be updated soon!"
+  summary: >
+    "With great power comes great confusion"
+    It is not enough to generate, collect and store metrics; One needs to know how look and analyse them to get the full benefit of metrics. In this workshop we will learn how to use metrics to detect problems, correlate and investigate issues.
+    This is a hands-on workshop. Although the workshop will use Graphite the methods are not Graphite specific.
 
 - name: Monitoring with ELK
   type: workshop
@@ -84,7 +87,7 @@
   summary: >
     While you can learn a lot by emitting metrics from your application, some insights can only be gained by looking at OS metrics.
     In this hands-on workshop, we will cover the basics in  Linux metric collection for monitoring, performance tuning and capacity planning.
-    How to choose effective metrics? What is the best way to collect them? and more..."
+    How to choose effective metrics? What is the best way to collect them? and more...
 
 - name: Monitoring for Developers
   type: workshop
