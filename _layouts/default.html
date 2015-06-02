@@ -53,9 +53,14 @@
 <script src="js/main.js"></script>
 <script src="js/social-share-kit.js"></script>
 <script>
-  $('.toggle, .toggle + h1').click(function(){
+  $('.toggle').click(function(){
     $(this).parent().children('.comment-box-wrap').slideToggle('slow');
     $(this).toggleClass('active');
+    return false
+  });
+  $('.toggle + h1').click(function(){
+    $(this).parent().children('.toggle').toggleClass('active');
+    $(this).parent().children('.comment-box-wrap').slideToggle('slow');
     return false
   });
   SocialShareKit.init();
