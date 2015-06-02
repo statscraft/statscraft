@@ -17,12 +17,12 @@
 - name: Break
   type: break
   start: "10:45"
-  end:   "11:15"
+  end:   "11:00"
   speaker: "Coffee, anyone?"
 
 - name: Monitoring with Riemann
   type: talk
-  start: "11:15"
+  start: "11:00"
   end:   "11:45"
   speaker: Itai Frenkel
   summary: >
