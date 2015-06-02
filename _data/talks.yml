@@ -104,7 +104,6 @@
     Some of the tools we will use:
      - JMX
      - jvisualvm
-     - imperative code timing
      - async/sync code timing
      - MDC
      - Coda Hale's "metrics"
