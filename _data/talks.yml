@@ -54,8 +54,7 @@
   end:   "16:00"
   speaker: Avishai Ish-Shalom
   summary: >
-    "With great power comes great confusion"
-
+    "With great power comes great confusion"<br/>
     It is not enough to generate, collect and store metrics; One needs to know how look and analyse them to get the full benefit of metrics. In this workshop we will learn how to use metrics to detect problems, correlate and investigate issues.
     This is a hands-on workshop. Although the workshop will use Graphite the methods are not Graphite specific.
 
@@ -95,18 +94,18 @@
   start: "16:30"
   end:   "18:30"
   speaker: Roman Landenband
-  summary: |
+  summary: >
     "Developers, developers, developers.. " - The inventor of "Ballmer Peak"
     Gather around as we get our hands dirty with code and tools to help you with monitoring your application and JVM level metrics.
     This workshop is all about coming to the office the next morning and putting this new found knowledge to use. 
-    You will be provided with a base image of Ubuntu with pre-installed Java application to which you will add monitoring and use different tools to investigate and understand whats going on inside.
+    You will be provided with a base image of Ubuntu with pre-installed Java application to which you will add monitoring and use different tools to investigate and understand whats going on inside.<br/>
 
-    Some of the tools we will use:
-     - JMX
-     - jvisualvm
-     - async/sync code timing
-     - MDC
-     - Coda Hale's "metrics"
-     - ELK 
+    Some of the tools we will use:<br/>
+     - JMX<br/>
+     - jvisualvm<br/>
+     - async/sync code timing<br/>
+     - MDC<br/>
+     - Coda Hale's "metrics"<br/>
+     - ELK <br/>
      - Grafana
   hidetime: true
