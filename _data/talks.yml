@@ -4,8 +4,11 @@
   start: "09:00"
   end:   "09:45"
   summary: >
-    Monitoring is hard. It's non-functional, but at the same time, resource hungry. Monitoring requires the right people.
-    Monitoring sucks because we're doing it wrong. We'll review the problem, which, as always, originates with people, not tools.
+    Monitoring is hard.<br />
+    Monitoring is non-functional, but at the same time, resource hungry.<br />
+    Monitoring requires the right people.<br />
+    #monitoringsucks because we're doing it wrong.<br />
+    We'll review the problem, which, as always, originates with people, not tools.
 
 - name: Intro to Monitoring
   type: talk
@@ -17,13 +20,13 @@
 - name: Break
   type: break
   start: "10:45"
-  end:   "11:00"
+  end:   "11:15"
   speaker: "Coffee, anyone?"
 
 - name: Monitoring with Riemann
   type: talk
-  start: "11:00"
-  end:   "11:45"
+  start: "11:15"
+  end:   "12:00"
   speaker: Itai Frenkel
   summary: >
     Forter has been using Riemann for more than a year in production to monitor our highly complex, distributed system.
@@ -54,8 +57,8 @@
   end:   "16:00"
   speaker: Avishai Ish-Shalom
   summary: >
-    "With great power comes great confusion"<br />
-    It is not enough to generate, collect and store metrics; One needs to know how look and analyse them to get the full benefit of metrics. 
+    "With great power comes great confusion".<br />
+    It is not enough to generate, collect and store metrics; One needs to know how to look and analyse them to get the full benefit of metrics.
     In this workshop we will learn how to use metrics to detect problems, correlate and investigate issues.
     This is a hands-on workshop. Although the workshop will use Graphite the methods are not Graphite specific.
 
@@ -67,11 +70,14 @@
   summary: >
     ELK (Elasticsearch, Logstash, and Kibana) is the leading open-source, log-analytics platform that is used by companies including Netflix,
     Verizon, and Bloomberg to prevent and troubleshoot problematic events in their systems. We will first discuss the various use-cases of using ELK.
-    From Ops monitoring, APM, forensics to security monitoring and business intelligence. In the hands-on part we will train attendees on how to get
-    started with ELK by shipping, parsing, and analyzing log data and then visualizing the events to understand them. As part of the hands-on session,
-    we will learn how to leverage ELK to monitor system and application performance using dockerized, collectd/collectl containers.
-    To get the best learning experience, attendees should bring their own laptop, have access to a machine that generates logs and be
-    ready to run the hands-on exercises with us.
+    From Ops monitoring, APM, forensics to security monitoring and business intelligence.<br />
+    <br />
+    In the hands-on part we will train attendees on how to get started with ELK by shipping, parsing, and analyzing
+    log data and then visualizing the events to understand them. As part of the hands-on session, we will learn how
+    to leverage ELK to monitor system and application performance using dockerized, collectd/collectl containers.<br />
+    <br />
+    To get the best learning experience, attendees should bring their own laptop, have access to a machine that
+    generates logs and be ready to run the hands-on exercises with us.
   hidetime: true
 
 - name: Break
@@ -98,7 +104,7 @@
   summary: >
     "Developers, developers, developers.. " - The inventor of "Ballmer Peak"<br />
     Gather around as we get our hands dirty with code and tools to help you with monitoring your application and JVM level metrics.
-    This workshop is all about coming to the office the next morning and putting this new found knowledge to use. 
+    This workshop is all about coming to the office the next morning and putting this new found knowledge to use.
     You will be provided with a base image of Ubuntu with pre-installed Java application to which you will add monitoring and use different tools to investigate and understand whats going on inside.<br />
 
     Some of the tools we will use:<br />
@@ -107,6 +113,6 @@
      - async/sync code timing<br />
      - MDC<br />
      - Coda Hale's "metrics"<br />
-     - ELK <br /> 
+     - ELK <br />
      - Grafana
   hidetime: true
