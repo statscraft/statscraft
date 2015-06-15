@@ -876,7 +876,8 @@ p.description {
   color: #333;
   font-size: 16px;
 }
-.agenda h3 {
+.agenda h3,
+.pre-talk h3 {
   color: #333333;
   font-size: 26px;
   margin-bottom: 30px;
@@ -898,6 +899,21 @@ p.description {
   position: relative;
   top: -40px;
   left: -40px
+}
+
+.pre-talk {
+  text-align: center;
+}
+
+.pre-talk .discription {
+  margin-top: -27px;
+}
+
+.pre-talk .rsvp {
+  background: #6B6B6B;
+  color: white;
+  padding:0 25px;
+  margin: 10px 0 40px 0;
 }
 /* TICKET SECTION
 -------------------------------------------------- */
@@ -1394,6 +1410,15 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
+@media (max-width: 600px) {
+  .pre-event-banner {
+    -webkit-transform: scale(0.8); /* Saf3.1+, Chrome */
+       -moz-transform: scale(0.8); /* FF3.5+ */
+        -ms-transform: scale(0.8); /* IE9 */
+         -o-transform: scale(0.8); /* Opera 10.5+ */
+            transform: scale(0.8);
+  }
+}
 
 @media (max-width: 650px) {
   h3 {
