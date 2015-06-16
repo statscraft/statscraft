@@ -876,7 +876,8 @@ p.description {
   color: #333;
   font-size: 16px;
 }
-.agenda h3 {
+.agenda h3,
+.pre-talk h3 {
   color: #333333;
   font-size: 26px;
   margin-bottom: 30px;
@@ -898,6 +899,21 @@ p.description {
   position: relative;
   top: -40px;
   left: -40px
+}
+
+.pre-talk {
+  text-align: center;
+}
+
+.pre-talk .discription {
+  margin-top: -27px;
+}
+
+.pre-talk .rsvp {
+  background: #6B6B6B;
+  color: white;
+  padding:0 25px;
+  margin: 10px 0 76px 0;
 }
 /* TICKET SECTION
 -------------------------------------------------- */
@@ -948,8 +964,6 @@ p.description {
   float: left;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  border-radius: 100px;
   background-color: #fff;
 }
 .your-ticket span {
@@ -980,7 +994,6 @@ p.description {
   padding: 17px 14px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  border-radius: 100px;
   background-color: #fff;
 }
 .share p {
@@ -1397,6 +1410,25 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
+.pre-event-banner {
+  padding-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .pre-event-banner {
+    width: 397px;
+  }
+}
+@media (max-width: 450px) {
+  .pre-event-banner {
+    width: 357px;
+  }
+}
+
+@media (max-width: 370px) {
+  .pre-event-banner {
+    width: 327px;
+  }
+}
 
 @media (max-width: 650px) {
   h3 {
@@ -1442,6 +1474,9 @@ there.
   h2 {
     font-size: 35px;
     margin-bottom: 29px;
+  }
+  .rsvp {
+    margin-bottom: 29px!important;
   }
   header .logo {
     width: 130px;
@@ -1748,7 +1783,6 @@ there.
     padding: 22px 17px;
     font-family: 'Lato', sans-serif;
   font-weight: 400;
-    border-radius: 100px;
     background-color: #fff;
   }
   .your-ticket span {
@@ -1813,7 +1847,6 @@ there.
     padding: 36px 22px;
     font-family: 'Lato', sans-serif;
   font-weight: 400;
-    border-radius: 100px;
     background-color: #fff;
   }
   .your-ticket span {
@@ -1890,4 +1923,56 @@ h4.language {
 
 .hidden {
   display:none;
+}
+
+.your-ticket {
+  width: 150px;
+  height: 50px;
+  padding: 13px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-right: 75px;
+}
+
+.ticket-link ,
+.ticket-link:hover {
+  text-decoration: none;
+  color: white;
+}
+.ticket-link h3 {
+  margin-left:20px
+}
+@media (max-width: 1139px) {
+  .ticket-link h3 {
+    font-size:27px;
+  }
+  .your-ticket {
+    width: 120px;
+    height: 35px;
+    padding: 9px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-right: 52px;
+  }
+  .your-ticket span {
+    font-size:17px;
+  }
+}
+@media (max-width: 850px) {
+  
+  .ticket-link h3 {
+    font-size:21px;
+  }
+  .your-ticket {
+    width: 120px;
+    height: 35px;
+    padding: 9px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-right: 34px;
+    margin-top: -11px;
+  }
+  .your-ticket span {
+    font-size:17px;
+  }
 }
