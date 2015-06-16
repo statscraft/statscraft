@@ -15,7 +15,13 @@
   start: "10:00"
   end:   "10:45"
   speaker: Yoav Abrahami
-  summary: "Will be updated soon!"
+  summary: >
+    So we have deployed an application. It is running. How do we verify it keeps on running? 
+    How do we get notified fast about any issues with the application? How do we garantee the service level we want to provide our customers? <br />
+    The magic answer is to monitor our application. But wait, what does it mean to monitor? 
+    What metrics should we monitor? What is the effective way to monitor those metrics? what about alerts?<br />
+    In this talk we will explore a simple browser - server - database application with regard to monitoring. 
+    What role have end user experience monitors, server side performance, operation, error and system monitors, database monitors as well as alerts. 
 
 - name: Break
   type: break
