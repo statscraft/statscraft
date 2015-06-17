@@ -3,5 +3,9 @@
   alt: "BigPanda"
 
 - name: "Ropes"
-  url: "#"
+  url: "http://ropes.io"
   alt: "Ropes"
+
+- name: "WIX"
+  url: "http://wix.com"
+  alt: "WIX"
