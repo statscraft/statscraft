@@ -14,7 +14,7 @@
   type: talk
   start: "10:00"
   end:   "10:45"
-  speaker: Yoav Abrahami
+  speaker: Yoav Abrahami and Mark Sonis
   summary: >
     So we have deployed an application. It is running. How do we verify it keeps on running? 
     How do we get notified fast about any issues with the application? How do we garantee the service level we want to provide our customers? <br />
@@ -33,7 +33,7 @@
   type: talk
   start: "11:15"
   end:   "12:00"
-  speaker: Itai Frenkel
+  speaker: Moshe Zada
   summary: >
     Forter has been using Riemann for more than a year in production to monitor our highly complex, distributed system.
     We are using Riemann as our hub for alerts (PagerDuty), latency and exception reporting (Kibana) and system probes (Jenkins).
