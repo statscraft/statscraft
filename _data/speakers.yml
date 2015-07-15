@@ -8,24 +8,27 @@ Nir Cohen:
   twitter: "https://twitter.com/thinkops"
   linkedin: "https://il.linkedin.com/in/nir0s"
 
-Yoav Abrahami:
-  title: "Chief Architect @ Wix"
+Yoav Abrahami and Mark Sonis:
+  title: "Wix's Chief Architect and Monitoring team leader"
   about : >
     Yoav Abrahami is the Chief Architect at Wix.com, working with developers and operations on building Wix's future products as well as accelerating
     and improving development processes. Prior to joining Wix.com, Yoav was an Architect at Amdocs Cramer OSS division.
-    Yoav has a MS in Physics and BS in Computer Science from Tel Aviv University.
+    Yoav has a MS in Physics and BS in Computer Science from Tel Aviv University.<br />
+    Mark is a Mamram alumni, with over 13 years of experience in operations. 
+    As a monitoring Ninja at Wix he's responsible for building a fully automated monitoring solution for the multi-micro-services / wide-distributed / high-frequency-changing production environment. 
+    My loves, in order, are: Hangout with my gorgeous family, diving in theoretical physics and creatively solve problems as a sport.
   github: "https://github.com/yoavaa"
   twitter: "https://twitter.com/yoavabrahami"
   linkedin: "https://il.linkedin.com/in/yoavabrahami"
 
-Itai Frenkel:
-  title: "Software Developer @ Forter"
+Moshe Zada:
+  title: "Problem Solver @ Forter"
   about: >
-    I am a software engineer at Forter doing architecture / developement / ops / blogging / videos / et al... I've been doing monitoring of
-    Microsoft's Telecom group, GigaSpaces In-Memory-Data-Grid and now Forter's Fraud Prevention SaaS.
-  github: https://github.com/itaifrenkel
-  twitter: "https://twitter.com/itaifrenkel"
-  linkedin: "https://il.linkedin.com/in/itaifrenkel"
+    Moshe is passionate about new technologies, coding, providing tools and VIM hacks. 
+    Currently Moshe is a problem solver at Forter and among other stuff leading Forter’s monitoring with Riemann and ELK stack.
+  github: https://github.com/MosheZada
+  twitter: "https://twitter.com/forterfraudfree"
+  linkedin: "https://www.linkedin.com/pub/moshe-zada/79/b15/265"
 
 Shahar Kedar:
   title: "Director of Engineering @ BigPanda"
@@ -77,6 +80,9 @@ Tomer Levy and Asaf Yigal:
     Asaf Yigal is co-founder and VP of Product at Logz.io. In the past he was co-founder of social-trading platform Currensee,
     which was later sold to OANDA. Yigal was also an early employee of server performance monitoring company Akorri and storage resource management
     startup Onaro, both of which were sold to netapp. A Techion graduate, he created an AI algorithm on naval warfare for the Israeli military.
+  twitter: "https://twitter.com/logzio"
+  linkedin: "https://il.linkedin.com/pub/tomer-levy/1/950/360"
+
 
 TBD:
   title: "TBD"
