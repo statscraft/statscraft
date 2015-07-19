@@ -1,0 +1,7 @@
+body, .reveal, .slides {
+    background-color: #fff;
+}
+.reveal {
+    background: url('images/hero-bg.png') no-repeat center bottom, url('../images/logo.png') no-repeat 97% 5%;
+    background-size: 100% auto, 130px auto;
+}

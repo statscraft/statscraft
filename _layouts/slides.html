@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>StatsCraft</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slides.css">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <!-- Application-specific meta tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@statscraft">
+  <meta name="twitter:title" content="StatsCraft monitoring conference">
+  <meta name="twitter:description" content="First Israeli monitoring conference, 30th of July 2015, Tel Aviv">
+  <meta name="twitter:image" content="http://www.statscraft.org.il/images/logo-meta.png">
+  <meta property="og:title" content="StatsCraft monitoring conference">
+  <meta property="og:description" content="First Israeli monitoring conference, 30th of July 2015, Tel Aviv">
+  <meta property="og:url" content="http://www.statscraft.org.il/">
+  <meta property="og:image" content="http://www.statscraft.org.il/images/logo-meta.png">
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "StatsCraft",
+    "startDate": "2015-07-30T09:00",
+    "endDate": "2015-07-30T18:30",
+    "url" : "http://www.statscraft.org.il",
+    "location" : {
+      "@type" : "Place",
+      "name" : "Google Campus TLV (Electra Tower, 34th Floor)",
+      "address" : "98 Yigal Alon St. Tel Aviv, 6789141 Israel"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.eventbrite.com/e/statscraft-monitoring-conference-2015-tickets-16933629943"
+    }
+  }
+  </script>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/reveal.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body {% if page.padding %} class="withPadding" {% endif %}>
+    {{ content }}
+<script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/js/reveal.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/modernizr-2.8.3.min.js"></script>
+<script>
+Reveal.initialize({
+    embedded: true,
+    keyboard: true,
+    controls: false,
+    // Vertical centering of slides
+    center: false,
+    // Loop the presentation
+    loop: true,
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    autoSlide: 1000 * 2, //10,
+    // Stop auto-sliding after user input
+    autoSlideStoppable: false,
+    // Transition style
+    transition: 'fade', // none/fade/slide/convex/concave/zoom
+    // Transition speed
+    transitionSpeed: 'fast', // default/fast/slow
+});
+</script>
+<!--><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{ site.gaTrackingID }}', 'auto');
+  ga('send', 'pageview');
+</script>
+!-->
+</body>
+</html>
