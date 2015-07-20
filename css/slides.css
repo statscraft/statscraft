@@ -1,7 +1,39 @@
-body, .reveal, .slides, .sponsors {
+body, .reveal, .sponsors {
     background-color: #fff;
 }
 .reveal {
     background: url('images/hero-bg.png') no-repeat center bottom, url('../images/logo.png') no-repeat 97% 5%;
     background-size: 100% auto, 130px auto;
+}
+
+.reveal .slides section h2 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.slides .sponsors {
+    text-align: center;
+}
+
+.slides .sponsors ul {
+    margin-top : 100px
+}
+.slides .sponsors li {
+    max-width: none;
+}
+
+.slides .agenda .slide-agenda-container {
+    margin-left : 20%;
+}
+
+.slides .agenda .row {
+    border-top: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+.reveal .slides-social {
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
 }
