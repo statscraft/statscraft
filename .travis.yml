@@ -35,7 +35,7 @@ deploy:
     acl: public_read
     detect_encoding: true
     cache_control: "max-age=86400"
-    all_branches: true
     upload-dir: $TRAVIS_BRANCH
     on:
+      all_branches: true
       repo: statscraft/statscraft
