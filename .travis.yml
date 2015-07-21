@@ -1,26 +1,41 @@
 language: ruby
 cache: bundler
+sudo: false
 rvm:
 - 2.0.0
-branches:
-  only:
-  - master
 script: ./travis.sh
 after_success: find _site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' \) -exec gzip -9 -n {} \; -exec mv {}.gz {} \;
 deploy:
-  provider: s3
-  access_key_id:
-    secure: mwTo9YTyPA6kyPWcGOt02s8kapASS/IvyVu0OwLs8tj/6obcYZB7kvELvO0z4fMqb+FvjxJfqllM2YxXwWmZJOb8cIIkEz/BuogFLu+BopMhz9AvCShq3sCXqb+QnuUEJKwlSuFSTDSpZlvZLoc3P7P9hL8HZwhPvra8TVznml0UbVcfBr0lyjRr0N5749XcBQPq5132BpDsUPqm90meyXYxpsS3U+492UEaG6EP6ar9/fH/G3fSGGm/jvE3lZEuXkIzWJgpvQakmofk+hcaVDAe0LbbbUkEodBiPBuiib8PRYoJGHIaZinRcP0yIDiYrswUC56XdQhZ4JIXgSFMaGXXeaiuhEbT+nzio2VZxAeW//l6hUzkNF2N/QK4dOPB8trM4B0hfWBhfW32G6gjqy36s4vbxIU53G/DSN4S6yj4BKa39sqMxgflBwYNrjAYpXyFJrJOJMF3QntGZ51qbqD5QdLMwNi/mDVIiW7inAMVRSNHOBo5Ef9nByyNIni5JyZo6n/1khbqVNkJc71JdoOhmevhyP1mTNil7/uf4+3D1/yCkeMpyzIC4x5hoX2ASaFKls/4dybyqcz3SlX9VsFJxEbPFmk6f2PP3e6pTXAMc3nD3lgihQxCUz5sX6dnDE17EU6+cCT6b49CuNo9+IFvCl14BVU+6MUzNZrz2hc=
-  secret_access_key:
-    secure: f31R+LdgzU7zSBFQ1Rd+j+ennyevLILLWFd+tbm6flP2/pDqGoAxFQJbv+G3s18tjKXyQM8gddy/vDc/KQhnt1LHTBjv3pqRDLPnt6z17pSnYvBXfdtrvGuNCBDjgfzIfh9XrbDXXp53vK/BDuPSQLY0EBvcWxD9xi71FLua6jQSU4R2t1xkCy1yDt4VMXirGDwr+93mRNXEbmAjseZDGLATG6ki0VWjnWLNgea86MrMsIFcQX+bDu6/plwAWAETdt9ftAo1Zs1PDe0eP1Pq29WCMy7HoP/YLd6xbj5IPpXlaJX/VHavuQuKo4mRqy4knYyHTtkO8FbPQG3mwBbpT9OxJOUCigMLsKIh82FDrilVvuLpACy4JUWJs+8EoMy1uCuwFQVm3zSbVFW/pId75FG1KEcw37GyPtoz6yAVDuLYTxzcLdODcVU+j+0TNR5/X6ODWVmM77mCnR6u7ToNBz9e0RtFJWAzX7AhJAT+SfK+VP+szanebUGDVg+Tfo3DLf5+P9Ab/SI6DzlWx+0rAjMvCgTHpxwu2NOO20TK/2m4gw38ub4dvnTe1P0Yb2PkxR5jGT0QCyCnNgMP69lvTc4dmEmnNhoT34AVeAsVO8EBB+wIaCvVW9Hj/2kWAHxwAtbhmotllQ8pTL5h2x0QknrEPGWWfhCuTZ2MqqV5N2g=
-  bucket: www.statscraft.org.il
-  local_dir: _site
-  no_cleanup: true
-  skip_cleanup: true
-  acl: public_read
-  detect_encoding: true
-  cache_control: "max-age=86400"
-  on:
-    repo: statscraft/statscraft
-  region: eu-west-1
-  endpoint: www.statscraft.org.il.s3-eu-west-1.amazonaws.com
+  - provider: s3
+    access_key_id:
+      secure: mwTo9YTyPA6kyPWcGOt02s8kapASS/IvyVu0OwLs8tj/6obcYZB7kvELvO0z4fMqb+FvjxJfqllM2YxXwWmZJOb8cIIkEz/BuogFLu+BopMhz9AvCShq3sCXqb+QnuUEJKwlSuFSTDSpZlvZLoc3P7P9hL8HZwhPvra8TVznml0UbVcfBr0lyjRr0N5749XcBQPq5132BpDsUPqm90meyXYxpsS3U+492UEaG6EP6ar9/fH/G3fSGGm/jvE3lZEuXkIzWJgpvQakmofk+hcaVDAe0LbbbUkEodBiPBuiib8PRYoJGHIaZinRcP0yIDiYrswUC56XdQhZ4JIXgSFMaGXXeaiuhEbT+nzio2VZxAeW//l6hUzkNF2N/QK4dOPB8trM4B0hfWBhfW32G6gjqy36s4vbxIU53G/DSN4S6yj4BKa39sqMxgflBwYNrjAYpXyFJrJOJMF3QntGZ51qbqD5QdLMwNi/mDVIiW7inAMVRSNHOBo5Ef9nByyNIni5JyZo6n/1khbqVNkJc71JdoOhmevhyP1mTNil7/uf4+3D1/yCkeMpyzIC4x5hoX2ASaFKls/4dybyqcz3SlX9VsFJxEbPFmk6f2PP3e6pTXAMc3nD3lgihQxCUz5sX6dnDE17EU6+cCT6b49CuNo9+IFvCl14BVU+6MUzNZrz2hc=
+    secret_access_key:
+      secure: f31R+LdgzU7zSBFQ1Rd+j+ennyevLILLWFd+tbm6flP2/pDqGoAxFQJbv+G3s18tjKXyQM8gddy/vDc/KQhnt1LHTBjv3pqRDLPnt6z17pSnYvBXfdtrvGuNCBDjgfzIfh9XrbDXXp53vK/BDuPSQLY0EBvcWxD9xi71FLua6jQSU4R2t1xkCy1yDt4VMXirGDwr+93mRNXEbmAjseZDGLATG6ki0VWjnWLNgea86MrMsIFcQX+bDu6/plwAWAETdt9ftAo1Zs1PDe0eP1Pq29WCMy7HoP/YLd6xbj5IPpXlaJX/VHavuQuKo4mRqy4knYyHTtkO8FbPQG3mwBbpT9OxJOUCigMLsKIh82FDrilVvuLpACy4JUWJs+8EoMy1uCuwFQVm3zSbVFW/pId75FG1KEcw37GyPtoz6yAVDuLYTxzcLdODcVU+j+0TNR5/X6ODWVmM77mCnR6u7ToNBz9e0RtFJWAzX7AhJAT+SfK+VP+szanebUGDVg+Tfo3DLf5+P9Ab/SI6DzlWx+0rAjMvCgTHpxwu2NOO20TK/2m4gw38ub4dvnTe1P0Yb2PkxR5jGT0QCyCnNgMP69lvTc4dmEmnNhoT34AVeAsVO8EBB+wIaCvVW9Hj/2kWAHxwAtbhmotllQ8pTL5h2x0QknrEPGWWfhCuTZ2MqqV5N2g=
+    bucket: www.statscraft.org.il
+    local_dir: _site
+    no_cleanup: true
+    skip_cleanup: true
+    acl: public_read
+    detect_encoding: true
+    cache_control: "max-age=86400"
+    on:
+      repo: statscraft/statscraft
+      branch: master
+    region: eu-west-1
+    endpoint: www.statscraft.org.il.s3-eu-west-1.amazonaws.com
+  - provider: s3
+    access_key_id:
+      secure: fAITb3SBqrowI++wdx9BkOyTPazY8MCf+4s+UJtuNMvsHHhThpmpKMNG/TJ+Gth6SUdFN3uot4nhSrmnefNUzJhs5To55+kB9pbADQmIvsq+ZOTk1lP7ALSPOvmHljUExNiAW3GlOT8yx+llomN8fhP5ZPnldqoYQOipnHkgOe/+qwyPzfv4DBBSsfGQc859yqXDNbkaJadlfk9CuJAIDoSFgQ9GnsXKc9cgdbOKV3rfuCvagUbjvwhDP7IBGdc4S7nheMI9qLzxOsoGD//wiQumt8+MfX76UTaAiX/rcVIiOhFIzAG8cR16Q2oAKh3RKFg8KuE3NHcyeQ8e6BouuXBPglEZ1nQYh/qUSrzyZCQMnqA9TuHqvCsbooZOjb5Vs4Qm3dqa/D9ncngrvaLLJ2XtZW62HRXQyzE8JUo6e2AixJgsMCCA+e3DU4ktpuiI/LH2iY/oWGyPwimFBUN/bFvJ+BiUOA05zrnWOiX8JA9WJee4/7IMo/jmmE5xKIVbS4G5IabI4yj0oVGiC9Xp9iOUyCIKdK3dQ6CfRi7DupQcFVwkE0ueSwrQYvoKluxr67lgH17QND97TyTIKjqe/y4K4gPI0aAd5hP5v88HWoGXVePMfRN5KDNgdTlf28ZAd1T1fOX/gJqk7GwRLsyMiSsa0ISx90SJKeNEoUvllzE=
+    secret_access_key:
+      secure: K97DWW1S8u65SnZDc9bl/kzekxeC0PgzrSX14y09CoDZpeypEmfGbYeivTM+QU9B2xheirT70ShN+0IBeBc7OEk6MgCJ/riau+wGGBFbmAtSAb/8PYbFyRoIroTWQf4NSCDxmYR2bqNCCDN9Z/UeZcgNOpjjfwsE7hAK7UvnV5UzoKSeJZD/U9U/UYU8oUEIeQNyErrtB8oOs/KySdA1T7cxqUtEerTx4bspiWEjqLU9Ojk2dFaLivpYUFVdY0meuj88wj35BifW5tw4oVGJMDIJ4lnnJ/Ox2SlWUlkokZLc89VWvsBF5hfc5Ukejkn3vLkR8/VGB847UjfhEJiLxXK6adwBeHSLB4Uo+qz5BVaV1J+HwpnqFylGw7/3mZ3rxo7U+//brrb68a04t3bKle/McjGRut/rvfLut33etfh1ddlMlh/OfqeVpxO2Wx27wLouWPFWrZv8ncMQm0XlSS3WUt9JP30CKHdLZF7s7ir1Ak8I7WFlad0crM6457vFHwSFVoL+kkjWrqaGpuKTl+9R6Gs6BUObspMHYtH5mVK586MDranj/X8pCcqMVoJ0aZ/8pX6xsmkLc25KavtAnkrusEOUYbCIjfCZ1fpzmMhfOMukKfxBXKhn/KS2ak/2PEjeKJybs60mn/aNNZQQXrcRUT68KJMda8CU7viSgbM=
+    bucket: statscraft-temp
+    local_dir: _site
+    no_cleanup: true
+    skip_cleanup: true
+    acl: public_read
+    detect_encoding: true
+    cache_control: "max-age=86400"
+    all_branches: true
+    upload-dir: $TRAVIS_BRANCH
+    on:
+      repo: statscraft/statscraft
