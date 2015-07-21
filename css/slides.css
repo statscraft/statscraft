@@ -2,8 +2,11 @@ body, .reveal, .sponsors {
     background-color: #fff;
 }
 .reveal {
-    background: url('images/hero-bg.png') no-repeat center bottom, url('../images/logo.png') no-repeat 97% 5%;
-    background-size: 100% auto, 130px auto;
+    background: url('images/hero-bg.png') no-repeat center bottom;
+    background-size: 100% auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400px;
+    font-size: 28px;
 }
 
 .reveal .slides section h2 {
@@ -23,17 +26,24 @@ body, .reveal, .sponsors {
 }
 
 .slides .agenda .slide-agenda-container {
-    margin-left : 20%;
 }
 
 .slides .agenda .row {
     border-top: none;
     text-align: left;
-    font-size: 20px;
+}
+
+.slide-talk-time {
+    font-weight: 700 !important;
+    padding-right: 15px !important;
 }
 
 .reveal .slides-social {
     font-size: large;
     font-weight: bold;
     padding: 20px;
+}
+
+.slide-row-disabled {
+    opacity: 0.3;
 }

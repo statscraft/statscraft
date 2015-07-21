@@ -2,18 +2,13 @@
 layout: slides 
 ---
 <div class="reveal">
-    <div class="slides-social">
-                    <a class="twitter-timeline"  href="https://twitter.com/hashtag/statscraft" data-widget-id="623418293043355648" data-chrome="nofooter noborders noscrollbar">#statscraft Tweets</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-    </div>
     <div class="slides">
         <section>
             <div class="agenda" id="agenda">
                 {% for talk in site.data.talks %}
                     {% if forloop.index != 8 and forloop.index != 11 %} 
-                <div class="row slide-agenda-container">
-    <span class="time1">{{ talk.start }} - {{ talk.end }}</span>
+                <div class="row slide-agenda-container" data-talk-end="{{ talk.end }}">
+    <span class="slide-talk-time">{{ talk.start }} - {{ talk.end }}</span>
                     {% if forloop.index == 7 or forloop.index == 10 %} 
                     <span>{{ talk.type | capitalize }}s:</span>
                     {% endif %}
@@ -37,5 +32,13 @@ layout: slides
 
             </div>
         </section>
+        <section>
+                    <a class="twitter-timeline"  href="https://twitter.com/hashtag/statscraft" data-widget-id="623418293043355648" data-chrome="nofooter noborders noscrollbar" width="520">#statscraft Tweets</a>
+            </section>
+            <section>
+                <div class="slide-logo">
+                    <img src="images/logo.png" />
+                </div>
+            </section>
     </div>
 </div>

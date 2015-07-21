@@ -51,11 +51,16 @@
 <script src="js/modernizr-2.8.3.min.js"></script>
 <script>
 Reveal.initialize({
-    embedded: true,
+    embedded: false,
     keyboard: true,
+    viewDistance: 1,
     controls: false,
     // Vertical centering of slides
-    center: true,
+    center: false,
+    width: "90%",
+    height: "100%",
+    // Factor of the display size that should remain empty around the content
+    margin: 0.1,
     // Loop the presentation
     loop: true,
     // Number of milliseconds between automatically proceeding to the
@@ -82,5 +87,8 @@ Reveal.initialize({
   ga('send', 'pageview');
 </script>
 !-->
+
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <script src="js/slide.js"></script>
 </body>
 </html>
