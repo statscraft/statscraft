@@ -26,14 +26,14 @@ layout: slides
             <div class="sponsors" id="sponsors">
               <ul>
                 {% for sponsor in site.data.sponsors %}
-                <li><a href={{ sponsor.url }} target="_blank"><img src="images/sponsors-{{ sponsor.name | downcase | replace:' ','' }}.png" alt="{{ sponsor.alt }}"></a></li>
+                <li><a href={{ sponsor.url }} target="_blank"><img src="images/sponsors-large-{{ sponsor.name | downcase | replace:' ','' }}.png" alt="{{ sponsor.alt }}"></a></li>
                 {% endfor %}
               </ul>
 
             </div>
         </section>
         <section>
-                    <a class="twitter-timeline"  href="https://twitter.com/hashtag/statscraft" data-widget-id="623418293043355648" data-chrome="nofooter noborders noscrollbar" width="520" height="490">#statscraft Tweets</a>
+                    <a class="twitter-timeline"  href="https://twitter.com/hashtag/statscraft" data-widget-id="623418293043355648" data-chrome="nofooter noborders noscrollbar transparent" width="520" height="600">#statscraft Tweets</a>
             </section>
             <section>
                 <div class="slide-logo">
