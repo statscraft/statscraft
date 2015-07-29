@@ -25,12 +25,14 @@ body, .reveal, .sponsors {
     max-width: none;
 }
 
-.slides .agenda .slide-agenda-container {
+.slides #agenda {
+    font-size: 22px;
 }
 
-.slides .agenda .row {
+.slides #agenda .row {
     border-top: none;
     text-align: left;
+    padding-top: 20px;
 }
 
 .slide-talk-time {
