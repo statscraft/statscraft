@@ -26,13 +26,13 @@ body, .reveal, .sponsors {
 }
 
 .slides #agenda {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .slides #agenda .row {
     border-top: none;
     text-align: left;
-    padding-top: 20px;
+    padding-top: 24px;
 }
 
 .slide-talk-time {
