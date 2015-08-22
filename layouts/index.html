@@ -1,7 +1,5 @@
----
-layout: default
----
-{% include header.html %}
+{{ partial "bodystart.html" . }}
+{{ partial "header.html" . }}
 <div class="important-note">
     <span>30<sup>th</sup> July 2015, Google Campus TLV</span>
   <a href="#tickets" class="ticket-btn" title="Get Tickets">get tickets</a>
@@ -37,11 +35,12 @@ layout: default
     <div class="agenda" id="agenda">
       <h2>Agenda</h2>
       <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
-      {% for talk in site.data.talks %}
-      <div class="{% if talk.hidetime %}hidetime {%endif%}row{% if forloop.index0 == 0 %} first-border{%endif %}">
-          {% include {{talk.type}}.html talk=talk %}
+      {{ range $index, $talk := .Site.Data.talks.talks }}
+      <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
+        {{ $path := $talk.type| printf "%s.html" }}
+        {{ partial $path $talk }}
       </div><!-- .row ends -->
-      {% endfor %}
+      {{ end }}
     </div><!-- .agenda ends -->
   </div>
 
@@ -87,11 +86,12 @@ layout: default
       </div>
     </div>
   </div><!-- venue -->
-  {% include organizers.html %}
-  {% include sponsors.html %}
-  {% include contact.html %}
+  {{ partial "organizers.html" . }}
+  {{ partial "sponsors.html" . }}
+  {{ partial "contact.html" . }}
 
   </div><!-- container -->
 </main><!-- main ends -->
 
-{% include footer.html %}
+{{ partial "footer.html" . }}
+{{ partial "bodyend.html" . }}

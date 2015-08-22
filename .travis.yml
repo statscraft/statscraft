@@ -1,10 +1,12 @@
-language: ruby
-cache: bundler
+language: go
+matrix:
+  - GOPATH=$TRAVIS_BUILD_DIR/gosrc
 sudo: false
-rvm:
-- 2.0.0
+install: 
+  - mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
+  - go get -v github.com/spf13/hugo
 script: ./travis.sh
-after_success: find _site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' \) -exec gzip -9 -n {} \; -exec mv {}.gz {} \;
+after_success: find public \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' \) -exec gzip -9 -n {} \; -exec mv {}.gz {} \;
 deploy:
   - provider: s3
     access_key_id:
@@ -12,7 +14,7 @@ deploy:
     secret_access_key:
       secure: f31R+LdgzU7zSBFQ1Rd+j+ennyevLILLWFd+tbm6flP2/pDqGoAxFQJbv+G3s18tjKXyQM8gddy/vDc/KQhnt1LHTBjv3pqRDLPnt6z17pSnYvBXfdtrvGuNCBDjgfzIfh9XrbDXXp53vK/BDuPSQLY0EBvcWxD9xi71FLua6jQSU4R2t1xkCy1yDt4VMXirGDwr+93mRNXEbmAjseZDGLATG6ki0VWjnWLNgea86MrMsIFcQX+bDu6/plwAWAETdt9ftAo1Zs1PDe0eP1Pq29WCMy7HoP/YLd6xbj5IPpXlaJX/VHavuQuKo4mRqy4knYyHTtkO8FbPQG3mwBbpT9OxJOUCigMLsKIh82FDrilVvuLpACy4JUWJs+8EoMy1uCuwFQVm3zSbVFW/pId75FG1KEcw37GyPtoz6yAVDuLYTxzcLdODcVU+j+0TNR5/X6ODWVmM77mCnR6u7ToNBz9e0RtFJWAzX7AhJAT+SfK+VP+szanebUGDVg+Tfo3DLf5+P9Ab/SI6DzlWx+0rAjMvCgTHpxwu2NOO20TK/2m4gw38ub4dvnTe1P0Yb2PkxR5jGT0QCyCnNgMP69lvTc4dmEmnNhoT34AVeAsVO8EBB+wIaCvVW9Hj/2kWAHxwAtbhmotllQ8pTL5h2x0QknrEPGWWfhCuTZ2MqqV5N2g=
     bucket: www.statscraft.org.il
-    local_dir: _site
+    local_dir: public
     no_cleanup: true
     skip_cleanup: true
     acl: public_read
@@ -29,7 +31,7 @@ deploy:
     secret_access_key:
       secure: WsASViadfF29gztwzOY/rVdCC4916rdsLYYqUSqjrRHecUSg8YHX8f5v+v3JigSG9YRhZL/l/A6ulj4buRxcimdKqAm4+5FsMDAiHepTnl2Ln27YLIN3PeVpAd6OeTFs15bpnpK6vNlagFBG9Szu8BIWgPTX2t9hJkagjXymPBVBHwffffNAknHz4FyDW/XCN7ULPtT3evPIDyghUjceCYQJZSZlC3qMFbPt8W5WtCKYuXzbF1j+4Y3d0TedlXw6XnC6Xhes6hzYSJx8AqmPNhi0yr9Qe/LpV/9ZIxJMaJYYPvmDVpPSmNW3PltgaaeJ1qfYTYPltzZ82AUOAD5ZKafxiFuE2dPd7fndR63G9zShS5iKCIKlUepiDn/r2FXudlwjiaFQg0SygkrkUlm6/duuPDpzQ+Z05JG8V1PpL34s13vsv77dQ94QEHpTGUT8OjEvllxSont2E/Wg9Dg/+nkicYFc/WC0bTx1uMUAoZ7gRMeg8xpIB2vo/V4EpKVrRiX8HEBNCAUsH2/xUmo2JQZDUKAs2lKd0C/FbW/2gHrNBJFOpdplYpAs27K9zAkLtZWXXGhNaNIKU3xy8sRMZdtFJFZsgaGPhY4wNMAT2rLdMQ4TqWUqTxEtAdXxgU/3oAV0VhMn1Hx0KYvrU57ppDUa/49ruP3PhUozUuGt7XU=
     bucket: statscraft-temp
-    local_dir: _site
+    local_dir: public
     no_cleanup: true
     skip_cleanup: true
     acl: public_read

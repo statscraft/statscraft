@@ -1,5 +1,2 @@
-Gemfile.lock
 .DS_Store
-_site/
-.bundle/
-.jekyll-metadata
+public/
