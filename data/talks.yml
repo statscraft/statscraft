@@ -96,7 +96,7 @@ talks:
       the choice of what should be measured and monitored was dictated by the tools avaialble.
       Now however, with the exlposion of Open-Source and SaaS, the question should no longer be "What can I monitor?",
       but rather "What should I monitor?" - a much harder but more important question to answer.
-    link: false
+    link: http://www.slideshare.net/statscraft/top-down-approach-to-monitoring-shahar-kedar
     video: https://www.youtube.com/watch?v=H7TRJKZLhWs
   
   - name: Lunch
