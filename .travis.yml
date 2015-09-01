@@ -1,11 +1,9 @@
 language: go
-matrix:
-  - GOPATH=$TRAVIS_BUILD_DIR/gosrc
 sudo: false
 cache:
   directories:
     - "$TRAVIS_BUILD_DIR/gosrc/src"
-    - $HOME/gopath/src/github.com/$TRAVIS_REPO_SLUG
+    - $HOME/gopath/src
     - vendor/bundle
 install: 
   - mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
