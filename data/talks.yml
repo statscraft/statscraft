@@ -20,6 +20,7 @@ talks:
       Monitoring requires the right people.<br />
       #monitoringsucks because we're doing it wrong.<br />
       We'll review the problem, which, as always, originates with people, not tools.
+    link: false
   
   - name: Intro to Monitoring
     type: talk
@@ -45,6 +46,7 @@ talks:
       What metrics should we monitor? What is the effective way to monitor those metrics? what about alerts?<br />
       In this talk we will explore a simple browser - server - database application with regard to monitoring. 
       What role have end user experience monitors, server side performance, operation, error and system monitors, database monitors as well as alerts. 
+    link: false
   
   - name: Break
     type: break
@@ -70,6 +72,7 @@ talks:
       We are using Riemann as our hub for alerts (PagerDuty), latency and exception reporting (Kibana) and system probes (Jenkins).
       This presentation will cover Riemann patterns for maintenance-mode, state machine based alerts, statistical alerts,
       system and integration tests based alerts, event enrichment and aggregation for reporting.
+    link: http://moshezada.github.io/statscraft15/
   
   - name: Monitoring - A Top down approach
     type: talk
@@ -90,6 +93,7 @@ talks:
       the choice of what should be measured and monitored was dictated by the tools avaialble.
       Now however, with the exlposion of Open-Source and SaaS, the question should no longer be "What can I monitor?",
       but rather "What should I monitor?" - a much harder but more important question to answer.
+    link: false
   
   - name: Lunch
     type: break
@@ -115,6 +119,7 @@ talks:
       It is not enough to generate, collect and store metrics; One needs to know how to look and analyse them to get the full benefit of metrics.
       In this workshop we will learn how to use metrics to detect problems, correlate and investigate issues.
       This is a hands-on workshop. Although the workshop will use Graphite the methods are not Graphite specific.
+    link: false
   
   - name: Monitoring with ELK
     type: workshop
@@ -145,6 +150,7 @@ talks:
       To get the best learning experience, attendees should bring their own laptop, have access to a machine that
       generates logs and be ready to run the hands-on exercises with us.
     hidetime: true
+    link: false
   
   - name: Break
     type: break
@@ -172,6 +178,7 @@ talks:
       While you can learn a lot by emitting metrics from your application, some insights can only be gained by looking at OS metrics.
       In this hands-on workshop, we will cover the basics in  Linux metric collection for monitoring, performance tuning and capacity planning.
       How to choose effective metrics? What is the best way to collect them? and more...
+    link: https://github.com/natict/linux-metrics
   
   - name: Monitoring for Developers
     type: workshop
@@ -202,3 +209,4 @@ talks:
        - ELK <br />
        - Grafana
     hidetime: true
+    link: false

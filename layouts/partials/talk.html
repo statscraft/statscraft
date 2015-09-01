@@ -17,6 +17,9 @@
         </div>
         <h3>Summary</h3>
         <p class="discription">{{ .summary | safeHTML}}</p>
+        {{ if .link }}
+        <h4><a href="{{.link}}">Link</a> to presentation</h4>
+        {{ end }}
     </div>
 </div>
 
