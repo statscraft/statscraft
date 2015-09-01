@@ -4,7 +4,7 @@ matrix:
 sudo: false
 cache:
   directories:
-    - "$GOPATH/src"
+    - "$TRAVIS_BUILD_DIR/gosrc/src"
 install: 
   - mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
   - go get -v github.com/spf13/hugo
