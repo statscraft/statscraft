@@ -19,6 +19,8 @@
         <p class="discription">{{ .summary | safeHTML}}</p>
         {{ if .link }}
         <h4><a href="{{.link}}">Link</a> to presentation</h4>
+        {{ else }}
+        <h4>No link</h4>
         {{ end }}
     </div>
 </div>

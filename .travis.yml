@@ -2,13 +2,13 @@ language: go
 matrix:
   - GOPATH=$TRAVIS_BUILD_DIR/gosrc
 sudo: false
+cache:
+  directories:
+    - "$GOPATH/src"
 install: 
   - mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
   - go get -v github.com/spf13/hugo
 script: ./travis.sh
-cache:
-  directories:
-    - "$TRAVIS_BUILD_DIR/gosrc"
 after_success: find public \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' \) -exec gzip -9 -n {} \; -exec mv {}.gz {} \;
 deploy:
   - provider: s3
