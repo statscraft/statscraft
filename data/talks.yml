@@ -21,6 +21,7 @@ talks:
       #monitoringsucks because we're doing it wrong.<br />
       We'll review the problem, which, as always, originates with people, not tools.
     link: false
+    video: https://www.youtube.com/watch?v=JQMiQxKrFJ4
   
   - name: Intro to Monitoring
     type: talk
@@ -47,6 +48,7 @@ talks:
       In this talk we will explore a simple browser - server - database application with regard to monitoring. 
       What role have end user experience monitors, server side performance, operation, error and system monitors, database monitors as well as alerts. 
     link: false
+    video: https://www.youtube.com/watch?v=VWvr5H8C-_U
   
   - name: Break
     type: break
@@ -73,6 +75,7 @@ talks:
       This presentation will cover Riemann patterns for maintenance-mode, state machine based alerts, statistical alerts,
       system and integration tests based alerts, event enrichment and aggregation for reporting.
     link: https://moshezada.github.io/statscraft15/
+    video: https://www.youtube.com/watch?v=sBPubf6x0i4
   
   - name: Monitoring - A Top down approach
     type: talk
@@ -94,6 +97,7 @@ talks:
       Now however, with the exlposion of Open-Source and SaaS, the question should no longer be "What can I monitor?",
       but rather "What should I monitor?" - a much harder but more important question to answer.
     link: false
+    video: https://www.youtube.com/watch?v=H7TRJKZLhWs
   
   - name: Lunch
     type: break
@@ -151,6 +155,7 @@ talks:
       generates logs and be ready to run the hands-on exercises with us.
     hidetime: true
     link: false
+    video: false
   
   - name: Break
     type: break
@@ -179,6 +184,7 @@ talks:
       In this hands-on workshop, we will cover the basics in  Linux metric collection for monitoring, performance tuning and capacity planning.
       How to choose effective metrics? What is the best way to collect them? and more...
     link: https://github.com/natict/linux-metrics
+    video: false
   
   - name: Monitoring for Developers
     type: workshop
@@ -210,3 +216,4 @@ talks:
        - Grafana
     hidetime: true
     link: false
+    video: false
