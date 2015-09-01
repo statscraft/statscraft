@@ -72,7 +72,7 @@ talks:
       We are using Riemann as our hub for alerts (PagerDuty), latency and exception reporting (Kibana) and system probes (Jenkins).
       This presentation will cover Riemann patterns for maintenance-mode, state machine based alerts, statistical alerts,
       system and integration tests based alerts, event enrichment and aggregation for reporting.
-    link: http://moshezada.github.io/statscraft15/
+    link: false
   
   - name: Monitoring - A Top down approach
     type: talk
