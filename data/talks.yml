@@ -20,7 +20,7 @@ talks:
       Monitoring requires the right people.<br />
       #monitoringsucks because we're doing it wrong.<br />
       We'll review the problem, which, as always, originates with people, not tools.
-    link: false
+    link: http://www.slideshare.net/statscraft/statscraft-2015-the-problem-keynote-nir-cohen
     video: https://www.youtube.com/watch?v=JQMiQxKrFJ4
   
   - name: Intro to Monitoring
@@ -47,7 +47,7 @@ talks:
       What metrics should we monitor? What is the effective way to monitor those metrics? what about alerts?<br />
       In this talk we will explore a simple browser - server - database application with regard to monitoring. 
       What role have end user experience monitors, server side performance, operation, error and system monitors, database monitors as well as alerts. 
-    link: false
+    link: http://www.slideshare.net/statscraft/statscraft-2015-introduction-to-monitoring-yoav-abrahami-and-mark-sonis
     video: https://www.youtube.com/watch?v=VWvr5H8C-_U
   
   - name: Break
