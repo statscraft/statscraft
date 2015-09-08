@@ -1,24 +1,20 @@
----
-layout: default
----
-{% include header.html %}
+{{ partial "bodystart.html" . }}
+{{ partial "header.html" . }}
 <div class="important-note">
     <span>30<sup>th</sup> July 2015, Google Campus TLV</span>
-  <a href="#tickets" class="ticket-btn" title="Get Tickets">get tickets</a>
 </div><!-- .important-note ends -->
 
 <main role="main">
   <div class="container pre-talk">
     <img class="pre-event-banner" src="./images/pre-event-banner.png">
     <div class="name"><h3>“Statistics for Engineers” Workshop</h3></div>
-    <p class="discription"> Join Dr. Heinrich Hartmann on this half day workshop </p>
-    <a  href="https://www.eventbrite.com/e/statistics-for-engineers-with-heinrich-hartmann-tickets-17368094438"><button class="rsvp">rsvp</button></a>
+    <p class="discription"> Dr. Heinrich Hartmann did an awesome half day workshop </p>
   </div>
   <div class="container about">
     <h2 id="about">About Statscraft</h2>
     <div class="row">
       <div class="six columns">
-        <h3>This conference is all about making monitoring easier, more accessible and more productive</h3>
+        <h3>This conference was all about making monitoring easier, more accessible and more productive</h3>
         <div class="about-topics-image">
           <div class="imageContainer">
             <img src="./images/about-topics.png">
@@ -37,43 +33,28 @@ layout: default
     <div class="agenda" id="agenda">
       <h2>Agenda</h2>
       <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
-      {% for talk in site.data.talks %}
-      <div class="{% if talk.hidetime %}hidetime {%endif%}row{% if forloop.index0 == 0 %} first-border{%endif %}">
-          {% include {{talk.type}}.html talk=talk %}
+      {{ range $index, $talk := .Site.Data.talks.talks }}
+      <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
+        {{ $path := $talk.type| printf "%s.html" }}
+        {{ partial $path $talk }}
       </div><!-- .row ends -->
-      {% endfor %}
+      {{ end }}
     </div><!-- .agenda ends -->
   </div>
 
   <div class="ticket-section" id="tickets">
-    <div class="container">
-      <h2>Get your ticket!</h2>
-      <p>Sorry, there are no tickets left </p>
-      <div class="row">
-        <a class="ticket-link" href="https://www.eventbrite.com/e/statscraft-monitoring-conference-2015-tickets-16933629943" target="_blank">
-        <div class="ticket-alert">
-          <h3>Join the waiting list</h3>
-          <div class="your-ticket">
-            <span>HERE</span>
+      <div class="container">
+          <div class="row">
           </div>
-        </div>
-        </a>
-      </div>
-      <div>
-        <p>Tell your friends</p>
-        <div class="ssk-group ssk-lg  ssk-count">
-          <a href="" class="ssk ssk-facebook"><div class="ssk-num">79</div></a>
-          <a href="" class="ssk ssk-twitter"><div class="ssk-num">104</div></a>
-          <a href="" class="ssk ssk-google-plus"><div class="ssk-num">21</div></a>
-        </div>
-      </div>
-<!--      <div class="share">
-        <p>Tell your friends</p>
-        <a href="#" title="Twitter"><img src="images/twitter.png" alt="Twiiter"></a>
-        <a href="#" title="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
-        <a href="#" title="Google"><img src="images/google.png" alt="Google"></a>
-      </div>-->
-    </div><!-- .container ends -->
+          <div>
+              <p>Tell your friends</p>
+              <div class="ssk-group ssk-lg  ssk-count">
+                  <a href="" class="ssk ssk-facebook"><div class="ssk-num">79</div></a>
+                  <a href="" class="ssk ssk-twitter"><div class="ssk-num">104</div></a>
+                  <a href="" class="ssk ssk-google-plus"><div class="ssk-num">21</div></a>
+              </div>
+          </div>
+      </div><!-- .container ends -->
   </div><!-- .ticket-section ends -->
 
   <div id="venue" class="venue text-center">
@@ -87,11 +68,12 @@ layout: default
       </div>
     </div>
   </div><!-- venue -->
-  {% include organizers.html %}
-  {% include sponsors.html %}
-  {% include contact.html %}
+  {{ partial "organizers.html" . }}
+  {{ partial "sponsors.html" . }}
+  {{ partial "contact.html" . }}
 
   </div><!-- container -->
 </main><!-- main ends -->
 
-{% include footer.html %}
+{{ partial "footer.html" . }}
+{{ partial "bodyend.html" . }}

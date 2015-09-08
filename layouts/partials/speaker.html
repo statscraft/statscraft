@@ -1,0 +1,8 @@
+<h2><a href="#" title="{{ .name }}">{{ .name}}</a></h2>
+<span class="designation">{{ .title }}</span>
+<div class="sociallinks">
+    <a target="_blank" href="{{ .github }}"><i class="fa fa-github-alt fa-lg"></i></a>
+    <a target="_blank" href="{{ .twitter }}"><i class="fa fa-twitter fa-lg"></i></a>
+    <a target="_blank" href="{{ .linkedin }}"><i class="fa fa-linkedin fa-lg"></i></a>
+</div>
+<p>{{ .about | safeHTML }}</p>

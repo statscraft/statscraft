@@ -1,4 +1,0 @@
-destination: "_site"
-exclude : [vendor, travis.sh, .travis.yml, s3_website.yml, .gititnore, Gemfile, README.md]
-
-gaTrackingID: "UA-63345088-1"

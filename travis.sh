@@ -1,3 +1,3 @@
 #!/bin/bash
-rm -r ./_site > /dev/null
-bundle exec jekyll build
+rm -r ./public > /dev/null  || "no cleaning to do"
+$GOPATH/bin/hugo

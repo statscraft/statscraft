@@ -6,15 +6,15 @@
     </p>
   </div>
   <div class="row organizers">
-      {% for organizer in site.data.organizers %}
-      <a href="{{organizer.linkedin}}" target="_blank">
-      <div class="organizer {{organizer.id}}">
+      {{ range .Site.Data.organizers.organizers }}
+      <a href="{{.linkedin}}" target="_blank">
+      <div class="organizer {{.id}}">
         <div class="img"></div>
-        <div class="name">{{organizer.name}}</div>
-        <div class="company">{{organizer.company}}</div>
+        <div class="name">{{.name}}</div>
+        <div class="company">{{.company}}</div>
       </div>
       </a>
-      {% endfor %}
+      {{ end }}
 
   </div>
 </div>
