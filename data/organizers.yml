@@ -9,7 +9,7 @@ organizers:
     id: michael
     company: (Gigaspaces)
     linkedin: https://il.linkedin.com/in/michaelsverdlik
-  
+
   - name: Shahar Kedar
     id: shahar
     company: (BigPanda)
@@ -29,3 +29,8 @@ organizers:
     id: avishai
     company: (FewBytes)
     linkedin: https://il.linkedin.com/in/nukemberg
+
+  - name: Nati Cohen
+    id: nati
+    company: (FewBytes)
+    linkedin: https://il.linkedin.com/in/natict

@@ -684,12 +684,12 @@ header .menu nav ul {
 .committee .organizers .organizer {
   width:165px;
   display: inline-block;
-  margin: 50px 10px;
+  margin: 50px 2px;
   cursor: pointer;
   vertical-align: top;
 }
 .committee .organizers .organizer .img {
-  background: url("../images/organizing-committee.jpg");
+  background: url("../images/organizing-commitee-nati.jpg");
   width: 165px;
   height: 80px;
   margin: 0 auto;
@@ -713,6 +713,9 @@ header .menu nav ul {
 .committee .organizers .organizer.avishai .img {
   background-position: -825px 0;
 }
+.committee .organizers .organizer.nati .img {
+  background-position: -990px 0;
+}
 .committee .organizers .organizer.nir:hover .img {
   background-position: 0 80px;
 }
@@ -731,6 +734,9 @@ header .menu nav ul {
 }
 .committee .organizers .organizer.avishai:hover .img {
   background-position: -825px 80px;
+}
+.committee .organizers .organizer.nati:hover .img {
+  background-position: -990px 80px;
 }
 p.description {
   color: #333;
