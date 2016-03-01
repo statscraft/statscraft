@@ -6,20 +6,20 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
-  
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+  <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}favicon.png">
+
   <!-- Application-specific meta tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@statscraft">
   <meta name="twitter:title" content="StatsCraft monitoring conference">
   <meta name="twitter:description" content="First Israeli monitoring conference, 30th of July 2015, Tel Aviv">
-  <meta name="twitter:image" content="http://www.statscraft.org.il/images/logo-meta.png">
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
   <meta property="og:title" content="StatsCraft monitoring conference">
   <meta property="og:description" content="First Israeli monitoring conference, 30th of July 2015, Tel Aviv">
   <meta property="og:url" content="http://www.statscraft.org.il/">
-  <meta property="og:image" content="http://www.statscraft.org.il/images/logo-meta.png">
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -39,5 +39,6 @@
     }
   }
   </script>
+  <base href="{{ .Site.BaseURL }}">
 </head>
 <body {{ if .Params.padding }} class="withPadding" {{ end }}>

@@ -1,10 +1,11 @@
+{{ $baseUrl := .Site.BaseURL }}
 <div class="sponsors" id="sponsors">
     <div class="container">
       <h2>Sponsors</h2>
       <ul>
-        {{ range .Site.Data.sponsors.sponsors }}
-        <li><a href={{ .url }} target="_blank"><img src="images/sponsors-{{ replace (.name | lower) " " "" }}.png" alt="{{ .alt }}"></a></li>
+        {{ range .Site.Data.y2015.sponsors.sponsors }}
+        <li><a href={{ .url }} target="_blank"><img src="{{ $baseUrl }}images/sponsors-{{ replace (.name | lower) " " "" }}.png" alt="{{ .alt }}"></a></li>
         {{ end }}
       </ul>
     </div>
-</div><!-- .sponsors ends -->  
+</div><!-- .sponsors ends -->

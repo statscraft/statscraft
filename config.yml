@@ -1,3 +1,4 @@
 ---
-baseurl: "http://statscraft.org.il"
+baseurl: "/"
+metadataformat: "yaml"
 gaTrackingID: "UA-63345088-1"

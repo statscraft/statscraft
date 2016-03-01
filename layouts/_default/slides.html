@@ -7,17 +7,17 @@
   <meta name="author" content="">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/slides.css">
-  <link rel="icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
-  
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/slides.css">
+  <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}favicon.png">
+
   <!-- Application-specific meta tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@statscraft">
   <meta name="twitter:title" content="StatsCraft monitoring conference">
   <meta name="twitter:description" content="First Israeli monitoring conference, 30th of July 2015, Tel Aviv">
-  <meta name="twitter:image" content="http://www.statscraft.org.il/images/logo-meta.png">
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
   <meta property="og:title" content="StatsCraft monitoring conference">
   <meta property="og:description" content="First Israeli monitoring conference, 30th of July 2015, Tel Aviv">
   <meta property="og:url" content="http://www.statscraft.org.il/">
@@ -41,15 +41,57 @@
     }
   }
   </script>
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/reveal.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
-<body {% if page.padding %} class="withPadding" {% endif %}>
-    {{ . }}
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <div class="agenda" id="agenda">
+                {{ range $index, $talk := .Site.Data.y2015.talks.talks }}
+                    {{ if and (ne $index 8) (ne $index 11) }}
+                <div class="row slide-agenda-container" data-talk-end="{{ index $talk "end" }}">
+    <span class="slide-talk-time">{{ $talk.start }} - {{ $talk.end }}</span>
+                    {{ if or (eq $index 7) (eq $index 10) }}
+                    <span>{{ $talk.type | title }}s:</span>
+                    {{ end }}
+
+                    {{ else }} <span class="slide-talk-separator">/</span>
+                    {{ end }}
+                    <span class="slide-talk-title">{{ $talk.name }}</span>
+                    {{ if and (ne $index 7) (ne $index 10) }}
+                </div><!-- .row ends -->
+                    {{ end }}
+                {{ end }}
+            </div><!-- .agenda ends -->
+        </section>
+        <section>
+            <div class="sponsors" id="sponsors">
+              <ul>
+                {{ range $sponsor := .Site.Data.y2015.sponsors.sponsors }}
+                {{ $lowername := $sponsor.name | lower }}
+                <li><a href={{ $sponsor.url }} target="_blank"><img src="{{ .Site.BaseURL }}images/sponsors-large-{{ replace $lowername " " "" }}.png" alt="{{ $sponsor.alt }}"></a></li>
+                {{ end }}
+              </ul>
+
+            </div>
+        </section>
+        <section>
+                    <a class="twitter-timeline"  href="https://twitter.com/hashtag/statscraft" data-widget-id="623418293043355648" data-chrome="nofooter noborders noscrollbar transparent" width="520" height="480">#statscraft Tweets</a>
+            </section>
+            <section>
+                <div class="slide-logo">
+                    <img src="{{ .Site.BaseURL }}images/big-a55-logo.png" />
+                </div>
+            </section>
+    </div>
+</div>
+{{ .Content }}
 <script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/js/reveal.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/jquery-1.11.2.min.js"></script> 
-<script src="js/modernizr-2.8.3.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery-1.11.2.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/modernizr-2.8.3.min.js"></script>
 <script>
 Reveal.initialize({
     embedded: false,
@@ -79,6 +121,6 @@ Reveal.initialize({
 });
 </script>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            <script src="js/slide.js"></script>
+            <script src="{{ .Site.BaseURL }}js/slide.js"></script>
 </body>
 </html>

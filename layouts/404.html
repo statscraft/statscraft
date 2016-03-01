@@ -1,0 +1,17 @@
+{{ partial "bodystart.html" . }}
+{{ partial "header.html" . }}
+
+<main role="main">
+    <div class="container">
+        <h2>Page not found</h2>
+        <h3> Redirecting you to site...</h3>
+        <p>If you're not redirected, please click <a href="{{ .Site.BaseURL }}">here</a></p>
+    </div>
+</main>
+{{ partial "footer.html" . }}
+<script>
+setTimeout(function(){
+    window.location.href = "{{ .Site.BaseURL }}";
+}, 2000);
+</script>
+{{ partial "bodyend.html" . }}

@@ -1,0 +1,79 @@
+{{ partial "bodystart.html" . }}
+{{ partial "header.html" . }}
+<div class="important-note">
+    <span>30<sup>th</sup> July 2015, Google Campus TLV</span>
+</div><!-- .important-note ends -->
+
+<main role="main">
+  <div class="container pre-talk">
+    <img class="pre-event-banner" src="{{ .Site.BaseURL }}/images/pre-event-banner.png">
+    <div class="name"><h3>“Statistics for Engineers” Workshop</h3></div>
+    <p class="discription"> Dr. Heinrich Hartmann did an awesome half day workshop </p>
+  </div>
+  <div class="container about">
+    <h2 id="about">About Statscraft</h2>
+    <div class="row">
+      <div class="six columns">
+        <h3>This conference was all about making monitoring easier, more accessible and more productive</h3>
+        <div class="about-topics-image">
+          <div class="imageContainer">
+            <img src="{{ .Site.BaseURL }}/images/about-topics.png">
+          </div>
+        </div>
+      </div>
+      <div class="six columns">
+        <p class="description">Monitoring is important. Without monitoring, there can be no feedback, no planning and no improvement. Monitoring is crucial for detecting problems, optimizing performance, capacity planning, improving user experience, improving business impact... the list goes on an on.
+        Yet in many companies, monitoring is an afterthought, neglected and underrated. Companies spend very little time and effort on it, create bad monitoring and then go on to ignore the data they collected completely. We often hear that "monitoring is hard" - and it can be, unless we do something about it.
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="agenda" id="agenda">
+      <h2>Agenda</h2>
+      <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
+      {{ range $index, $talk := .Site.Data.y2015.talks.talks }}
+      <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
+        {{ $path := $talk.type| printf "%s.html" }}
+        {{ partial $path $talk }}
+      </div><!-- .row ends -->
+      {{ end }}
+    </div><!-- .agenda ends -->
+  </div>
+
+  <div class="ticket-section" id="tickets">
+      <div class="container">
+          <div class="row">
+          </div>
+          <div>
+              <p>Tell your friends</p>
+              <div class="ssk-group ssk-lg  ssk-count">
+                  <a href="" class="ssk ssk-facebook"><div class="ssk-num">79</div></a>
+                  <a href="" class="ssk ssk-twitter"><div class="ssk-num">104</div></a>
+                  <a href="" class="ssk ssk-google-plus"><div class="ssk-num">21</div></a>
+              </div>
+          </div>
+      </div><!-- .container ends -->
+  </div><!-- .ticket-section ends -->
+
+  <div id="venue" class="venue text-center">
+    <div class="container">
+      <h2>Venue</h2>
+      <h3>Google Campus TLV</h3>
+      <address>Electra Tower, 98 Yigal Alon St. Tel Aviv, 34<sup>th</sup> Floor</address>
+
+      <div id="canvas1" class="map">
+        <iframe id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6762.142146902201!2d34.7942164302785!3d32.06732635798904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b9f0f7ed125%3A0xcd0f8fa9a029cdd8!2sElectra+Tower!5e0!3m2!1sen!2sil!4v1430820774639" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+      </div>
+    </div>
+  </div><!-- venue -->
+  {{ partial "organizers.html" . }}
+  {{ partial "sponsors.html" . }}
+  {{ partial "contact.html" . }}
+
+  </div><!-- container -->
+</main><!-- main ends -->
+
+{{ partial "footer.html" . }}
+{{ partial "bodyend.html" . }}

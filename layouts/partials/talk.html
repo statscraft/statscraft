@@ -9,7 +9,7 @@
     <div class="comment-box-wrap" style="display:none;">
         <div class="comment-box row">
             <div class="avatar">
-                <img src="images/{{replace (.speaker.name | lower) " " "" }}.jpg" alt="Avatar">
+                <img src="{{ $.Site.BaseURL }}images/{{replace (.speaker.name | lower) " " "" }}.jpg" alt="Avatar">
             </div>
             <div class="eight columns">
                 {{ partial "speaker.html" .speaker }}
@@ -22,7 +22,7 @@
         {{ end }}
         {{ if .video }}
         <h4><a href="{{.video}}" target="_blank">YouTube Video</a></h4>
-        {{ end }}    
+        {{ end }}
     </div>
 </div>
 
