@@ -1,11 +1,11 @@
 language: go
 sudo: false
-cache:
-  directories:
-    - "$TRAVIS_BUILD_DIR/gosrc/src"
-    - $HOME/gopath/src
-    - vendor/bundle
-install: 
+#cache:
+#  directories:
+#    - "$TRAVIS_BUILD_DIR/gosrc/src"
+#    - $HOME/gopath/src
+#    - vendor/bundle
+install:
   - mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
   - go get -v github.com/spf13/hugo
 script: ./travis.sh
