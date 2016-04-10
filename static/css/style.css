@@ -1965,7 +1965,7 @@ h4.language {
   }
 }
 @media (max-width: 850px) {
-  
+
   .ticket-link h3 {
     font-size:21px;
   }
@@ -1982,3 +1982,19 @@ h4.language {
     font-size:17px;
   }
 }
+
+.cfp {
+    padding-top: 90px;
+}
+
+.cfp h3{
+    text-align: center;
+}
+
+
+.cfsponsors h3{
+    text-align: center;
+}
+
+
+
