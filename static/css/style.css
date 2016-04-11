@@ -1983,11 +1983,11 @@ h4.language {
   }
 }
 
-.cfp {
+.cfp, .previous-events {
     padding-top: 90px;
 }
 
-.cfp h3{
+.cfp h3, .previous-events h3{
     text-align: center;
 }
 
