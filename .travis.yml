@@ -1,4 +1,6 @@
 language: go
+go:
+  - 1.6
 sudo: false
 install:
 - mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
