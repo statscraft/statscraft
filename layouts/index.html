@@ -2,6 +2,7 @@
 {{ partial "header.html" . }}
 <div class="important-note">
     <span>8<sup>th</sup> August 2016, Gallery Dubnov TLV</b></span>
+    <a href="#tickets" class="ticket-btn" title="Get Tickets">get tickets</a>
 </div><!-- .important-note ends -->
 <main role="main">
 <div class="container about">
@@ -24,8 +25,7 @@
 </div><!-- container -->
 <div class="container cfp">
     <h2 id="cfp">Call For Papers!</h2>
-    <h4>Hurry! The CFP will be closed on the 14th of June</h4>
-    <h3>Fill in <a href="{{ .Site.Data.y2016.cfp.cfp_google_form_url }}">this form</a> with your awesome talk proposal!</h3>
+    <h4>The CFP is closed! We're currently reviewing the submissions</h4>
 </div>
 {{/*
 <div class="container cfsponsors">
@@ -33,6 +33,40 @@
     <h3>Fill in <a href="{{ .Site.Data.y2016.cfp.sponsor_google_form_url }}">this form</a> with your awesome sponsor proposal!</h3>
 </div>
  */}}
+
+ <div id="venue" class="venue venue2016 text-center">
+     <div class="container">
+         <h2>Venue</h2>
+         <h3>Dubnov Gallery TLV</h3>
+         <address>Dubnov Gallery, Dubnov St. 8, Tel Aviv</address>
+
+         <div id="canvas1" class="map">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.801888660921!2d34.7814571161904!3d32.07460668118976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b8368489aad%3A0x26747d74226bb226!2z15LXnNeo15nXlCDXk9eV15HXoNeV15EgKNee15DXmdeo15TXldejKQ!5e0!3m2!1sen!2s!4v1467614487514" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+     </div>
+ </div><!-- venue -->
+
+  <div class="ticket-section" id="tickets">
+    <div class="container">
+      <h2>Get your ticket!</h2>
+      <p>So you'd like to be a part of Statscaft 2016? <span>We’d love to see you there!</span></p>
+      <div class="row">
+        <a href="https://www.eventbrite.com/e/statscraft-monitoring-conference-2016-tickets-26404502578" target="_blank">
+        <div class="ticket-alert">
+          <div class="left-tickets">
+            <strong id="tickets_left"></strong>
+            <span>Tickets left</span>
+          </div>
+
+          <div class="your-ticket">
+            <span>Get Yours</span>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div>      </div><!-- .container ends -->
+    </div><!-- .ticket-section ends -->
+
 
 <div class="container previous-events">
   <h2 id="previous">Previous Events</h2>

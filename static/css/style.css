@@ -1024,6 +1024,9 @@ p.description {
   background: #f6be00 url('images/venue-bg.jpg') no-repeat center top;
   background-size: cover;
 }
+.venue2016 {
+  background: #f6be00 none no-repeat center top;
+}
 .venue h2 {
   color: #fff;
   margin-bottom: 43px;
