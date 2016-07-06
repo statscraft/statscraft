@@ -163,6 +163,7 @@ talks:
     end:   "13:40"
     speaker:
       name: Elena Levi
+      about: ""
     summary: ""
 
   - name: Alerting mistakes
@@ -171,6 +172,7 @@ talks:
     end:   "13:50"
     speaker:
       name: Eran Zimbler
+      about: ""
     summary: ""
 
   - name: Monitor Your Business (no developers required)
@@ -179,6 +181,7 @@ talks:
     end:   "13:40"
     speaker:
       name: Arik Fraimovich
+      about: ""
     summary: ""
 
   - name: "The Pareto Logging Principle: 97% of Logged Errors are Caused by 3% of Unique Errors"
@@ -187,8 +190,8 @@ talks:
     end:   "13:40"
     speaker:
       name: Chen Harel
+      about: ""
     summary: ""
-
 
   - name: Why We Love Prometheus (And You Should, Too!)
     type: ignite
@@ -196,8 +199,8 @@ talks:
     end:   "13:40"
     speaker:
       name: Gil Fliker
+      about: ""
     summary: ""
-
 
   - name: How Newborns are like your infrastructure
     type: ignite
@@ -205,6 +208,7 @@ talks:
     end:   "13:40"
     speaker:
       name: Gil Zellner
+      about: ""
     summary: ""
 
   - name: Domain-Driven Monitoring
@@ -213,6 +217,7 @@ talks:
     end:   "13:40"
     speaker:
       name: Asaf Kotzer
+      about: ""
     summary: ""
 
   - name: "KPIs Analysis: Product V.S. Engineering"
@@ -221,6 +226,7 @@ talks:
     end:   "13:40"
     speaker:
       name: Amir Ben Ari
+      about: ""
     summary: ""
 
   - name: ETW - Monitor Anything, Anywhere, Anytime
@@ -229,6 +235,7 @@ talks:
     end:   "13:40"
     speaker:
       name: Dina Goldshtein
+      about: ""
     summary: ""
 
   - name: Break
