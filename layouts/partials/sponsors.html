@@ -3,7 +3,7 @@
     <div class="container">
       <h2>Sponsors</h2>
       <ul>
-        {{ range .Site.Data.y2015.sponsors.sponsors }}
+        {{ range .Site.Data.y2016.sponsors.sponsors }}
         <li><a href={{ .url }} target="_blank"><img src="{{ $baseUrl }}images/sponsors-{{ replace (.name | lower) " " "" }}.png" alt="{{ .alt }}"></a></li>
         {{ end }}
       </ul>

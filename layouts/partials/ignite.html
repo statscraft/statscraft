@@ -1,0 +1,28 @@
+<div class="two columns">
+    <span class="time">{{ .start }} - {{ .end }}</span>
+    <span class="item {{ .type }}">{{.type | title }}</span>
+</div>
+<div class="nine columns">
+    <a href="#" class="toggle ">toggle</a>
+    <h1>{{ .name }}</h1>
+    <span class="author">{{ .speaker.name }}</span>
+    <div class="comment-box-wrap" style="display:none;">
+        <div class="comment-box row">
+            <div class="avatar">
+                <img src="{{ $.Site.BaseURL }}images/{{replace (.speaker.name | lower) " " "" }}.jpg" alt="Avatar">
+            </div>
+            <div class="eight columns">
+                {{ partial "speaker.html" .speaker }}
+            </div>
+        </div>
+        <h3>Summary</h3>
+        <p class="discription">{{ .summary | safeHTML}}</p>
+        {{ if .link }}
+        <h4><a href="{{.link}}" target="_blank">Slides</a></h4>
+        {{ end }}
+        {{ if .video }}
+        <h4><a href="{{.video}}" target="_blank">YouTube Video</a></h4>
+        {{ end }}
+    </div>
+</div>
+

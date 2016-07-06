@@ -1,30 +1,25 @@
 ---
 organizers:
-  - name: Nir Cohen
-    id: nir
-    company: (Gigaspaces)
-    linkedin: https://il.linkedin.com/in/nir0s
-  
-  - name: Michael Sverdlik
-    id: michael
-    company: (Gigaspaces)
-    linkedin: https://il.linkedin.com/in/michaelsverdlik
-
   - name: Shahar Kedar
     id: shahar
     company: (BigPanda)
     linkedin: https://il.linkedin.com/in/shaharke
-  
+
   - name: Erik Zaadi
     id: erik
     company: (BigPanda)
     linkedin: https://il.linkedin.com/in/erikzaadi
-  
+
+  - name: Ofer Schreiber
+    id: oschreib
+    company: (BigPanda)
+    linkedin: https://il.linkedin.com/in/oschreib
+
   - name: Amit Cohen
     id: amit
     company: (FewBytes)
     linkedin: https://il.linkedin.com/in/amitcohe
-  
+
   - name: Avishai Ish-Shalom
     id: avishai
     company: (FewBytes)
@@ -34,3 +29,13 @@ organizers:
     id: nati
     company: (FewBytes)
     linkedin: https://il.linkedin.com/in/natict
+
+  - name: Elena Frumkin
+    id: elena
+    company: (Singular)
+    linkedin: https://il.linkedin.com/in/elena
+
+  - name: Ran Leibman
+    id: ran
+    company: (Facebook)
+    linkedin: https://il.linkedin.com/in/ran

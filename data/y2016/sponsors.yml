@@ -3,11 +3,15 @@ sponsors:
   - name: "BigPanda"
     url: "https://bigpanda.io"
     alt: "BigPanda"
-  
+
   - name: "Outbrain"
     url: "http://www.outbrain.com/"
     alt: "Outbrain"
-  
-  - name: "WIX"
-    url: "http://engineering.wix.com/"
-    alt: "WIX"
+
+  - name: "AOL"
+    url: "http://aol.com"
+    alt: "AOL"
+
+  - name: "Facebook"
+    url: "https://facebook.com"
+    alt: "Facebook"

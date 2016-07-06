@@ -22,18 +22,20 @@
             </p>
         </div>
     </div>
-</div><!-- container -->
-<div class="container cfp">
-    <h2 id="cfp">Call For Papers!</h2>
-    <h4>The CFP is closed! We're currently reviewing the submissions</h4>
-</div>
-{{/*
-<div class="container cfsponsors">
-    <h2 id="cfsponsors">Call For Sponsors!</h2>
-    <h3>Fill in <a href="{{ .Site.Data.y2016.cfp.sponsor_google_form_url }}">this form</a> with your awesome sponsor proposal!</h3>
-</div>
-*/}}
+    <div class="agenda" id="agenda">
+      <h2>Agenda</h2>
+      <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
+      {{ range $index, $talk := .Site.Data.y2016.talks.talks }}
+      <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
+        {{ $path := $talk.type| printf "%s.html" }}
+        {{ partial $path $talk }}
+      </div><!-- .row ends -->
+      {{ end }}
+    </div><!-- .agenda ends -->
+  </div>
 
+
+</div><!-- container -->
  <div id="venue" class="venue venue2016 text-center">
      <div class="container">
          <h2>Venue</h2>
@@ -61,6 +63,12 @@
       </div>
       <div>      </div><!-- .container ends -->
     </div><!-- .ticket-section ends -->
+
+  {{ partial "organizers.html" . }}
+  {{ partial "sponsors.html" . }}
+  {{ partial "contact.html" . }}
+
+
 
 <div class="container previous-events">
   <h2 id="previous">Previous Events</h2>
