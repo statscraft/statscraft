@@ -689,7 +689,7 @@ header .menu nav ul {
   vertical-align: top;
 }
 .committee .organizers .organizer .img {
-  background: url("../images/organizing-commitee-nati.jpg");
+  background: url("../images/organizing-commitee-2016.jpg");
   width: 165px;
   height: 80px;
   margin: 0 auto;
@@ -716,6 +716,17 @@ header .menu nav ul {
 .committee .organizers .organizer.nati .img {
   background-position: -990px 0;
 }
+.committee .organizers .organizer.elena .img {
+  background-position: -1155px 0;
+}
+.committee .organizers .organizer.ran .img {
+  background-position: -1320px 0;
+}
+
+.committee .organizers .organizer.ofer .img {
+  background-position: -1485px 0;
+}
+
 .committee .organizers .organizer.nir:hover .img {
   background-position: 0 80px;
 }
@@ -738,6 +749,17 @@ header .menu nav ul {
 .committee .organizers .organizer.nati:hover .img {
   background-position: -990px 80px;
 }
+.committee .organizers .organizer.elena:hover .img {
+  background-position: -1155px 80px;
+}
+.committee .organizers .organizer.ran:hover .img {
+  background-position: -1320px 80px;
+}
+
+.committee .organizers .organizer.ofer:hover .img {
+  background-position: -1485px 80px;
+}
+
 p.description {
   color: #333;
   font-size: 20px;
@@ -789,6 +811,10 @@ p.description {
 }
 .agenda .break {
   background-color: #e6635a;
+}
+
+.agenda .ignite {
+  background-color: #bada55;
 }
 .agenda h1 {
   color: #333;

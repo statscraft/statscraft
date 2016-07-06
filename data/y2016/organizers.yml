@@ -11,9 +11,9 @@ organizers:
     linkedin: https://il.linkedin.com/in/erikzaadi
 
   - name: Ofer Schreiber
-    id: oschreib
+    id: ofer
     company: (BigPanda)
-    linkedin: https://il.linkedin.com/in/oschreib
+    linkedin: https://www.linkedin.com/in/oferschreiber
 
   - name: Amit Cohen
     id: amit
@@ -22,18 +22,18 @@ organizers:
 
   - name: Avishai Ish-Shalom
     id: avishai
-    company: (FewBytes)
+    company: (Outbrain)
     linkedin: https://il.linkedin.com/in/nukemberg
 
   - name: Nati Cohen
     id: nati
-    company: (FewBytes)
+    company: (SimilarWeb)
     linkedin: https://il.linkedin.com/in/natict
 
-  - name: Elena Frumkin
+  - name: Elena Levy
     id: elena
     company: (Singular)
-    linkedin: https://il.linkedin.com/in/elena
+    linkedin: https://www.linkedin.com/in/elena-levi-9b240430
 
   - name: Ran Leibman
     id: ran
