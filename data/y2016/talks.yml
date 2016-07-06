@@ -4,14 +4,16 @@ talks:
     type: talk
     speaker:
       name: Statscraft Team
-      title: ""
-      about: ""
-      github: false
-      twitter: false
+      title: "The Amazing Statscraft Comittee"
+      about: >
+        This conference is a community effort by and for people who do monitoring daily and care about monitoring.<br/>The organizing committee are all volunteers and sponsorships cover the direct costs of the conference.
+      github: https://github.com/statscraft
+      twitter: https://twitter.com/statscraft
       linkedin: false
     start: "09:00"
     end:   "09:15"
-    summary: "   "
+    summary: >
+        We'll dazzle you with our warming welcome.
     link: false
     video: false
 
@@ -19,14 +21,17 @@ talks:
     type: talk
     speaker:
       name: Yaniv Shalev
-      title: ""
-      about: ""
+      title: "VP | AOL Israel Site Lead | CTO at Convertro"
+      about: "Strong experience with leading holistic team and product development from idea to GA highly aligned with business goals"
       github: false
       twitter: false
-      linkedin: false
+      linkedin: https://www.linkedin.com/in/yanivshalev
     start: "09:15"
     end:   "09:45"
-    summary: ""
+    summary: >
+        In this talk we will emphasize the need to take holistic approach to monitoring and using monitoring as a competitive advantage (I’m calling it, “the 4 layer monitoring model”).<br/>
+        We will discuss the maturity of monitoring from the simple infrastructure layer we all know through service based monitoring, to insight/event driven data monitoring and finally monitoring our entire business.<br/>
+        As an analytics solution we wanted to treat our data as we treat our customers business.
     link: false
     video: false
 
@@ -36,12 +41,17 @@ talks:
     end:   "10:15"
     speaker:
       name: Eliran Ben-Zikri
-      title: ""
-      about : ""
+      title: "Production Engineer at SimilarWeb"
+      about : "With one functional ear and vast experience in networking & security, Eliran Ben-Zikri is a Production Engineer at SimilarWeb where he fell in love with anything automated and writing code for all *nix based systems."
       github: false
       twitter: false
-      linkedin: false
-    summary: ""
+      linkedin: https://il.linkedin.com/in/eliranbz
+    summary: >
+      *   Intro: Where we've been, the horrors.<br/>
+      *   Implications: What was the impact on the business, the team and the individuals.<br/>
+      *   What we did: The steps we took to overcome it, including developing tools and changing everything we know<br/>
+      *   Conclusions: What are the main things we learned and what are the takeaways from this lecture. Practical tips.<br/>
+      *   Where are we headed from here: What's next, the things to come.
     link: false
     video: false
 
@@ -56,15 +66,30 @@ talks:
     start: "10:30"
     end:   "11:00"
     speaker:
-      name: Moshe Zada & Assaf Milman
-      title: "Problem Solver @ Forter"
+      name: Moshe Zada Assaf Milman
+      title: "Problem Solvers @ Forter"
       about: >
         Moshe is passionate about new technologies, coding, providing tools and VIM hacks.
         Currently Moshe is a problem solver at Forter and among other stuff leading Forter’s monitoring with Riemann and ELK stack.
       github: https://github.com/MosheZada
       twitter: "https://twitter.com/forterfraudfree"
       linkedin: "https://www.linkedin.com/pub/moshe-zada/79/b15/265"
-    summary: ""
+    summary: >
+      First half of the presentation (15 minutes) - by BI engineer (Assaf Milman)<br/>
+        * why a startup managers also needs a dedicated BI team (1-2 persons). Who needs it the most (answer- the BI team now sits in the Finance room)<br/>
+        * Can you really tweak different thresholds for different customers + different traffic seasonality by hand? (nope)<br/>
+        * (one of) the statistical algorithm we use for dynamic thresholds configuration to alert on anomalies every 20 minutes and compares the data with the last 24 hours (for example). How to massage data to fit the statistical assumption (implicitly we assumed events are uncorrelated).  For details see http://www.slideshare.net/itaif/monitoring-patterns-for-mitigating-technical-risk slides 30-34. I went over it briefly in front of ~10 people in a meetup... so I don't think anyone in the audience heard it before.<br/>
+        * Who is really in charge of these alert? <br/>
+        * What are the improvements we plan (can we reduce alert time to 5 minutes for merchants with enough traffic?)<br/>
+        * How did it work for us till now (~1 year) Saved us twice. We had a boo-boo when the anomaly was below the noise level and the customer did notice it. It was also due to a configuration problem since we changed a few data sources (part of the problems is that BI is not "part of the R&D"). Fortunatly, we did not loose money, we did loose face though.<br/>
+        * The relationships between the BI team and R&D pros/cons. Should we wait 20 minutes before approving a deployment of a new version? What happens when this alert (immediate fail backwards, no time for fail forward).<br/>
+        <br/>
+        Second half of the presentation - by Moshe Zada<br/>
+        * How we used system tests both as local tests, production monitoring probes and CI tests AND why we chose to check database state at the end of each test.<br/>
+        * What problems did it detect, how did we handle the alert noise, what where the problems it causes ("sporadic success" tests became a problem)<br/>
+        * The transition from a single mysql to an event sourcing architecture (events->merging to document->s3/MySQL/ElasticSearch/Redshift is necessary for deploying smaller services independently (the impact on monitoring data at rest when transitioning from one service to multiple services each with its own data store).<br/>
+        * The need for a single reconsiliator to check that data is consistent across all stores, how do we tweak alerts differently (statistical) than system tests/probes (must always work, and fast), the added value of a place to try and fix problems before alerting (remidiation), compliance (credit card redaction). Related topics how to monitor data migration errors (an error column in redshift for example), and should strict schema validation be in the redactor or maybe someplace else?<br/>
+        * Which "data at rest asserts" did we move from the system tests to the BI alert instead of the reconsiliator?
     link: false
     video: false
 
@@ -74,12 +99,19 @@ talks:
     end:   "11:30"
     speaker:
       name: Dalia Simons
-      title: ""
-      about: ""
+      title: "Server Engineering at Wix"
+      about: >
+        I've been developing software for over 10 years. in the last 5 years i've been part of the server engineering team @ wix.<br/>
+        I've been working on the experiments system for the last 2 years
       github: false
       twitter: false
-      linkedin: false
-    summary: ""
+      linkedin: https://il.linkedin.com/in/daliasimons
+    summary: >
+        This lecture will introduce the way we use our experiments system to gradually deploy and monitor new features .<br/>
+        We will go over:<br/>
+        * Why we need an experiments system<br/>
+        * Types of experiments (ab tests vs feature toggles) and how they help us monitor different new features<br/>
+        * Using filters to open experiments and monitor specific geos / locations / devices
     link: false
     video: false
 
@@ -95,12 +127,13 @@ talks:
     end:   "12:00"
     speaker:
       name: The Sponsors
-      title: ""
-      about: ""
+      title: "Our Amazing Sponsorts"
+      about: "Who made this conference possible"
       github: false
       twitter: false
       linkedin: false
-    summary: ""
+    summary: >
+        Our fabulous sponsors will present themselves shortly.
     link: false
     video: false
 
@@ -110,12 +143,19 @@ talks:
     end:   "12:30"
     speaker:
       name: Demi Ben-Ari
-      title: ""
-      about: ""
+      title: "co-founder and CTO at a stealth mode startup"
+      about: >
+          Demi Ben-Ari is co-founder and CTO at a stealth mode startup.<br/>
+          Demi has over 9 years of experience in building various systems both from the field of near real time applications and Big Data distributed systems. <br/>
+          Describing himself as a software development groupie, Interested in tackling cutting edge technologies.<br/>
+          Demi is also a co-founder of the “Big Things” Big Data community- http://somebigthings.com/big-things-intro/
       github: false
       twitter: false
-      linkedin: false
-    summary: ""
+      linkedin: https://il.linkedin.com/in/demibenari
+    summary: >
+        At first I'll go over the problems that developers and devops people are facing when developing distributed systems and monitoring them,<br/>
+        then I'll go over all of these problems and the possible solutions in the market for each one of them.<br/>
+        Finally I'll close with the simple solutions that we've implemented, even via Bash scripts, not always all has to be fancy, but just to work good enough and give value.
     link: false
     video: false
 
@@ -131,8 +171,12 @@ talks:
     end:   "13:40"
     speaker:
       name: Elena Levi
-      about: ""
-    summary: ""
+      about: >
+          BI Extremist<br/> Analyst by day, Statscraft organizer by night
+      title: "Product/BI at Singular"
+      linkedin: https://il.linkedin.com/in/elena-levi-9b240430
+    summary: >
+        Monitoring Zendesk (customer service software) to find what your company spends time on,<br/> what product fetcher you need the most and what your customers think.
 
   - name: Alerting mistakes
     type: ignite
@@ -140,8 +184,10 @@ talks:
     end:   "13:50"
     speaker:
       name: Eran Zimbler
-      about: ""
-    summary: ""
+      title: "DevOps Extraordinar at Rumble News"
+      about: "After working for checkpoint software and AVG I finally moved out of security related companies and started working at Rumble News, there I have evolved into a cloud savvy/monitor watcher/scripts fixer/solutions finder/devops.<br/>While starting to feel too old for this shit, I have learned that clouds like old time servers rain at the worst of times."
+      linkedin: https://il.linkedin.com/in/zimbler
+    summary: "Short walktrough of all the mistakes I did with alerts and alerting systems during the last 10 years."
 
   - name: Monitor Your Business (no developers required)
     type: ignite
@@ -149,8 +195,12 @@ talks:
     end:   "14:00"
     speaker:
       name: Arik Fraimovich
-      about: ""
-    summary: ""
+      about: >
+        In the past years, I have been dealing with all aspects of data -- from how to load it properly and in scale and then how to present it to the end users.<br/>In the process I've created Redash, an open source data collaboration platform, that helps organizations democratize their data access.<br/>
+          These days I'm working hard on creating a sustainable business around Redash.
+      title: "BI at Redash"
+      linkedin: https://il.linkedin.com/in/arikfri
+    summary: "The idea is to explain why it's important to monitor business metrics -> give example for business metrics -> explain the approach of measuring business KPIs with custom code vs. directly from the DB -> then show how I build a dashboard of business metrics using Redash."
 
   - name: "The Pareto Logging Principle: 97% of Logged Errors are Caused by 3% of Unique Errors"
     type: ignite
@@ -158,8 +208,15 @@ talks:
     end:   "14:10"
     speaker:
       name: Chen Harel
-      about: ""
-    summary: ""
+      title: "Chief DevOps at Takipi"
+      about: >
+        Chen is Co-Founder & Chief DevOps @ Takipi, focusing on high-scalability and availability.<br/>Previously, Chen was a team lead at Autodesk, where he led the development of the company's flagship Cloud infrastructure.<br/>Prior to that Chen was a lead infrastructure engineer at VisualTao.<br/>Apple(s) person.
+      linkedin: https://il.linkedin.com/in/chenh
+    summary: >
+        * Introduction of Takipi (Source of data)<br/>
+        * Logged error noise: Total Events vs Unique Events<br/>
+        * The top 10 exception types in production<br/><br/>
+        In this session we'll share stats from monitoring over a 1,000 applications in production, and uncover the most common cause and cost of operational noise
 
   - name: Why We Love Prometheus (And You Should, Too!)
     type: ignite
@@ -167,17 +224,28 @@ talks:
     end:   "14:20"
     speaker:
       name: Gil Fliker
-      about: ""
-    summary: ""
-
+      about: >
+          From Dev to DBA to Operations to DEV... the future<br/>  Running things at scale for a while.<br/>
+          Currently Operations manager @Outbrain<br/>
+          Building Outbrain's infrastructure from day one.
+      title: "Operations Manager at Outbrain"
+      linkedin: https://www.linkedin.com/in/gil-fliker-65862a27
+    summary: >
+        If like me you are trying to figure out what is going on in your data center, who is consuming your resources? and your method of choice is collecting numbers over time? then I got a few stories for you.<br/>
+        In this session you will hear and see how Prometheus is put to work at Outbrain any why we like it.<br/>
+        We will be chatting about a few use cases of using Prometheus and lessons learned.
   - name: How Newborns are like your infrastructure
     type: ignite
     start: "14:20"
     end:   "14:30"
     speaker:
       name: Gil Zellner
-      about: ""
-    summary: ""
+      about: "Ops =><br/> Dev =><br/> Beer<br/>"
+      title: "Giant guy at GigaSpaces"
+      linkedin: https://il.linkedin.com/in/gilzellner
+    summary: >
+      By the time of the conference, I will be a father to a 2 month old child.<br/>
+      I will log the caring process from launch, to production issues, deployment and patches, hotfixes and downtime, using terminology from the production engineering world.
 
   - name: Domain-Driven Monitoring
     type: ignite
@@ -185,8 +253,14 @@ talks:
     end:   "14:40"
     speaker:
       name: Asaf Kotzer
-      about: ""
-    summary: ""
+      about: "Asaf is a software developer. He's currently the Chief Architect at Soluto, working on infrastructure and products, as well as continuously improving the development process. Asaf is a 8200 alumni and has a BSc in Computer Science and Cognitive Science from The Hebrew University in Jerusalem."
+      title: "Chief Architect at Soluto"
+      linkedin: https://il.linkedin.com/in/asafkotzer
+    summary: >
+        1. Present traditional approaches to monitoring (not just monitoring, really, it's pretty true for many non-functional requirements), with strict separation between dev, ops and product.<br/>
+        2. Problem description- lots of loose ends, often with a tendency to monitor/alert on low-level system metrics, sometimes blind to the system as a whole. But the "system" is here to make money, so that's not a good idea.<br/>
+        3. Show a DevOps-style alternative- I think I'll reference Evans' DDD - he has that thing with the user-developer dialogs - and show how a dialog on the business domain can lead to better monitoring. Basically, the dialog will shift the focus from alerting on CPU and RAM to alerting on, say, "push notification read rate too low".<br/>
+        4. Describe how this works at Soluto. It's far from perfect, but PMs are taking more and more responsibility for non-functional requirements (like response-time, uptime, error handling). As part of this, developers and PMs define alerts together (we don't have dedicated ops people), before the feature is released. (might sound better than it is in practice).
 
   - name: ETW - Monitor Anything, Anywhere, Anytime
     type: ignite
@@ -194,8 +268,13 @@ talks:
     end:   "14:50"
     speaker:
       name: Dina Goldshtein
-      about: ""
-    summary: ""
+      about: >
+        Dina Goldshtein is a Senior Software Engineer at Aternity.<br/>Aternity builds performance monitoring tools that run on millions of PCs and mobile devices.<br/>Dina is on the team responsible for the core collection mechanism, which hooks low-level Windows events and collects performance information from a variety of sources.<br/>Since starting at Aternity, she worked a lot on boot performance monitoring, identifying bottlenecks in the Windows boot process.
+      title: "Senior Software Engineer at Aternity"
+      linkedin: https://il.linkedin.com/in/dina-goldshtein-35487b3
+    summary: >
+        Event Tracing for Windows is Microsoft’s structured logging infrastructure.<br/>Although it supports emitting your own custom messages, the cool thing about it is that Windows and many other Microsoft frameworks come built-in with thousands, if not tens of thousands of trace-points which allow you to monitor basically anything, on demand, both during development and on production.<br/>This includes standard metrics such as memory and CPU, but also more exotic things such as WCF functions, .NET exceptions, thread call-stacks, and even the Windows boot process!<br/>
+        In this session we will see how to use freely available tools to monitor your applications and environments.
 
   - name: Break
     type: break
@@ -209,12 +288,13 @@ talks:
     end:   "17:00"
     speaker:
       name: Roey Berman
-      title: ""
-      about: ""
+      title: "Kick Ass Engineer at Forter"
+      about: "Roey Berman is a kick ass natural developer"
       github: false
       twitter: false
       linkedin: false
-    summary: ""
+    summary: >
+        Our riemann champion is Roey Berman (now at Forter, formely from Everything.ME).
     link: false
 
   - name: "The Next Linux Superpower: eBPF Primer"
@@ -223,11 +303,15 @@ talks:
     end:   "17:00"
     speaker:
       name: Sasha Goldshtein
-      title: ""
-      about: ""
+      about: >
+          Sasha Goldshtein is the CTO of Sela Group, a book author, international conference speaker, consultant, and trainer. Sasha specializes in performance investigations, production debugging, and loves bleeding edge monitoring tools.
+      title: "CTO of Sela Group"
       twitter: false
-      linkedin: false
-    summary: ""
+      linkedin: https://il.linkedin.com/in/sashag
+    summary: >
+        Imagine you're tackling one of these evasive performance issues in the field, and your go-to monitoring checklist doesn't seem to cut it. There are plenty of suspects, but they are moving around rapidly and you need more logs, more data, more in-depth information to make a diagnosis. Maybe you've heard about DTrace, or even used it, and are yearning for a similar toolkit, which can plug dynamic tracing into a system that wasn't prepared or instrumented in any way.<br/>
+        Hopefully, you won't have to yearn for a lot longer. eBPF (extended Berkeley Packet Filters) is a kernel technology that enables a plethora of diagnostic scenarios by introducing dynamic, safe, low-overhead, efficient programs that run in the context of your live kernel. Sure, BPF programs can attach to sockets; but more interestingly, they can attach to kprobes and uprobes, static kernel tracepoints, and even user-mode static probes. And modern BPF programs have access to a wide set of instructions and data structures, which means you can collect valuable information and analyze it on-the-fly, without spilling it to huge files and reading them from user space.<br/>
+        In this talk, we will introduce BCC, the BPF Compiler Collection, which is an open set of tools and libraries for dynamic tracing on Linux. Some tools are easy and ready to use, such as execsnoop, fileslower, and memleak. Other tools such as trace and argdist require more sophistication and can be used as a Swiss Army knife for a variety of scenarios. We will spend most of the time demonstrating the power of modern dynamic tracing -- from memory leaks to static probes in Ruby, Node, and Java programs, from slow file I/O to monitoring network traffic. Finally, we will discuss building our own tools using the Python and Lua bindings to BCC, and its LLVM backend.
     hidetime: true
     link: false
     video: false
