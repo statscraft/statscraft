@@ -684,7 +684,7 @@ header .menu nav ul {
 .committee .organizers .organizer {
   width:165px;
   display: inline-block;
-  margin: 50px 2px;
+  margin: 50px 35px;
   cursor: pointer;
   vertical-align: top;
 }

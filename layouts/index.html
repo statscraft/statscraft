@@ -64,8 +64,8 @@
       <div>      </div><!-- .container ends -->
     </div><!-- .ticket-section ends -->
 
-  {{ partial "organizers.html" . }}
-  {{ partial "sponsors.html" . }}
+  {{ partial "organizers.html" .Site.Data.y2016.organizers }}
+  {{ partial "sponsors.html"  .Site.Data.y2016.sponsors }}
   {{ partial "contact.html" . }}
 
 
