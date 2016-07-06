@@ -188,19 +188,10 @@ talks:
       about: ""
     summary: ""
 
-  - name: "KPIs Analysis: Product V.S. Engineering"
+  - name: ETW - Monitor Anything, Anywhere, Anytime
     type: ignite
     start: "14:40"
     end:   "14:50"
-    speaker:
-      name: Amir Ben Ari
-      about: ""
-    summary: ""
-
-  - name: ETW - Monitor Anything, Anywhere, Anytime
-    type: ignite
-    start: "14:50"
-    end:   "15:00"
     speaker:
       name: Dina Goldshtein
       about: ""
@@ -208,14 +199,14 @@ talks:
 
   - name: Break
     type: break
-    start: "15:00"
-    end:   "15:15"
+    start: "14:50"
+    end:   "15:00"
     speaker: More? No problem!
 
   - name: Riemann workshop
     type: workshop
-    start: "15:15"
-    end:   "17:15"
+    start: "15:00"
+    end:   "17:00"
     speaker:
       name: Roey Berman
       title: ""
