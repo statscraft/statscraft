@@ -45,11 +45,7 @@ talks:
       about : "With one functional ear and vast experience in networking & security, Eliran Ben-Zikri is a Production Engineer at SimilarWeb where he fell in love with anything automated and writing code for all *nix based systems."
       github: false
       twitter: false
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/eliranbz
-=======
-      linkedin: false
->>>>>>> 4524775... ALL ZE DATA
     summary: >
       *   Intro: Where we've been, the horrors.<br/>
       *   Implications: What was the impact on the business, the team and the individuals.<br/>
@@ -109,11 +105,7 @@ talks:
         I've been working on the experiments system for the last 2 years
       github: false
       twitter: false
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/daliasimons
-=======
-      linkedin: false
->>>>>>> 4524775... ALL ZE DATA
     summary: >
         This lecture will introduce the way we use our experiments system to gradually deploy and monitor new features .<br/>
         We will go over:<br/>
@@ -161,11 +153,7 @@ talks:
           Demi is also a co-founder of the “Big Things” Big Data community- http://somebigthings.com/big-things-intro/
       github: false
       twitter: false
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/demibenari
-=======
-      linkedin: false
->>>>>>> 4524775... ALL ZE DATA
     summary: >
         At first I'll go over the problems that developers and devops people are facing when developing distributed systems and monitoring them,<br/>
         then I'll go over all of these problems and the possible solutions in the market for each one of them.<br/>
@@ -188,10 +176,7 @@ talks:
       about: >
           BI Extremist<br/> Analyst by day, Statscraft organizer by night
       title: "Product/BI at Singular"
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/elena-levi-9b240430
-=======
->>>>>>> 4524775... ALL ZE DATA
     summary: >
         Monitoring Zendesk (customer service software) to find what your company spends time on,<br/> what product fetcher you need the most and what your customers think.
 
@@ -201,14 +186,9 @@ talks:
     end:   "13:50"
     speaker:
       name: Eran Zimbler
-<<<<<<< HEAD
       title: "DevOps Extraordinar at Rumble News"
       about: "After working for checkpoint software and AVG I finally moved out of security related companies and started working at Rumble News, there I have evolved into a cloud savvy/monitor watcher/scripts fixer/solutions finder/devops.<br/>While starting to feel too old for this shit, I have learned that clouds like old time servers rain at the worst of times."
       linkedin: https://il.linkedin.com/in/zimbler
-=======
-      title: "DevOps Extraordinar"
-      about: "After working for checkpoint software and AVG I finally moved out of security related companies and started working at Rumble News, there I have evolved into a cloud savvy/monitor watcher/scripts fixer/solutions finder/devops.<br/>While starting to feel too old for this shit, I have learned that clouds like old time servers rain at the worst of times."
->>>>>>> 4524775... ALL ZE DATA
     summary: "Short walktrough of all the mistakes I did with alerts and alerting systems during the last 10 years."
 
   - name: Monitor Your Business (no developers required)
@@ -221,10 +201,7 @@ talks:
         In the past years, I have been dealing with all aspects of data -- from how to load it properly and in scale and then how to present it to the end users.<br/>In the process I've created Redash, an open source data collaboration platform, that helps organizations democratize their data access.<br/>
           These days I'm working hard on creating a sustainable business around Redash.
       title: "BI at Redash"
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/arikfri
-=======
->>>>>>> 4524775... ALL ZE DATA
     summary: "The idea is to explain why it's important to monitor business metrics -> give example for business metrics -> explain the approach of measuring business KPIs with custom code vs. directly from the DB -> then show how I build a dashboard of business metrics using Redash."
 
   - name: "The Pareto Logging Principle: 97% of Logged Errors are Caused by 3% of Unique Errors"
@@ -236,10 +213,7 @@ talks:
       title: "Chief DevOps at Takipi"
       about: >
         Chen is Co-Founder & Chief DevOps @ Takipi, focusing on high-scalability and availability.<br/>Previously, Chen was a team lead at Autodesk, where he led the development of the company's flagship Cloud infrastructure.<br/>Prior to that Chen was a lead infrastructure engineer at VisualTao.<br/>Apple(s) person.
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/chenh
-=======
->>>>>>> 4524775... ALL ZE DATA
     summary: >
         * Introduction of Takipi (Source of data)<br/>
         * Logged error noise: Total Events vs Unique Events<br/>
@@ -257,10 +231,7 @@ talks:
           Currently Operations manager @Outbrain<br/>
           Building Outbrain's infrastructure from day one.
       title: "Operations Manager at Outbrain"
-<<<<<<< HEAD
       linkedin: https://www.linkedin.com/in/gil-fliker-65862a27
-=======
->>>>>>> 4524775... ALL ZE DATA
     summary: >
         If like me you are trying to figure out what is going on in your data center, who is consuming your resources? and your method of choice is collecting numbers over time? then I got a few stories for you.<br/>
         In this session you will hear and see how Prometheus is put to work at Outbrain any why we like it.<br/>
@@ -273,10 +244,7 @@ talks:
       name: Gil Zellner
       about: "Ops =><br/> Dev =><br/> Beer<br/>"
       title: "Giant guy at GigaSpaces"
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/gilzellner
-=======
->>>>>>> 4524775... ALL ZE DATA
     summary: >
       By the time of the conference, I will be a father to a 2 month old child.<br/>
       I will log the caring process from launch, to production issues, deployment and patches, hotfixes and downtime, using terminology from the production engineering world.
@@ -289,10 +257,7 @@ talks:
       name: Asaf Kotzer
       about: "Asaf is a software developer. He's currently the Chief Architect at Soluto, working on infrastructure and products, as well as continuously improving the development process. Asaf is a 8200 alumni and has a BSc in Computer Science and Cognitive Science from The Hebrew University in Jerusalem."
       title: "Chief Architect at Soluto"
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/asafkotzer
-=======
->>>>>>> 4524775... ALL ZE DATA
     summary: >
         1. Present traditional approaches to monitoring (not just monitoring, really, it's pretty true for many non-functional requirements), with strict separation between dev, ops and product.<br/>
         2. Problem description- lots of loose ends, often with a tendency to monitor/alert on low-level system metrics, sometimes blind to the system as a whole. But the "system" is here to make money, so that's not a good idea.<br/>
@@ -308,10 +273,7 @@ talks:
       about: >
         Dina Goldshtein is a Senior Software Engineer at Aternity.<br/>Aternity builds performance monitoring tools that run on millions of PCs and mobile devices.<br/>Dina is on the team responsible for the core collection mechanism, which hooks low-level Windows events and collects performance information from a variety of sources.<br/>Since starting at Aternity, she worked a lot on boot performance monitoring, identifying bottlenecks in the Windows boot process.
       title: "Senior Software Engineer at Aternity"
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/dina-goldshtein-35487b3
-=======
->>>>>>> 4524775... ALL ZE DATA
     summary: >
         Event Tracing for Windows is Microsoft’s structured logging infrastructure.<br/>Although it supports emitting your own custom messages, the cool thing about it is that Windows and many other Microsoft frameworks come built-in with thousands, if not tens of thousands of trace-points which allow you to monitor basically anything, on demand, both during development and on production.<br/>This includes standard metrics such as memory and CPU, but also more exotic things such as WCF functions, .NET exceptions, thread call-stacks, and even the Windows boot process!<br/>
         In this session we will see how to use freely available tools to monitor your applications and environments.
@@ -352,11 +314,7 @@ talks:
           Sasha Goldshtein is the CTO of Sela Group, a book author, international conference speaker, consultant, and trainer. Sasha specializes in performance investigations, production debugging, and loves bleeding edge monitoring tools.
       title: "CTO of Sela Group"
       twitter: false
-<<<<<<< HEAD
       linkedin: https://il.linkedin.com/in/sashag
-=======
-      linkedin: false
->>>>>>> 4524775... ALL ZE DATA
     summary: >
         Imagine you're tackling one of these evasive performance issues in the field, and your go-to monitoring checklist doesn't seem to cut it. There are plenty of suspects, but they are moving around rapidly and you need more logs, more data, more in-depth information to make a diagnosis. Maybe you've heard about DTrace, or even used it, and are yearning for a similar toolkit, which can plug dynamic tracing into a system that wasn't prepared or instrumented in any way.<br/>
         Hopefully, you won't have to yearn for a lot longer. eBPF (extended Berkeley Packet Filters) is a kernel technology that enables a plethora of diagnostic scenarios by introducing dynamic, safe, low-overhead, efficient programs that run in the context of your live kernel. Sure, BPF programs can attach to sockets; but more interestingly, they can attach to kprobes and uprobes, static kernel tracepoints, and even user-mode static probes. And modern BPF programs have access to a wide set of instructions and data structures, which means you can collect valuable information and analyze it on-the-fly, without spilling it to huge files and reading them from user space.<br/>
