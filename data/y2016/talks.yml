@@ -175,7 +175,7 @@ talks:
       name: Elena Levi
       about: >
           BI Extremist<br/> Analyst by day, Statscraft organizer by night
-      title: "Product/BI at Singular"
+      title: "BI Analyst at Singular"
       linkedin: https://il.linkedin.com/in/elena-levi-9b240430
     summary: >
         Monitoring Zendesk (customer service software) to find what your company spends time on,<br/> what product fetcher you need the most and what your customers think.
@@ -198,8 +198,7 @@ talks:
     speaker:
       name: Arik Fraimovich
       about: >
-        In the past years, I have been dealing with all aspects of data -- from how to load it properly and in scale and then how to present it to the end users.<br/>In the process I've created Redash, an open source data collaboration platform, that helps organizations democratize their data access.<br/>
-          These days I'm working hard on creating a sustainable business around Redash.
+        When talking about monitoring usually what comes to mind is technical metrics like CPU, disk space, memory, time to server a request, etc. Those are nice, but those KPIs (usually) don't drive your business. It's how many interactions a user had, how much money we generated and how many new users joined is what driving the business. And as a business, those are the KPIs we should monitor and care about.<br/>Previously you had to beg for time from your developers to provision business metrics collection. In this talk I would like to show you how to do this without any developers involved by just using SQL and a tool like Redash.
       title: "BI at Redash"
       linkedin: https://il.linkedin.com/in/arikfri
     summary: "The idea is to explain why it's important to monitor business metrics -> give example for business metrics -> explain the approach of measuring business KPIs with custom code vs. directly from the DB -> then show how I build a dashboard of business metrics using Redash."
