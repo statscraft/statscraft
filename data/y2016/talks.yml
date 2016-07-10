@@ -103,11 +103,9 @@ talks:
       twitter: false
       linkedin: https://il.linkedin.com/in/daliasimons
     summary: >
-        This lecture will introduce the way we use our experiments system to gradually deploy and monitor new features .<br/>
-        We will go over:<br/>
-        * Why we need an experiments system<br/>
-        * Types of experiments (ab tests vs feature toggles) and how they help us monitor different new features<br/>
-        * Using filters to open experiments and monitor specific geos / locations / devices
+        How do you rollout a new feature to customers? how do you monitor it? decide if it's successful?<br/>
+        In this lecture i will share how we use our experiments system at wix to help us monitor the success of new features across different geos/ locales / devices.<br/>
+        We can then make better decisions and quickly react by closing problematic features
     link: false
     video: false
 
@@ -146,14 +144,16 @@ talks:
           Demi Ben-Ari is co-founder and CTO at a stealth mode startup.<br/>
           Demi has over 9 years of experience in building various systems both from the field of near real time applications and Big Data distributed systems. <br/>
           Describing himself as a software development groupie, Interested in tackling cutting edge technologies.<br/>
-          Demi is also a co-founder of the “Big Things” Big Data community- http://somebigthings.com/big-things-intro/
+          Demi is also a co-founder of the <a href="http://somebigthings.com/big-things-intro/">“Big Things” Big Data community</a>
       github: false
       twitter: false
       linkedin: https://il.linkedin.com/in/demibenari
     summary: >
-        At first I'll go over the problems that developers and devops people are facing when developing distributed systems and monitoring them,<br/>
-        then I'll go over all of these problems and the possible solutions in the market for each one of them.<br/>
-        Finally I'll close with the simple solutions that we've implemented, even via Bash scripts, not always all has to be fancy, but just to work good enough and give value.
+        "Once you start working with distributed Big Data systems, you start discovering a whole bunch of problems you won’t find in monolithic systems.All of a sudden to monitor all of the components becomes a big data problem itself.<br/>
+        In the talk we'll mention all of the aspects that you should take in consideration when monitoring a distributed system once you're using tools like:
+        Web Services, Apache Spark, Cassandra, MongoDB, Amazon Web Services.<br/>
+        Not only the tools, what should you monitor about the actual data that flows in the system?<br/>
+        And we’ll cover the simplest solution with your day to day open source tools, the surprising thing, that it comes not from an Ops Guy."
     link: false
     video: false
 
