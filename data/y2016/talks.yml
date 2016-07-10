@@ -196,11 +196,7 @@ talks:
         Chen is Co-Founder & Chief DevOps @ Takipi, focusing on high-scalability and availability.<br/>Previously, Chen was a team lead at Autodesk, where he led the development of the company's flagship Cloud infrastructure.<br/>Prior to that Chen was a lead infrastructure engineer at VisualTao.<br/>Apple(s) person.
       linkedin: https://il.linkedin.com/in/chenh
     summary: >
-        * Introduction of Takipi (Source of data)<br/>
-        * Logged error noise: Total Events vs Unique Events<br/>
-        * The top 10 exception types in production<br/><br/>
         In this session we'll share stats from monitoring over a 1,000 applications in production, and uncover the most common cause and cost of operational noise
-
   - name: Why We Love Prometheus (And You Should, Too!)
     type: ignite
     start: "14:10"
@@ -217,19 +213,17 @@ talks:
         If like me you are trying to figure out what is going on in your data center, who is consuming your resources? and your method of choice is collecting numbers over time? then I got a few stories for you.<br/>
         In this session you will hear and see how Prometheus is put to work at Outbrain any why we like it.<br/>
         We will be chatting about a few use cases of using Prometheus and lessons learned.
-  - name: How Newborns are like your infrastructure
+  - name: Newborns - a very difficult production system
     type: ignite
     start: "14:20"
     end:   "14:30"
     speaker:
       name: Gil Zellner
-      about: "Ops =><br/> Dev =><br/> Beer<br/>"
-      title: "Giant guy at GigaSpaces"
+      about: "Created by 2 engineers in the 80s, survived Israel Institute of Technology in the 2000’s, worked at Gett and a few others, currently works on Cloudify at Gigaspaces."
+      title: "Cloudify developer at Gigaspaces"
       linkedin: https://il.linkedin.com/in/gilzellner
     summary: >
-      By the time of the conference, I will be a father to a 2 month old child.<br/>
-      I will log the caring process from launch, to production issues, deployment and patches, hotfixes and downtime, using terminology from the production engineering world.
-
+      Newborn babies are difficult. like your production system. this outlines everything from monitoring, services, analytics and such. humorous yet accurate.
   - name: Domain-Driven Monitoring
     type: ignite
     start: "14:30"
