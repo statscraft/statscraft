@@ -71,21 +71,7 @@ talks:
       twitter: "https://twitter.com/forterfraudfree"
       linkedin: "https://www.linkedin.com/pub/moshe-zada/79/b15/265"
     summary: >
-      First half of the presentation (15 minutes) - by BI engineer (Assaf Milman)<br/>
-        * why a startup managers also needs a dedicated BI team (1-2 persons). Who needs it the most (answer- the BI team now sits in the Finance room)<br/>
-        * Can you really tweak different thresholds for different customers + different traffic seasonality by hand? (nope)<br/>
-        * (one of) the statistical algorithm we use for dynamic thresholds configuration to alert on anomalies every 20 minutes and compares the data with the last 24 hours (for example). How to massage data to fit the statistical assumption (implicitly we assumed events are uncorrelated).  For details see http://www.slideshare.net/itaif/monitoring-patterns-for-mitigating-technical-risk slides 30-34. I went over it briefly in front of ~10 people in a meetup... so I don't think anyone in the audience heard it before.<br/>
-        * Who is really in charge of these alert? <br/>
-        * What are the improvements we plan (can we reduce alert time to 5 minutes for merchants with enough traffic?)<br/>
-        * How did it work for us till now (~1 year) Saved us twice. We had a boo-boo when the anomaly was below the noise level and the customer did notice it. It was also due to a configuration problem since we changed a few data sources (part of the problems is that BI is not "part of the R&D"). Fortunatly, we did not loose money, we did loose face though.<br/>
-        * The relationships between the BI team and R&D pros/cons. Should we wait 20 minutes before approving a deployment of a new version? What happens when this alert (immediate fail backwards, no time for fail forward).<br/>
-        <br/>
-        Second half of the presentation - by Moshe Zada<br/>
-        * How we used system tests both as local tests, production monitoring probes and CI tests AND why we chose to check database state at the end of each test.<br/>
-        * What problems did it detect, how did we handle the alert noise, what where the problems it causes ("sporadic success" tests became a problem)<br/>
-        * The transition from a single mysql to an event sourcing architecture (events->merging to document->s3/MySQL/ElasticSearch/Redshift is necessary for deploying smaller services independently (the impact on monitoring data at rest when transitioning from one service to multiple services each with its own data store).<br/>
-        * The need for a single reconsiliator to check that data is consistent across all stores, how do we tweak alerts differently (statistical) than system tests/probes (must always work, and fast), the added value of a place to try and fix problems before alerting (remidiation), compliance (credit card redaction). Related topics how to monitor data migration errors (an error column in redshift for example), and should strict schema validation be in the redactor or maybe someplace else?<br/>
-        * Which "data at rest asserts" did we move from the system tests to the BI alert instead of the reconsiliator?
+    In this talk two speakers from Forter will explain how we approach monitoring of “incoming” data after it was written to disk (at rest). The first problem we solve is business KPI based alerts. These require per-customer thresholds that also have time-seasonality. We will describe our dynamic thresholding algorithm to detect analytical and engineering anomalies that affect the business. More importantly this project is part of the BI team which is not officially part of R&D. The second problem we solve is data quality and consistency across different data stores. Our naive approach of “asserting” data was written to database after each system test/probe outlived its usefulness. We will describe why, and how the data reconciliator solves this problem differently. Related topics such as schema validation, data-remediation, pii redaction and data migration errors will also be discussed.
     link: false
     video: false
 
