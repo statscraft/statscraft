@@ -62,11 +62,12 @@ talks:
     start: "10:30"
     end:   "11:00"
     speaker:
-      name: Moshe Zada Assaf Milman
+      name: Moshe Zada and Assaf Milman
+      image: moshe_assaf.gif
       title: "Problem Solvers @ Forter"
       about: >
         Moshe is passionate about new technologies, coding, providing tools and VIM hacks.
-        Currently Moshe is a problem solver at Forter and among other stuff leading Forter’s monitoring with Riemann and ELK stack.
+        Currently Moshe is a problem solver at Forter and among other stuff leading Forter’s monitoring with Riemann and ELK stack.<br/>
       github: https://github.com/MosheZada
       twitter: "https://twitter.com/forterfraudfree"
       linkedin: "https://www.linkedin.com/pub/moshe-zada/79/b15/265"
@@ -134,12 +135,12 @@ talks:
       github: false
       twitter: false
       linkedin: https://il.linkedin.com/in/demibenari
-    summary: >
-        "Once you start working with distributed Big Data systems, you start discovering a whole bunch of problems you won’t find in monolithic systems.All of a sudden to monitor all of the components becomes a big data problem itself.<br/>
+    summary: |
+        Once you start working with distributed Big Data systems, you start discovering a whole bunch of problems you won’t find in monolithic systems.All of a sudden to monitor all of the components becomes a big data problem itself.<br/>
         In the talk we'll mention all of the aspects that you should take in consideration when monitoring a distributed system once you're using tools like:
         Web Services, Apache Spark, Cassandra, MongoDB, Amazon Web Services.<br/>
         Not only the tools, what should you monitor about the actual data that flows in the system?<br/>
-        And we’ll cover the simplest solution with your day to day open source tools, the surprising thing, that it comes not from an Ops Guy."
+        And we’ll cover the simplest solution with your day to day open source tools, the surprising thing, that it comes not from an Ops Guy.
     link: false
     video: false
 
@@ -181,7 +182,7 @@ talks:
       name: Arik Fraimovich
       about: >
         In the past years, I have been dealing with all aspects of data -- from how to load it properly and in scale and then how to present it to the end users.<br/>In the process I've created Redash, an open source data collaboration platform, that helps organizations democratize their data access.<br/>These days I'm working hard on creating a sustainable business around Redash.
-      title: "BI at Redash"
+      title: "Founder at Redash"
       linkedin: https://il.linkedin.com/in/arikfri
     summary: >
         When talking about monitoring usually what comes to mind is technical metrics like CPU, disk space, memory, time to server a request, etc. Those are nice, but those KPIs (usually) don't drive your business. It's how many interactions a user had, how much money we generated and how many new users joined is what driving the business. And as a business, those are the KPIs we should monitor and care about.<br/>Previously you had to beg for time from your developers to provision business metrics collection. In this talk I would like to show you how to do this without any developers involved by just using SQL and a tool like Redash.
