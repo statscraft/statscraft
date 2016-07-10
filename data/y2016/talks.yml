@@ -234,11 +234,7 @@ talks:
       title: "Chief Architect at Soluto"
       linkedin: https://il.linkedin.com/in/asafkotzer
     summary: >
-        1. Present traditional approaches to monitoring (not just monitoring, really, it's pretty true for many non-functional requirements), with strict separation between dev, ops and product.<br/>
-        2. Problem description- lots of loose ends, often with a tendency to monitor/alert on low-level system metrics, sometimes blind to the system as a whole. But the "system" is here to make money, so that's not a good idea.<br/>
-        3. Show a DevOps-style alternative- I think I'll reference Evans' DDD - he has that thing with the user-developer dialogs - and show how a dialog on the business domain can lead to better monitoring. Basically, the dialog will shift the focus from alerting on CPU and RAM to alerting on, say, "push notification read rate too low".<br/>
-        4. Describe how this works at Soluto. It's far from perfect, but PMs are taking more and more responsibility for non-functional requirements (like response-time, uptime, error handling). As part of this, developers and PMs define alerts together (we don't have dedicated ops people), before the feature is released. (might sound better than it is in practice).
-
+        Monitoring, like with non-functional requirements, has traditionally been looked at from a dev/ops/devops perspective. But monitoring is not about tech, it's about business. We will show an alternative for how a domain-centred dialog can lead to better monitoring, echoing good old DDD concepts and aiming toward the breaking of more silos.
   - name: ETW - Monitor Anything, Anywhere, Anytime
     type: ignite
     start: "14:40"
