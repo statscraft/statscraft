@@ -47,11 +47,7 @@ talks:
       twitter: false
       linkedin: https://il.linkedin.com/in/eliranbz
     summary: >
-      *   Intro: Where we've been, the horrors.<br/>
-      *   Implications: What was the impact on the business, the team and the individuals.<br/>
-      *   What we did: The steps we took to overcome it, including developing tools and changing everything we know<br/>
-      *   Conclusions: What are the main things we learned and what are the takeaways from this lecture. Practical tips.<br/>
-      *   Where are we headed from here: What's next, the things to come.
+      For the past two years, the production engineering team at Similarweb has gone through a dramatic makeover.<br/>We had to redefine how we collect, monitor, visualize metrics and cherry-pick what should wake us up at night.<br/>In this talk I'll describe our journey as a team, the decisions we made, the goals we tried to achieve and the tools we ended up using.
     link: false
     video: false
 
@@ -175,7 +171,7 @@ talks:
       name: Elena Levi
       about: >
           BI Extremist<br/> Analyst by day, Statscraft organizer by night
-      title: "BI Analyst at Singular"
+      title: "Analyst at Singular"
       linkedin: https://il.linkedin.com/in/elena-levi-9b240430
     summary: >
         Monitoring Zendesk (customer service software) to find what your company spends time on,<br/> what product fetcher you need the most and what your customers think.
@@ -198,11 +194,11 @@ talks:
     speaker:
       name: Arik Fraimovich
       about: >
-        When talking about monitoring usually what comes to mind is technical metrics like CPU, disk space, memory, time to server a request, etc. Those are nice, but those KPIs (usually) don't drive your business. It's how many interactions a user had, how much money we generated and how many new users joined is what driving the business. And as a business, those are the KPIs we should monitor and care about.<br/>Previously you had to beg for time from your developers to provision business metrics collection. In this talk I would like to show you how to do this without any developers involved by just using SQL and a tool like Redash.
+        In the past years, I have been dealing with all aspects of data -- from how to load it properly and in scale and then how to present it to the end users.<br/>In the process I've created Redash, an open source data collaboration platform, that helps organizations democratize their data access.<br/>These days I'm working hard on creating a sustainable business around Redash.
       title: "BI at Redash"
       linkedin: https://il.linkedin.com/in/arikfri
-    summary: "The idea is to explain why it's important to monitor business metrics -> give example for business metrics -> explain the approach of measuring business KPIs with custom code vs. directly from the DB -> then show how I build a dashboard of business metrics using Redash."
-
+    summary: >
+        When talking about monitoring usually what comes to mind is technical metrics like CPU, disk space, memory, time to server a request, etc. Those are nice, but those KPIs (usually) don't drive your business. It's how many interactions a user had, how much money we generated and how many new users joined is what driving the business. And as a business, those are the KPIs we should monitor and care about.<br/>Previously you had to beg for time from your developers to provision business metrics collection. In this talk I would like to show you how to do this without any developers involved by just using SQL and a tool like Redash.
   - name: "The Pareto Logging Principle: 97% of Logged Errors are Caused by 3% of Unique Errors"
     type: ignite
     start: "14:00"
