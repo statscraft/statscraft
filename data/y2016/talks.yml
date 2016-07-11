@@ -161,7 +161,9 @@ talks:
       title: "Analyst at Singular"
       linkedin: https://il.linkedin.com/in/elena-levi-9b240430
     summary: >
-        Monitoring Zendesk (customer service software) to find what your company spends time on,<br/> what product fetcher you need the most and what your customers think.
+        We all (should) agree that monitoring customer activity is very important and that monitoring support tickets is highly recommended as well.
+        But what about the content of these tickets?
+        In this talk we will discuss how we categorize our support tickets and how it affects our R&D decisions
 
   - name: Alerting mistakes
     type: ignite
