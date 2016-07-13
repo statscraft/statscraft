@@ -2,3 +2,5 @@
 baseurl: "/"
 metadataformat: "yaml"
 gaTrackingID: "UA-63345088-1"
+params:
+    current: 2016

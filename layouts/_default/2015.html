@@ -57,8 +57,19 @@
   {{ partial "organizers.html" .Site.Data.y2015.organizers }}
   {{ partial "sponsors.html"  .Site.Data.y2015.sponsors }}
   {{ partial "contact.html" . }}
-
   </div><!-- container -->
+      <div class="agenda" id="agenda">
+                <h2>Agenda</h2>
+                <h4 class="language">*this conference was Kosher and all talks were in biblical Hebrew</h4>
+                {{ range $index, $talk := .Site.Data.y2015.talks.talks }}
+                <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
+                    {{ $path := $talk.type| printf "%s.html" }}
+                    {{ partial $path $talk }}
+                </div><!-- .row ends -->
+                {{ end }}
+            </div><!-- .agenda ends -->
+
+
 </main><!-- main ends -->
 
 {{ partial "footer.html" . }}

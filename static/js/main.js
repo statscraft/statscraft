@@ -55,8 +55,7 @@ $(document).ready(function() {
    });
    return false;
   });
-
-  Eventbrite({'access_token': "ONOTGVFR47AZUS63IOMF"}, function(eb_client){
+  /*Eventbrite({'access_token': "ONOTGVFR47AZUS63IOMF"}, function(eb_client){
     eb_client.event_get( {'id': '26404502578'}, function ( res ) {
       var tickets = res.event.tickets,
           ticket = tickets[0].ticket,
@@ -64,7 +63,7 @@ $(document).ready(function() {
         $("#tickets_left").html(tickets_left);
     })
   });
-
+*/
 });
 
 
