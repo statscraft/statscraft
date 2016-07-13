@@ -1,10 +1,5 @@
 ---
 talks:
-  - name: Gathering and signup
-    type: break
-    start: "08:30"
-    end:   "09:00"
-    speaker: "Mengling FTW"
   - name: Opening Welcome
     type: talk
     speaker:
