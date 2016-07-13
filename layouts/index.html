@@ -22,57 +22,59 @@
             </p>
         </div>
     </div>
-    <div class="agenda" id="agenda">
-      <h2>Agenda</h2>
-      <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
-      {{ range $index, $talk := .Site.Data.y2016.talks.talks }}
-      <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
-        {{ $path := $talk.type| printf "%s.html" }}
-        {{ partial $path $talk }}
-      </div><!-- .row ends -->
-      {{ end }}
-    </div><!-- .agenda ends -->
-  </div>
-
-
-</div><!-- container -->
- <div id="venue" class="venue venue2016 text-center">
-     <div class="container">
-         <h2>Venue</h2>
-         <h3>Dubnov Gallery TLV</h3>
-         <address>Dubnov Gallery, Dubnov St. 8, Tel Aviv</address>
-
-         <div id="canvas1" class="map">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.801888660921!2d34.7814571161904!3d32.07460668118976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b8368489aad%3A0x26747d74226bb226!2z15LXnNeo15nXlCDXk9eV15HXoNeV15EgKNee15DXmdeo15TXldejKQ!5e0!3m2!1sen!2s!4v1467614487514" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-         </div>
-     </div>
- </div><!-- venue -->
-  <div class="ticket-section" id="tickets">
-    <div class="container">
-      <h2>Get your ticket!</h2>
-      <p>So you'd like to be a part of Statscaft 2016? <span>We’d love to see you there!</span></p>
-      <div class="row">
-        <a href="https://www.eventbrite.com/e/statscraft-monitoring-conference-2016-tickets-26404502578" target="_blank">
-        <div class="ticket-alert">
-          <div>&nbsp;</div>
-          <div class="your-ticket">
-            <span>Get Yours</span>
-          </div>
+    <div>&nbsp;</div>
+    <div class="ticket-section" id="tickets">
+        <div class="container">
+            <h2>Get your ticket!</h2>
+            <p>So you'd like to be a part of Statscaft 2016? <span>We’d love to see you there!</span></p>
+            <div class="row">
+                <a href="https://www.eventbrite.com/e/statscraft-monitoring-conference-2016-tickets-26404502578" target="_blank">
+                    <div class="ticket-alert">
+                        <div>&nbsp;</div>
+                        <div class="your-ticket">
+                            <span>Get Yours</span>
+                        </div>
+                    </div>
+                </a>
+                <div>
+                </div><!-- .container ends -->
+            </div><!-- .ticket-section ends -->
         </div>
-        </a>
-      </div>
-      <div>      </div><!-- .container ends -->
-    </div><!-- .ticket-section ends -->
 
-  {{ partial "organizers.html" .Site.Data.y2016.organizers }}
-  {{ partial "sponsors.html"  .Site.Data.y2016.sponsors }}
-  {{ partial "contact.html" . }}
+        <div id="venue" class="venue venue2016 text-center">
+                <div class="container">
+                    <h2>Venue</h2>
+                    <h3>Dubnov Gallery TLV</h3>
+                    <address>Dubnov Gallery, Dubnov St. 8, Tel Aviv</address>
 
+                    <div id="canvas1" class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.801888660921!2d34.7814571161904!3d32.07460668118976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b8368489aad%3A0x26747d74226bb226!2z15LXnNeo15nXlCDXk9eV15HXoNeV15EgKNee15DXmdeo15TXldejKQ!5e0!3m2!1sen!2s!4v1467614487514" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div><!-- venue -->
+            </div>
 
+            {{ partial "organizers.html" .Site.Data.y2016.organizers }}
 
-<div class="container previous-events">
-  <h2 id="previous">Previous Events</h2>
-  <h3><a href="{{ .Site.BaseURL }}2015/">2015</a></h3>
+            {{ partial "sponsors.html"  .Site.Data.y2016.sponsors }}
+            {{ partial "contact.html" . }}
+
+            <div class="agenda" id="agenda">
+                <h2>Agenda</h2>
+                <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
+                {{ range $index, $talk := .Site.Data.y2016.talks.talks }}
+                <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
+                    {{ $path := $talk.type| printf "%s.html" }}
+                    {{ partial $path $talk }}
+                </div><!-- .row ends -->
+                {{ end }}
+            </div><!-- .agenda ends -->
+        </div>
+    </div><!-- container -->
+    <div class="container previous-events">
+        <h2 id="previous">Previous Events</h2>
+        <h3><a href="{{ .Site.BaseURL }}2015/">2015</a></h3>
+    </div>
 </div>
 
 

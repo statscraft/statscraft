@@ -1094,6 +1094,9 @@ p.description {
   display: inline-block;
   vertical-align: top;
 }
+.y2016 .sponsors .container {
+    width: 100%;
+}
 .sponsors li img {
   width: 100%;
   display: block;
