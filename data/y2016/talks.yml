@@ -280,7 +280,10 @@ talks:
       twitter: false
       linkedin: https://www.linkedin.com/in/roey-berman-05018029
     summary: >
-        Our riemann champion is Roey Berman (now at Forter, formely from Everything.ME).
+        In this workshop we will get a chance to see Riemann in action and get some hands-on experience.
+        We'll start with a brief introduction to Clojure and continue to dive into Riemann's powerful stream processing language.
+        We'll go over some common use cases like monitoring queues, long running processes and scheduled tasks.
+        To conclude we'll learn how to test our Riemann configuration using Riemann's built-in testing framework.
     link: false
 
   - name: "The Next Linux Superpower: eBPF Primer"
