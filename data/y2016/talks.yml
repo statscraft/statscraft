@@ -2,8 +2,8 @@
 talks:
   - name: Gathering and signup
     type: break
-    start: "08:30"
-    end:   "09:00"
+    start: "09:00"
+    end:   "09:30"
     speaker: "Mengling FTW"
   - name: Opening Welcome
     type: talk
@@ -15,8 +15,8 @@ talks:
       github: https://github.com/statscraft
       twitter: https://twitter.com/statscraft
       linkedin: false
-    start: "09:00"
-    end:   "09:15"
+    start: "09:30"
+    end:   "09:45"
     summary: >
         We'll dazzle you with our warming welcome.
     link: false
@@ -31,8 +31,8 @@ talks:
       github: false
       twitter: false
       linkedin: https://www.linkedin.com/in/yanivshalev
-    start: "09:15"
-    end:   "09:45"
+    start: "09:45"
+    end:   "10:15"
     summary: >
         In this talk we will emphasize the need to take holistic approach to monitoring and using monitoring as a competitive advantage (I’m calling it, “the 4 layer monitoring model”).<br/>
         We will discuss the maturity of monitoring from the simple infrastructure layer we all know through service based monitoring, to insight/event driven data monitoring and finally monitoring our entire business.<br/>
@@ -42,8 +42,8 @@ talks:
 
   - name: Tales of an alert-fatigue survivor
     type: talk
-    start: "9:45"
-    end:   "10:15"
+    start: "10:15"
+    end:   "10:45"
     speaker:
       name: Eliran Ben-Zikri
       title: "Production Engineer at SimilarWeb"
@@ -58,33 +58,34 @@ talks:
 
   - name: Break
     type: break
-    start: "10:15"
-    end:   "10:30"
+    start: "10:45"
+    end:   "11:00"
     speaker: "Coffee, anyone?"
 
   - name: Monitoring data at rest
     type: talk
-    start: "10:30"
-    end:   "11:00"
+    start: "11:00"
+    end:   "11:30"
     speaker:
-      name: Moshe Zada and Assaf Milman
-      image: moshe_assaf.gif
-      title: "Problem Solvers @ Forter"
+      name: Assaf Milman
+      title: "BI Manager @ Forter"
       about: >
-        Moshe is passionate about new technologies, coding, providing tools and VIM hacks.
-        Currently Moshe is a problem solver at Forter and among other stuff leading Forter’s monitoring with Riemann and ELK stack.<br/>
-      github: https://github.com/MosheZada
+        BI manager at Forter since Jan 2015.<br/>
+        Responsible for delivering business insights to management, team leaders and other stakeholders.<br/>
+        Developing the company's business oriented alerting system.<br/>
+        I brew my own beer - best served before writing a new feature..<br/>
+      github: https://github.com/assafmilman
       twitter: "https://twitter.com/forterfraudfree"
-      linkedin: "https://www.linkedin.com/pub/moshe-zada/79/b15/265"
+      linkedin: "https://www.linkedin.com/in/assaf-milman-01a7ba58"
     summary: >
-        In this talk two speakers from Forter will explain how we approach monitoring of “incoming” data after it was written to disk (at rest). The first problem we solve is business KPI based alerts. These require per-customer thresholds that also have time-seasonality. We will describe our dynamic thresholding algorithm to detect analytical and engineering anomalies that affect the business. More importantly this project is part of the BI team which is not officially part of R&D. The second problem we solve is data quality and consistency across different data stores. Our naive approach of “asserting” data was written to database after each system test/probe outlived its usefulness. We will describe why, and how the data reconciliator solves this problem differently. Related topics such as schema validation, data-remediation, pii redaction and data migration errors will also be discussed.
+        In this talk Assaf Milman from Forter will explain how we approach monitoring of “incoming” data after it was written to disk (at rest). The first problem we solve is business KPI based alerts. These require per-customer thresholds that also have time-seasonality. We will describe our dynamic thresholding algorithm to detect analytical and engineering anomalies that affect the business. More importantly this project is part of the BI team which is not officially part of R&D. The second problem we solve is data quality and consistency across different data stores. Our naive approach of “asserting” data was written to database after each system test/probe outlived its usefulness. We will describe why, and how the data reconciliator solves this problem differently. Related topics such as schema validation, data-remediation, pii redaction and data migration errors will also be discussed.
     link: false
     video: false
 
   - name: Experimenting on Humans
     type: talk
-    start: "11:00"
-    end:   "11:30"
+    start: "11:30"
+    end:   "12:00"
     speaker:
       name: Dalia Simons
       title: "Server Engineering at Wix"
@@ -103,14 +104,14 @@ talks:
 
   - name: Break
     type: break
-    start: "11:30"
-    end:   "11:45"
+    start: "12:00"
+    end:   "12:15"
     speaker: "Coffee, again!!1"
 
   - name: A word from our sponsors
     type: talk
-    start: "11:45"
-    end:   "12:00"
+    start: "12:15"
+    end:   "12:30"
     speaker:
       name: The Sponsors
       title: "Our Amazing Sponsors"
@@ -127,8 +128,8 @@ talks:
 
   - name: Monitoring Big Data Systems Done "The Simple Way"
     type: talk
-    start: "12:00"
-    end:   "12:30"
+    start: "12:30"
+    end:   "13:00"
     speaker:
       name: Demi Ben-Ari
       title: "co-founder and CTO at a stealth mode startup"
@@ -151,14 +152,32 @@ talks:
 
   - name: Lunch
     type: break
-    start: "12:30"
-    end:   "13:30"
+    start: "13:00"
+    end:   "14:00"
     speaker: Yay! Food!
+
+  - name: Another word from our sponsors
+    type: talk
+    start: "14:00"
+    end:   "14:20"
+    speaker:
+      name: The Sponsors
+      title: "Our Amazing Sponsors"
+      about: >
+        Who made this conference possible<br/>
+        Thank you!
+      github: false
+      twitter: false
+      linkedin: false
+    summary: >
+        Our fabulous sponsors will present themselves shortly.
+    link: false
+    video: false
 
   - name: Monitoring what customers think
     type: ignite
-    start: "13:30"
-    end:   "13:40"
+    start: "14:20"
+    end:   "14:30"
     speaker:
       name: Elena Levi
       about: >
@@ -172,8 +191,8 @@ talks:
 
   - name: Alerting mistakes
     type: ignite
-    start: "13:40"
-    end:   "13:50"
+    start: "14:30"
+    end:   "14:40"
     speaker:
       name: Eran Zimbler
       title: "DevOps Extraordinar at Rumble News"
@@ -183,8 +202,8 @@ talks:
 
   - name: Monitor Your Business (no developers required)
     type: ignite
-    start: "13:50"
-    end:   "14:00"
+    start: "14:40"
+    end:   "14:50"
     speaker:
       name: Arik Fraimovich
       about: >
@@ -195,8 +214,8 @@ talks:
         When talking about monitoring usually what comes to mind is technical metrics like CPU, disk space, memory, time to server a request, etc. Those are nice, but those KPIs (usually) don't drive your business. It's how many interactions a user had, how much money we generated and how many new users joined is what driving the business. And as a business, those are the KPIs we should monitor and care about.<br/>Previously you had to beg for time from your developers to provision business metrics collection. In this talk I would like to show you how to do this without any developers involved by just using SQL and a tool like Redash.
   - name: "The Pareto Logging Principle: 97% of Logged Errors are Caused by 3% of Unique Errors"
     type: ignite
-    start: "14:00"
-    end:   "14:10"
+    start: "14:50"
+    end:   "15:00"
     speaker:
       name: Chen Harel
       title: "Chief DevOps at Takipi"
@@ -207,8 +226,8 @@ talks:
         In this session we'll share stats from monitoring over a 1,000 applications in production, and uncover the most common cause and cost of operational noise
   - name: Why We Love Prometheus (And You Should, Too!)
     type: ignite
-    start: "14:10"
-    end:   "14:20"
+    start: "15:00"
+    end:   "15:10"
     speaker:
       name: Gil Fliker
       about: >
@@ -221,10 +240,11 @@ talks:
         If like me you are trying to figure out what is going on in your data center, who is consuming your resources? and your method of choice is collecting numbers over time? then I got a few stories for you.<br/>
         In this session you will hear and see how Prometheus is put to work at Outbrain any why we like it.<br/>
         We will be chatting about a few use cases of using Prometheus and lessons learned.
+
   - name: Newborns - a very difficult production system
     type: ignite
-    start: "14:20"
-    end:   "14:30"
+    start: "15:10"
+    end:   "15:20"
     speaker:
       name: Gil Zellner
       about: "Created by 2 engineers in the 80s, survived Israel Institute of Technology in the 2000’s, worked at Gett and a few others, currently works on Cloudify at Gigaspaces."
@@ -232,10 +252,11 @@ talks:
       linkedin: https://il.linkedin.com/in/gilzellner
     summary: >
       Newborn babies are difficult. like your production system. this outlines everything from monitoring, services, analytics and such. humorous yet accurate.
+
   - name: Domain-Driven Monitoring
     type: ignite
-    start: "14:30"
-    end:   "14:40"
+    start: "15:20"
+    end:   "15:30"
     speaker:
       name: Asaf Kotzer
       about: "Asaf is a software developer. He's currently the Chief Architect at Soluto, working on infrastructure and products, as well as continuously improving the development process. Asaf is a 8200 alumni and has a BSc in Computer Science and Cognitive Science from The Hebrew University in Jerusalem."
@@ -243,10 +264,11 @@ talks:
       linkedin: https://il.linkedin.com/in/asafkotzer
     summary: >
         Monitoring, like with non-functional requirements, has traditionally been looked at from a dev/ops/devops perspective. But monitoring is not about tech, it's about business. We will show an alternative for how a domain-centred dialog can lead to better monitoring, echoing good old DDD concepts and aiming toward the breaking of more silos.
+
   - name: ETW - Monitor Anything, Anywhere, Anytime
     type: ignite
-    start: "14:40"
-    end:   "14:50"
+    start: "15:30"
+    end:   "15:40"
     speaker:
       name: Dina Goldshtein
       about: >
@@ -257,16 +279,33 @@ talks:
         Event Tracing for Windows is Microsoft’s structured logging infrastructure.<br/>Although it supports emitting your own custom messages, the cool thing about it is that Windows and many other Microsoft frameworks come built-in with thousands, if not tens of thousands of trace-points which allow you to monitor basically anything, on demand, both during development and on production.<br/>This includes standard metrics such as memory and CPU, but also more exotic things such as WCF functions, .NET exceptions, thread call-stacks, and even the Windows boot process!<br/>
         In this session we will see how to use freely available tools to monitor your applications and environments.
 
+  - name: Spam Management and Demand Control in Monitoring Systems
+    type: ignite
+    start: "15:40"
+    end:   "15:50"
+    speaker:
+      name: Brian Smith
+      about: >
+        Brian Smith is a production engineer at Facebook.</br/>
+        Tools Developer, Database Administrator, and Systems Administrator in large and small environments.<br/>
+      title: "Production Engineer at Facebook"
+      linkedin: https://www.linkedin.com/in/brianclsmith
+    summary: >
+        You've convinced everyone of the importance of monitoring their services, but now you suddenly have a problem.<br/>
+        What are you going to do with all that data? <br/>
+        In this talk we will discuss the delicate balance between ease of use and protecting the monitoring system from the well meaning but clueless people who put time stamps in the names of their metrics.<br/>
+        We will discuss the Facebook monitoring team's general philosophy around demand control, then dive into specific details about how we keep the system up, from time series clustering and spam detection algorithms to rate limiting and blacklisting policies.<br/>
+
   - name: Break
     type: break
-    start: "14:50"
-    end:   "15:00"
+    start: "15:50"
+    end:   "16:00"
     speaker: More? No problem!
 
   - name: Riemann workshop
     type: workshop
-    start: "15:00"
-    end:   "17:00"
+    start: "16:00"
+    end:   "18:00"
     speaker:
       name: Roey Berman
       title: >
@@ -288,8 +327,8 @@ talks:
 
   - name: "The Next Linux Superpower: eBPF Primer"
     type: workshop
-    start: "15:00"
-    end:   "17:00"
+    start: "16:00"
+    end:   "18:00"
     speaker:
       name: Sasha Goldshtein
       about: >
