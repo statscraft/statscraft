@@ -286,8 +286,8 @@ talks:
     speaker:
       name: Brian Smith
       about: >
-        Brian Smith is a production engineer at Facebook.</br/>
-        Tools Developer, Database Administrator, and Systems Administrator in large and small environments.<br/>
+        Brian has been a PE at Facebook for 4 years, and has spent his time building and maintaining the large scale stream processing and monitoring systems. Currently working on ODS and Scuba.<br/>
+        ODS is Facebook's time series database, detection system, and query engine that handles trillions of data points a day. Scuba is a real time event and log query engine for analyzing unstructured data streams that ingests millions of events per second.<br/>
       title: "Production Engineer at Facebook"
       linkedin: https://www.linkedin.com/in/brianclsmith
     summary: >
