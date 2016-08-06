@@ -69,7 +69,6 @@
     {{ if lt $index 22 }}
                 <div class="row slide-agenda-container" data-talk-end="{{ index $talk "end" }}" data-talk-start="{{ index $talk "start" }}">
         <span class="slide-talk-time">{{ $talk.start }} - {{ $talk.end }}</span>
-        {{ if ne $talk.type "break" }}<span>{{ $talk.type | title }}:</span>{{ end }}
                         <span class="slide-talk-title">{{ $talk.name }}</span>
                     </div><!-- .row ends -->
     {{ else }}
