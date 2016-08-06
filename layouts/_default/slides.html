@@ -5,8 +5,7 @@
   <title>StatsCraft</title>
   <meta name="description" content="">
   <meta name="author" content="">
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/slides.css">
   <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
@@ -16,61 +15,80 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@statscraft">
   <meta name="twitter:title" content="StatsCraft monitoring conference">
-  <meta name="twitter:description" content="First Israeli monitoring conference, 30th of July 2015, Tel Aviv">
+  <meta name="twitter:description" content="Israeli monitoring conference, 8th of August, Tel Aviv">
   <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
   <meta property="og:title" content="StatsCraft monitoring conference">
-  <meta property="og:description" content="First Israeli monitoring conference, 30th of July 2015, Tel Aviv">
+  <meta property="og:description" content="Israeli monitoring conference, 8th of August, Tel Aviv">
   <meta property="og:url" content="http://www.statscraft.org.il/">
-  <meta property="og:image" content="http://www.statscraft.org.il/images/logo-meta.png">
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
+  {{/*
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Event",
     "name": "StatsCraft",
-    "startDate": "2015-07-30T09:00",
-    "endDate": "2015-07-30T18:30",
+    "startDate": "2016-08-08T08:00",
+    "endDate": "2016-08-08T18:30",
     "url" : "http://www.statscraft.org.il",
     "location" : {
       "@type" : "Place",
-      "name" : "Google Campus TLV (Electra Tower, 34th Floor)",
-      "address" : "98 Yigal Alon St. Tel Aviv, 6789141 Israel"
+      "name" : "Dubnov Gallery",
+      "address" : "Dubnov St. 8, Tel Aviv, 6473208 Israel"
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://www.eventbrite.com/e/statscraft-monitoring-conference-2015-tickets-16933629943"
+      "url": "https://www.eventbrite.com/e/statscraft-monitoring-conference-2016-tickets-26404502578"
     }
   }
   </script>
-<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+  */}}
+  <base href="{{ .Site.BaseURL }}">
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1198986813464953');
+  fbq('track', "PageView");
+  fbq('track', 'Lead');</script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1198986813464953&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.1.0/css/reveal.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="y{{ .Site.Params.current }}{{ if .Params.padding }} withPadding{{ end }}"><link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
 <div class="reveal">
     <div class="slides">
         <section>
             <div class="agenda" id="agenda">
-                {{ range $index, $talk := .Site.Data.y2015.talks.talks }}
-                    {{ if and (ne $index 8) (ne $index 11) }}
-                <div class="row slide-agenda-container" data-talk-end="{{ index $talk "end" }}">
-    <span class="slide-talk-time">{{ $talk.start }} - {{ $talk.end }}</span>
-                    {{ if or (eq $index 7) (eq $index 10) }}
-                    <span>{{ $talk.type | title }}s:</span>
-                    {{ end }}
+                {{ range $index, $talk := .Site.Data.y2016.talks.talks }}
+    {{ if lt $index 22 }}
+                <div class="row slide-agenda-container" data-talk-end="{{ index $talk "end" }}" data-talk-start="{{ index $talk "start" }}">
+        <span class="slide-talk-time">{{ $talk.start }} - {{ $talk.end }}</span>
+        {{ if ne $talk.type "break" }}<span>{{ $talk.type | title }}:</span>{{ end }}
+                        <span class="slide-talk-title">{{ $talk.name }}</span>
+                    </div><!-- .row ends -->
+    {{ else }}
+    {{ if eq $index 23}}
+        &nbsp;|&nbsp;{{ $talk.name }}</span>
+    {{ else }}
+                <div class="row slide-agenda-container" data-talk-end="{{ index $talk "end" }}" data-talk-start="{{ index $talk "start" }}">
 
-                    {{ else }} <span class="slide-talk-separator">/</span>
-                    {{ end }}
-                    <span class="slide-talk-title">{{ $talk.name }}</span>
-                    {{ if and (ne $index 7) (ne $index 10) }}
-                </div><!-- .row ends -->
-                    {{ end }}
-                {{ end }}
+        <span class="slide-talk-time">{{ $talk.start }} - {{ $talk.end }}</span>
+        <span>Workshops: {{ $talk.name }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
             </div><!-- .agenda ends -->
         </section>
         <section>
             <div class="sponsors" id="sponsors">
               <ul>
-                {{ range $sponsor := .Site.Data.y2015.sponsors.sponsors }}
+                {{ range $sponsor := .Site.Data.y2016.sponsors.sponsors }}
                 {{ $lowername := $sponsor.name | lower }}
                 <li><a href={{ $sponsor.url }} target="_blank"><img src="{{ .Site.BaseURL }}images/sponsors-large-{{ replace $lowername " " "" }}.png" alt="{{ $sponsor.alt }}"></a></li>
                 {{ end }}
@@ -105,11 +123,11 @@ Reveal.initialize({
     // Factor of the display size that should remain empty around the content
     margin: 0.1,
     // Loop the presentation
-    loop: true,
+    loop: false,
     // Number of milliseconds between automatically proceeding to the
     // next slide, disabled when set to 0, this value can be overwritten
     // by using a data-autoslide attribute on your slides
-    autoSlide: 1000 * 30,
+    //autoSlide: 1000 * 30,
     // Stop auto-sliding after user input
     autoSlideStoppable: false,
     // Transition style
