@@ -130,7 +130,7 @@ talks:
     link: false
     video: false
 
-  - name: Monitoring data at rest
+  - name: BI & Business Alerting
     type: talk
     start: "12:30"
     end:   "13:00"
