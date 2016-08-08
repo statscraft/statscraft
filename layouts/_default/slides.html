@@ -89,9 +89,9 @@
         <section>
             <div class="sponsors" id="sponsors">
               <ul>
-                {{ range $sponsor := .Site.Data.y2016.sponsors.sponsors }}
+                {{ range $sponsor := sort .Site.Data.y2016.sponsors.sponsors "name" }}
                 {{ $lowername := $sponsor.name | lower }}
-                <li><a href={{ $sponsor.url }} target="_blank"><img src="{{ .Site.BaseURL }}images/sponsors-large-{{ replace $lowername " " "" }}.png" alt="{{ $sponsor.alt }}"></a></li>
+                <li class="{{ $lowername }}"><a href={{ $sponsor.url }} target="_blank"><img src="{{ .Site.BaseURL }}images/sponsors-large-{{ replace $lowername " " "" }}.png" alt="{{ $sponsor.alt }}"></a></li>
                 {{ end }}
               </ul>
 
