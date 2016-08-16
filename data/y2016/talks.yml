@@ -38,7 +38,7 @@ talks:
         We will discuss the maturity of monitoring from the simple infrastructure layer we all know through service based monitoring, to insight/event driven data monitoring and finally monitoring our entire business.<br/>
         As an analytics solution we wanted to treat our data as we treat our customers business.
     link: false
-    video: false
+    video: https://www.youtube.com/watch?v=XI32yrTXPaY
 
   - name: Tales of an alert-fatigue survivor
     type: talk
@@ -54,7 +54,7 @@ talks:
     summary: >
       For the past two years, the production engineering team at Similarweb has gone through a dramatic makeover.<br/>We had to redefine how we collect, monitor, visualize metrics and cherry-pick what should wake us up at night.<br/>In this talk I'll describe our journey as a team, the decisions we made, the goals we tried to achieve and the tools we ended up using.
     link: false
-    video: false
+    video: https://www.youtube.com/watch?v=kOZfxAzwSXo
 
   - name: Break
     type: break
@@ -84,7 +84,7 @@ talks:
         Not only the tools, what should you monitor about the actual data that flows in the system?<br/>
         And we’ll cover the simplest solution with your day to day open source tools, the surprising thing, that it comes not from an Ops Guy.
     link: false
-    video: false
+    video: https://www.youtube.com/watch?v=_jjgfW-NUoo
 
   - name: Experimenting on Humans
     type: talk
@@ -104,7 +104,7 @@ talks:
         In this lecture i will share how we use our experiments system at wix to help us monitor the success of new features across different geos/ locales / devices.<br/>
         We can then make better decisions and quickly react by closing problematic features
     link: false
-    video: false
+    video: https://www.youtube.com/watch?v=GTD_WfR-8rs
 
   - name: Break
     type: break
@@ -148,7 +148,7 @@ talks:
     summary: >
         In this talk Assaf Milman from Forter will explain how we approach monitoring of “incoming” data after it was written to disk (at rest). The first problem we solve is business KPI based alerts. These require per-customer thresholds that also have time-seasonality. We will describe our dynamic thresholding algorithm to detect analytical and engineering anomalies that affect the business. More importantly this project is part of the BI team which is not officially part of R&D. The second problem we solve is data quality and consistency across different data stores. Our naive approach of “asserting” data was written to database after each system test/probe outlived its usefulness. We will describe why, and how the data reconciliator solves this problem differently. Related topics such as schema validation, data-remediation, pii redaction and data migration errors will also be discussed.
     link: false
-    video: false
+    video: https://www.youtube.com/watch?v=1O3iWcdldyE
 
   - name: Lunch
     type: break
@@ -178,6 +178,7 @@ talks:
     type: ignite
     start: "14:20"
     end:   "14:30"
+    video: https://www.youtube.com/watch?v=W0l-ngCeALI
     speaker:
       name: Elena Levi
       about: >
@@ -193,6 +194,7 @@ talks:
     type: ignite
     start: "14:30"
     end:   "14:40"
+    video: https://www.youtube.com/watch?v=rI1-NK_h5G8
     speaker:
       name: Eran Zimbler
       title: "DevOps Extraordinar at Rumble News"
@@ -212,10 +214,12 @@ talks:
       linkedin: https://il.linkedin.com/in/arikfri
     summary: >
         When talking about monitoring usually what comes to mind is technical metrics like CPU, disk space, memory, time to server a request, etc. Those are nice, but those KPIs (usually) don't drive your business. It's how many interactions a user had, how much money we generated and how many new users joined is what driving the business. And as a business, those are the KPIs we should monitor and care about.<br/>Previously you had to beg for time from your developers to provision business metrics collection. In this talk I would like to show you how to do this without any developers involved by just using SQL and a tool like Redash.
+
   - name: "The Pareto Logging Principle: 97% of Logged Errors are Caused by 3% of Unique Errors"
     type: ignite
     start: "14:50"
     end:   "15:00"
+    video: https://www.youtube.com/watch?v=yfI3-4zN-8Y
     speaker:
       name: Chen Harel
       title: "Chief DevOps at Takipi"
@@ -224,10 +228,12 @@ talks:
       linkedin: https://il.linkedin.com/in/chenh
     summary: >
         In this session we'll share stats from monitoring over a 1,000 applications in production, and uncover the most common cause and cost of operational noise
+
   - name: Why We Love Prometheus (And You Should, Too!)
     type: ignite
     start: "15:00"
     end:   "15:10"
+    video: https://www.youtube.com/watch?v=jErpYRdW1r4
     speaker:
       name: Gil Fliker
       about: >
@@ -245,6 +251,7 @@ talks:
     type: ignite
     start: "15:10"
     end:   "15:20"
+    video: https://www.youtube.com/watch?v=EySFKvu7q1A
     speaker:
       name: Gil Zellner
       about: "Created by 2 engineers in the 80s, survived Israel Institute of Technology in the 2000’s, worked at Gett and a few others, currently works on Cloudify at Gigaspaces."
@@ -257,6 +264,7 @@ talks:
     type: ignite
     start: "15:20"
     end:   "15:30"
+    video: https://www.youtube.com/watch?v=xLwLIV5zWDI
     speaker:
       name: Asaf Kotzer
       about: "Asaf is a software developer. He's currently the Chief Architect at Soluto, working on infrastructure and products, as well as continuously improving the development process. Asaf is a 8200 alumni and has a BSc in Computer Science and Cognitive Science from The Hebrew University in Jerusalem."
@@ -269,6 +277,7 @@ talks:
     type: ignite
     start: "15:30"
     end:   "15:40"
+    video: https://www.youtube.com/watch?v=-kwdW85wNSc
     speaker:
       name: Dina Goldshtein
       about: >
@@ -283,6 +292,7 @@ talks:
     type: ignite
     start: "15:40"
     end:   "15:50"
+    video: https://www.youtube.com/watch?v=XhYxE2luvTU
     speaker:
       name: Brian Smith
       about: >
