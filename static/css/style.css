@@ -595,13 +595,14 @@ header .menu nav ul {
   vertical-align: bottom;
 }
 .important-note .ticket-btn {
-  width: 168px;
+  min-width: 168px;
   height: 54px;
+  padding: 16px;
   color: #fff;
   text-align: center;
   font-size: 21px;
   line-height: 54px;
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
   text-transform: uppercase;
   background-color: #868686;
@@ -689,7 +690,7 @@ header .menu nav ul {
   vertical-align: top;
 }
 .committee .organizers .organizer .img {
-  background: url("../images/organizing-commitee-2016.jpg");
+  background: url("../images/organizing-commitee-2017.png");
   width: 165px;
   height: 80px;
   margin: 0 auto;
@@ -727,6 +728,10 @@ header .menu nav ul {
   background-position: -1485px 0;
 }
 
+.committee .organizers .organizer.smintz .img {
+  background-position: -1650px 0;
+}
+
 .committee .organizers .organizer.nir:hover .img {
   background-position: 0 80px;
 }
@@ -758,6 +763,10 @@ header .menu nav ul {
 
 .committee .organizers .organizer.ofer:hover .img {
   background-position: -1485px 80px;
+}
+
+.committee .organizers .organizer.smintz:hover .img {
+  background-position: -1650px 80px;
 }
 
 p.description {

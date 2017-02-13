@@ -1,0 +1,46 @@
+---
+organizers:
+  - name: Shahar Kedar
+    id: shahar
+    company: (BigPanda)
+    linkedin: https://il.linkedin.com/in/shaharke
+
+  - name: Erik Zaadi
+    id: erik
+    company: (BigPanda)
+    linkedin: https://il.linkedin.com/in/erikzaadi
+
+  - name: Ofer Schreiber
+    id: ofer
+    company: (BigPanda)
+    linkedin: https://www.linkedin.com/in/oferschreiber
+
+  - name: Amit Cohen
+    id: amit
+    company: (Strigo.io)
+    linkedin: https://il.linkedin.com/in/amitcohe
+
+  - name: Avishai Ish-Shalom
+    id: avishai
+    company: (Wix)
+    linkedin: https://il.linkedin.com/in/nukemberg
+
+  - name: Nati Cohen
+    id: nati
+    company: (SimilarWeb)
+    linkedin: https://il.linkedin.com/in/natict
+
+  - name: Elena Levi
+    id: elena
+    company: (Singular)
+    linkedin: https://www.linkedin.com/in/elena-levi-9b240430
+
+  - name: Nir Cohen
+    id: nir
+    company: (Strigo.io)
+    linkedin: https://il.linkedin.com/in/nir0s
+
+  - name: Shahar Mintz
+    id: smintz
+    company: (Facebook)
+    linkedin: https://www.linkedin.com/in/shaharmintz/
