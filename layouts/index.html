@@ -55,16 +55,16 @@
         <!--   </div> -->
         <!-- </div><!&#45;&#45; venue &#45;&#45;> -->
 
-            {{ partial "organizers.html" .Site.Data.y2016.organizers }}
+            {{ partial "organizers.html" .Site.Data.y2017.organizers }}
 
-            <!-- {{ partial "sponsors.html"  .Site.Data.y2016.sponsors }} -->
+            <!-- {{ partial "sponsors.html"  .Site.Data.y2017.sponsors }} -->
             {{ partial "contact.html" . }}
     </div><!-- container -->
 
     <!-- <div class="agenda" id="agenda"> -->
     <!--   <h2>Agenda</h2> -->
     <!--   <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4> -->
-    <!--   {{ range $index, $talk := .Site.Data.y2016.talks.talks }} -->
+    <!--   {{ range $index, $talk := .Site.Data.y2017.talks.talks }} -->
     <!--   <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first&#45;border{{ end }}"> -->
     <!--     {{ $path := $talk.type| printf "%s.html" }} -->
     <!--     {{ partial $path $talk }} -->

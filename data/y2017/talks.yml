@@ -1,0 +1,355 @@
+---
+talks:
+  - name: Gathering and signup
+    type: break
+    start: "09:00"
+    end:   "09:30"
+    speaker: "Mengling FTW"
+  - name: Opening Welcome
+    type: talk
+    speaker:
+      name: Statscraft Team
+      title: "The Amazing Statscraft Comittee"
+      about: >
+        This conference is a community effort by and for people who do monitoring daily and care about monitoring.<br/>The organizing committee are all volunteers and sponsorships cover the direct costs of the conference.
+      github: https://github.com/statscraft
+      twitter: https://twitter.com/statscraft
+      linkedin: false
+    start: "09:30"
+    end:   "09:45"
+    summary: >
+        We'll dazzle you with our warming welcome.
+    link: false
+    video: false
+
+  - name: How to Monitor a Business?
+    type: talk
+    speaker:
+      name: Yaniv Shalev
+      title: "VP | AOL Israel Site Lead | CTO at Convertro"
+      about: "Strong experience with leading holistic team and product development from idea to GA highly aligned with business goals"
+      github: false
+      twitter: false
+      linkedin: https://www.linkedin.com/in/yanivshalev
+    start: "09:45"
+    end:   "10:15"
+    summary: >
+        In this talk we will emphasize the need to take holistic approach to monitoring and using monitoring as a competitive advantage (I’m calling it, “the 4 layer monitoring model”).<br/>
+        We will discuss the maturity of monitoring from the simple infrastructure layer we all know through service based monitoring, to insight/event driven data monitoring and finally monitoring our entire business.<br/>
+        As an analytics solution we wanted to treat our data as we treat our customers business.
+    link: false
+    video: https://www.youtube.com/watch?v=XI32yrTXPaY
+
+  - name: Tales of an alert-fatigue survivor
+    type: talk
+    start: "10:15"
+    end:   "10:45"
+    speaker:
+      name: Eliran Ben-Zikri
+      title: "Production Engineer at SimilarWeb"
+      about : "With one functional ear and vast experience in networking & security, Eliran Ben-Zikri is a Production Engineer at SimilarWeb where he fell in love with anything automated and writing code for all *nix based systems."
+      github: false
+      twitter: false
+      linkedin: https://il.linkedin.com/in/eliranbz
+    summary: >
+      For the past two years, the production engineering team at Similarweb has gone through a dramatic makeover.<br/>We had to redefine how we collect, monitor, visualize metrics and cherry-pick what should wake us up at night.<br/>In this talk I'll describe our journey as a team, the decisions we made, the goals we tried to achieve and the tools we ended up using.
+    link: false
+    video: https://www.youtube.com/watch?v=kOZfxAzwSXo
+
+  - name: Break
+    type: break
+    start: "10:45"
+    end:   "11:00"
+    speaker: "Coffee, anyone?"
+
+  - name: Monitoring Big Data Systems Done "The Simple Way"
+    type: talk
+    start: "11:00"
+    end:   "11:30"
+    speaker:
+      name: Demi Ben-Ari
+      title: "co-founder and CTO at a stealth mode startup"
+      about: >
+          Demi Ben-Ari is co-founder and CTO at a stealth mode startup.<br/>
+          Demi has over 9 years of experience in building various systems both from the field of near real time applications and Big Data distributed systems. <br/>
+          Describing himself as a software development groupie, Interested in tackling cutting edge technologies.<br/>
+          Demi is also a co-founder of the <a href="http://somebigthings.com/big-things-intro/">“Big Things” Big Data community</a>
+      github: false
+      twitter: false
+      linkedin: https://il.linkedin.com/in/demibenari
+    summary: |
+        Once you start working with distributed Big Data systems, you start discovering a whole bunch of problems you won’t find in monolithic systems.All of a sudden to monitor all of the components becomes a big data problem itself.<br/>
+        In the talk we'll mention all of the aspects that you should take in consideration when monitoring a distributed system once you're using tools like:
+        Web Services, Apache Spark, Cassandra, MongoDB, Amazon Web Services.<br/>
+        Not only the tools, what should you monitor about the actual data that flows in the system?<br/>
+        And we’ll cover the simplest solution with your day to day open source tools, the surprising thing, that it comes not from an Ops Guy.
+    link: false
+    video: https://www.youtube.com/watch?v=_jjgfW-NUoo
+
+  - name: Experimenting on Humans
+    type: talk
+    start: "11:30"
+    end:   "12:00"
+    speaker:
+      name: Dalia Simons
+      title: "Server Engineering at Wix"
+      about: >
+        I've been developing software for over 10 years. in the last 5 years i've been part of the server engineering team @ wix.<br/>
+        I've been working on the experiments system for the last 2 years
+      github: false
+      twitter: false
+      linkedin: https://il.linkedin.com/in/daliasimons
+    summary: >
+        How do you rollout a new feature to customers? how do you monitor it? decide if it's successful?<br/>
+        In this lecture i will share how we use our experiments system at wix to help us monitor the success of new features across different geos/ locales / devices.<br/>
+        We can then make better decisions and quickly react by closing problematic features
+    link: false
+    video: https://www.youtube.com/watch?v=GTD_WfR-8rs
+
+  - name: Break
+    type: break
+    start: "12:00"
+    end:   "12:15"
+    speaker: "Coffee, again!!1"
+
+  - name: A word from our sponsors
+    type: talk
+    start: "12:15"
+    end:   "12:30"
+    speaker:
+      name: The Sponsors
+      title: "Our Amazing Sponsors"
+      about: >
+        Who made this conference possible<br/>
+        Thank you!
+      github: false
+      twitter: false
+      linkedin: false
+    summary: >
+        Our fabulous sponsors will present themselves shortly.
+    link: false
+    video: false
+
+  - name: BI & Business Alerting
+    type: talk
+    start: "12:30"
+    end:   "13:00"
+    speaker:
+      name: Assaf Milman
+      title: "BI Manager @ Forter"
+      about: >
+        BI manager at Forter since Jan 2015.<br/>
+        Responsible for delivering business insights to management, team leaders and other stakeholders.<br/>
+        Developing the company's business oriented alerting system.<br/>
+        I brew my own beer - best served before writing a new feature..<br/>
+      github: https://github.com/assafmilman
+      twitter: "https://twitter.com/forterfraudfree"
+      linkedin: "https://www.linkedin.com/in/assaf-milman-01a7ba58"
+    summary: >
+        In this talk Assaf Milman from Forter will explain how we approach monitoring of “incoming” data after it was written to disk (at rest). The first problem we solve is business KPI based alerts. These require per-customer thresholds that also have time-seasonality. We will describe our dynamic thresholding algorithm to detect analytical and engineering anomalies that affect the business. More importantly this project is part of the BI team which is not officially part of R&D. The second problem we solve is data quality and consistency across different data stores. Our naive approach of “asserting” data was written to database after each system test/probe outlived its usefulness. We will describe why, and how the data reconciliator solves this problem differently. Related topics such as schema validation, data-remediation, pii redaction and data migration errors will also be discussed.
+    link: false
+    video: https://www.youtube.com/watch?v=1O3iWcdldyE
+
+  - name: Lunch
+    type: break
+    start: "13:00"
+    end:   "14:00"
+    speaker: Yay! Food!
+
+  - name: Another word from our sponsors
+    type: talk
+    start: "14:00"
+    end:   "14:20"
+    speaker:
+      name: The Sponsors
+      title: "Our Amazing Sponsors"
+      about: >
+        Who made this conference possible<br/>
+        Thank you!
+      github: false
+      twitter: false
+      linkedin: false
+    summary: >
+        Our fabulous sponsors will present themselves shortly.
+    link: false
+    video: false
+
+  - name: Monitoring what customers think
+    type: ignite
+    start: "14:20"
+    end:   "14:30"
+    video: https://www.youtube.com/watch?v=W0l-ngCeALI
+    speaker:
+      name: Elena Levi
+      about: >
+          BI Extremist<br/> Analyst by day, Statscraft organizer by night
+      title: "Analyst at Singular"
+      linkedin: https://il.linkedin.com/in/elena-levi-9b240430
+    summary: >
+        We all (should) agree that monitoring customer activity is very important and that monitoring support tickets is highly recommended as well.
+        But what about the content of these tickets?
+        In this talk we will discuss how we categorize our support tickets and how it affects our R&D decisions
+
+  - name: Alerting mistakes
+    type: ignite
+    start: "14:30"
+    end:   "14:40"
+    video: https://www.youtube.com/watch?v=rI1-NK_h5G8
+    speaker:
+      name: Eran Zimbler
+      title: "DevOps Extraordinar at Rumble News"
+      about: "After working for checkpoint software and AVG I finally moved out of security related companies and started working at Rumble News, there I have evolved into a cloud savvy/monitor watcher/scripts fixer/solutions finder/devops.<br/>While starting to feel too old for this shit, I have learned that clouds like old time servers rain at the worst of times."
+      linkedin: https://il.linkedin.com/in/zimbler
+    summary: "Short walktrough of all the mistakes I did with alerts and alerting systems during the last 10 years."
+
+  - name: Monitor Your Business (no developers required)
+    type: ignite
+    start: "14:40"
+    end:   "14:50"
+    speaker:
+      name: Arik Fraimovich
+      about: >
+        In the past years, I have been dealing with all aspects of data -- from how to load it properly and in scale and then how to present it to the end users.<br/>In the process I've created Redash, an open source data collaboration platform, that helps organizations democratize their data access.<br/>These days I'm working hard on creating a sustainable business around Redash.
+      title: "Founder at Redash"
+      linkedin: https://il.linkedin.com/in/arikfri
+    summary: >
+        When talking about monitoring usually what comes to mind is technical metrics like CPU, disk space, memory, time to server a request, etc. Those are nice, but those KPIs (usually) don't drive your business. It's how many interactions a user had, how much money we generated and how many new users joined is what driving the business. And as a business, those are the KPIs we should monitor and care about.<br/>Previously you had to beg for time from your developers to provision business metrics collection. In this talk I would like to show you how to do this without any developers involved by just using SQL and a tool like Redash.
+
+  - name: "The Pareto Logging Principle: 97% of Logged Errors are Caused by 3% of Unique Errors"
+    type: ignite
+    start: "14:50"
+    end:   "15:00"
+    video: https://www.youtube.com/watch?v=yfI3-4zN-8Y
+    speaker:
+      name: Chen Harel
+      title: "Chief DevOps at Takipi"
+      about: >
+        Chen is Co-Founder & Chief DevOps @ Takipi, focusing on high-scalability and availability.<br/>Previously, Chen was a team lead at Autodesk, where he led the development of the company's flagship Cloud infrastructure.<br/>Prior to that Chen was a lead infrastructure engineer at VisualTao.<br/>Apple(s) person.
+      linkedin: https://il.linkedin.com/in/chenh
+    summary: >
+        In this session we'll share stats from monitoring over a 1,000 applications in production, and uncover the most common cause and cost of operational noise
+
+  - name: Why We Love Prometheus (And You Should, Too!)
+    type: ignite
+    start: "15:00"
+    end:   "15:10"
+    video: https://www.youtube.com/watch?v=jErpYRdW1r4
+    speaker:
+      name: Gil Fliker
+      about: >
+          From Dev to DBA to Operations to DEV... the future<br/>  Running things at scale for a while.<br/>
+          Currently Operations manager @Outbrain<br/>
+          Building Outbrain's infrastructure from day one.
+      title: "Operations Manager at Outbrain"
+      linkedin: https://www.linkedin.com/in/gil-fliker-65862a27
+    summary: >
+        If like me you are trying to figure out what is going on in your data center, who is consuming your resources? and your method of choice is collecting numbers over time? then I got a few stories for you.<br/>
+        In this session you will hear and see how Prometheus is put to work at Outbrain any why we like it.<br/>
+        We will be chatting about a few use cases of using Prometheus and lessons learned.
+
+  - name: Newborns - a very difficult production system
+    type: ignite
+    start: "15:10"
+    end:   "15:20"
+    video: https://www.youtube.com/watch?v=EySFKvu7q1A
+    speaker:
+      name: Gil Zellner
+      about: "Created by 2 engineers in the 80s, survived Israel Institute of Technology in the 2000’s, worked at Gett and a few others, currently works on Cloudify at Gigaspaces."
+      title: "Cloudify developer at Gigaspaces"
+      linkedin: https://il.linkedin.com/in/gilzellner
+    summary: >
+      Newborn babies are difficult. like your production system. this outlines everything from monitoring, services, analytics and such. humorous yet accurate.
+
+  - name: Domain-Driven Monitoring
+    type: ignite
+    start: "15:20"
+    end:   "15:30"
+    video: https://www.youtube.com/watch?v=xLwLIV5zWDI
+    speaker:
+      name: Asaf Kotzer
+      about: "Asaf is a software developer. He's currently the Chief Architect at Soluto, working on infrastructure and products, as well as continuously improving the development process. Asaf is a 8200 alumni and has a BSc in Computer Science and Cognitive Science from The Hebrew University in Jerusalem."
+      title: "Chief Architect at Soluto"
+      linkedin: https://il.linkedin.com/in/asafkotzer
+    summary: >
+        Monitoring, like with non-functional requirements, has traditionally been looked at from a dev/ops/devops perspective. But monitoring is not about tech, it's about business. We will show an alternative for how a domain-centred dialog can lead to better monitoring, echoing good old DDD concepts and aiming toward the breaking of more silos.
+
+  - name: ETW - Monitor Anything, Anywhere, Anytime
+    type: ignite
+    start: "15:30"
+    end:   "15:40"
+    video: https://www.youtube.com/watch?v=-kwdW85wNSc
+    speaker:
+      name: Dina Goldshtein
+      about: >
+        Dina Goldshtein is a Senior Software Engineer at Aternity.<br/>Aternity builds performance monitoring tools that run on millions of PCs and mobile devices.<br/>Dina is on the team responsible for the core collection mechanism, which hooks low-level Windows events and collects performance information from a variety of sources.<br/>Since starting at Aternity, she worked a lot on boot performance monitoring, identifying bottlenecks in the Windows boot process.
+      title: "Senior Software Engineer at Aternity"
+      linkedin: https://il.linkedin.com/in/dina-goldshtein-35487b3
+    summary: >
+        Event Tracing for Windows is Microsoft’s structured logging infrastructure.<br/>Although it supports emitting your own custom messages, the cool thing about it is that Windows and many other Microsoft frameworks come built-in with thousands, if not tens of thousands of trace-points which allow you to monitor basically anything, on demand, both during development and on production.<br/>This includes standard metrics such as memory and CPU, but also more exotic things such as WCF functions, .NET exceptions, thread call-stacks, and even the Windows boot process!<br/>
+        In this session we will see how to use freely available tools to monitor your applications and environments.
+
+  - name: Spam Management and Demand Control in Monitoring Systems
+    type: ignite
+    start: "15:40"
+    end:   "15:50"
+    video: https://www.youtube.com/watch?v=XhYxE2luvTU
+    speaker:
+      name: Brian Smith
+      about: >
+        Brian has been a PE at Facebook for 4 years, and has spent his time building and maintaining the large scale stream processing and monitoring systems. Currently working on ODS and Scuba.<br/>
+        ODS is Facebook's time series database, detection system, and query engine that handles trillions of data points a day. Scuba is a real time event and log query engine for analyzing unstructured data streams that ingests millions of events per second.<br/>
+      title: "Production Engineer at Facebook"
+      linkedin: https://www.linkedin.com/in/brianclsmith
+    summary: >
+        You've convinced everyone of the importance of monitoring their services, but now you suddenly have a problem.<br/>
+        What are you going to do with all that data? <br/>
+        In this talk we will discuss the delicate balance between ease of use and protecting the monitoring system from the well meaning but clueless people who put time stamps in the names of their metrics.<br/>
+        We will discuss the Facebook monitoring team's general philosophy around demand control, then dive into specific details about how we keep the system up, from time series clustering and spam detection algorithms to rate limiting and blacklisting policies.<br/>
+
+  - name: Break
+    type: break
+    start: "15:50"
+    end:   "16:00"
+    speaker: More? No problem!
+
+  - name: Riemann workshop
+    type: workshop
+    start: "16:00"
+    end:   "18:00"
+    speaker:
+      name: Roey Berman
+      title: >
+        Senior Software Engineer at Forter
+      about: >
+        I'm a full-stack software developer with experience ranging from server infrastructure to mobile/web UI development. My passion is building highly scalable distributed services.<br/>
+        I'm obsessed with well-designed software and elegant and readable code.<br/>
+        My main language these days is Python, but I'm also considerably experienced with C, C++, C#, Go, Java, Perl, JavaScript and Clojure.<br/>
+        I'm active in the open-source community and have contributed to various projects (https://github.com/bergundy/)<br/>
+      github: false
+      twitter: false
+      linkedin: https://www.linkedin.com/in/roey-berman-05018029
+    summary: >
+        In this workshop we will get a chance to see Riemann in action and get some hands-on experience.
+        We'll start with a brief introduction to Clojure and continue to dive into Riemann's powerful stream processing language.
+        We'll go over some common use cases like monitoring queues, long running processes and scheduled tasks.
+        To conclude we'll learn how to test our Riemann configuration using Riemann's built-in testing framework.
+    link: false
+
+  - name: "The Next Linux Superpower: eBPF Primer"
+    type: workshop
+    start: "16:00"
+    end:   "18:00"
+    speaker:
+      name: Sasha Goldshtein
+      about: >
+          Sasha Goldshtein is the CTO of Sela Group, a book author, international conference speaker, consultant, and trainer. Sasha specializes in performance investigations, production debugging, and loves bleeding edge monitoring tools.
+      title: "CTO of Sela Group"
+      twitter: false
+      linkedin: https://il.linkedin.com/in/sashag
+    summary: >
+        Imagine you're tackling one of these evasive performance issues in the field, and your go-to monitoring checklist doesn't seem to cut it. There are plenty of suspects, but they are moving around rapidly and you need more logs, more data, more in-depth information to make a diagnosis. Maybe you've heard about DTrace, or even used it, and are yearning for a similar toolkit, which can plug dynamic tracing into a system that wasn't prepared or instrumented in any way.<br/>
+        Hopefully, you won't have to yearn for a lot longer. eBPF (extended Berkeley Packet Filters) is a kernel technology that enables a plethora of diagnostic scenarios by introducing dynamic, safe, low-overhead, efficient programs that run in the context of your live kernel. Sure, BPF programs can attach to sockets; but more interestingly, they can attach to kprobes and uprobes, static kernel tracepoints, and even user-mode static probes. And modern BPF programs have access to a wide set of instructions and data structures, which means you can collect valuable information and analyze it on-the-fly, without spilling it to huge files and reading them from user space.<br/>
+        In this talk, we will introduce BCC, the BPF Compiler Collection, which is an open set of tools and libraries for dynamic tracing on Linux. Some tools are easy and ready to use, such as execsnoop, fileslower, and memleak. Other tools such as trace and argdist require more sophistication and can be used as a Swiss Army knife for a variety of scenarios. We will spend most of the time demonstrating the power of modern dynamic tracing -- from memory leaks to static probes in Ruby, Node, and Java programs, from slow file I/O to monitoring network traffic. Finally, we will discuss building our own tools using the Python and Lua bindings to BCC, and its LLVM backend.
+    hidetime: true
+    link: false
+    video: false
