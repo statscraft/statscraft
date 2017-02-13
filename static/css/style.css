@@ -690,7 +690,7 @@ header .menu nav ul {
   vertical-align: top;
 }
 .committee .organizers .organizer .img {
-  background: url("/images/organizing-commitee-2017.png");
+  background: url("../images/organizing-commitee-2017.png");
   width: 165px;
   height: 80px;
   margin: 0 auto;
