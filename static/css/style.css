@@ -595,8 +595,10 @@ header .menu nav ul {
   vertical-align: bottom;
 }
 .important-note .ticket-btn {
-  width: 168px;
+  min-width: 168px;
   height: 54px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #fff;
   text-align: center;
   font-size: 21px;
