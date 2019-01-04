@@ -10,6 +10,7 @@ after_success: find public \( -iname '*.html' -o -iname '*.css' -o -iname '*.js'
   -exec gzip -9 -n {} \; -exec mv {}.gz {} \;
 deploy:
 - provider: s3
+  region: eu-west-1
   access_key_id:
     secure: mwTo9YTyPA6kyPWcGOt02s8kapASS/IvyVu0OwLs8tj/6obcYZB7kvELvO0z4fMqb+FvjxJfqllM2YxXwWmZJOb8cIIkEz/BuogFLu+BopMhz9AvCShq3sCXqb+QnuUEJKwlSuFSTDSpZlvZLoc3P7P9hL8HZwhPvra8TVznml0UbVcfBr0lyjRr0N5749XcBQPq5132BpDsUPqm90meyXYxpsS3U+492UEaG6EP6ar9/fH/G3fSGGm/jvE3lZEuXkIzWJgpvQakmofk+hcaVDAe0LbbbUkEodBiPBuiib8PRYoJGHIaZinRcP0yIDiYrswUC56XdQhZ4JIXgSFMaGXXeaiuhEbT+nzio2VZxAeW//l6hUzkNF2N/QK4dOPB8trM4B0hfWBhfW32G6gjqy36s4vbxIU53G/DSN4S6yj4BKa39sqMxgflBwYNrjAYpXyFJrJOJMF3QntGZ51qbqD5QdLMwNi/mDVIiW7inAMVRSNHOBo5Ef9nByyNIni5JyZo6n/1khbqVNkJc71JdoOhmevhyP1mTNil7/uf4+3D1/yCkeMpyzIC4x5hoX2ASaFKls/4dybyqcz3SlX9VsFJxEbPFmk6f2PP3e6pTXAMc3nD3lgihQxCUz5sX6dnDE17EU6+cCT6b49CuNo9+IFvCl14BVU+6MUzNZrz2hc=
   secret_access_key:
@@ -24,8 +25,6 @@ deploy:
   on:
     repo: statscraft/statscraft
     branch: master
-  region: eu-west-1
-  endpoint: www.statscraft.org.il.s3-eu-west-1.amazonaws.com
 - provider: s3
   access_key_id:
     secure: LzRdDhoqeFgquQop7dCF6b4GeqhxWJVLjrIiKwK8M0bsfCZYz7AVWuvrhBtD+5651m87RhrbkQ+mcVEeKTqI2NZD035MO8R+05Pxb4oAFq4EefgfFy085e/52ERf16X47w57Aa7Oqfp7yEdX2tKswUxLVyWM2vPAB7q57/Z594VLHqvj2DPio1oUDDEFGvd2DicUcy+pz3131bCqeirP/devPxRU4bD7e2rXiv/UMdf2g+kMwXxD9M+y+GuFkM1gWZq4wRfXhgPj84jHRPYhvFKhW6UgOK5d2auhv/LTP2D86+tZGbcs9/BS7p5VgwLSlHjHfjJctr4ZtPSD3BkZdGrl9A8E7pUfovmKhC3aZxt7L8slSGQaIbr4ZS4EJMJXkwel/HohD+HAvHkgiLaHf0w9xFpq2zZaBEF/9XjMF3/RahtAfrzDA0KW4h3lTdowZCi5GMQcSlNU2SVZpa3XKqpFvEzHKWoVSPdTnqWxpjt6GrLM204Wnite7AJTjmUT32l78PMMHTo2eAPB6kz0mHXwx+RwL/qTvskRQpXcQE9GjumIEiymEl++ipJBAKbOXgS3JdM8je02jO4t8pLFUeBl9jDQzs6/qkHIdO/Mdn7ZajkpTANtdxKhaFtwedhnhrs9btiOTlIwPdxDPv440QG6qBfgr3zVVUBlAF2M6Pk=
