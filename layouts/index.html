@@ -1,13 +1,13 @@
 {{ partial "bodystart.html" . }}
 {{ partial "header.html" . }}
 <div class="important-note">
-  <span>Next summit: TBA</span>
-  <a href="{{ .Site.Data.y2017.cfp.cfp_google_form_url }}" class="ticket-btn" title="Submit a talk">Submit a talk</a>
+  <span>Next summit: May 2019</span>
+  <a href="{{ .Site.Data.y2019.cfp.cfp_google_form_url }}" class="ticket-btn" title="Submit a talk">Submit a talk</a>
 </div><!-- .important-note ends -->
 
 <main role="main">
     <div class="row container">
-      <p class="description">Due to technical issues, we have decided to postpone StatsCraft to the end of this year (date TBA). We apologize for the inconvenience.</p>
+      <p class="description">StatsCraft is back! StatsCraft 2019 will be held in May, stay tuned!</p>
     </div>
   <div class="container about">
     <h2 id="about">About Statscraft</h2>
@@ -68,12 +68,12 @@
 
     <div class="container cfp">
       <h2 id="cfp">Call For Papers!</h2>
-      <h4>Hurry! The CFP will be closed on the 30th of April</h4>
-      <h3>Fill in <a href="{{ .Site.Data.y2017.cfp.cfp_google_form_url }}">this form</a> with your awesome talk proposal!</h3>
+      <h4>CFP will open on January 15th</h4>
+      <!-- <h3>Fill in <a href="{{ .Site.Data.y2017.cfp.cfp_google_form_url }}">this form</a> with your awesome talk proposal!</h3> -->
     </div>
-    {{ partial "organizers.html" .Site.Data.y2017.organizers }}
+    {{ partial "organizers.html" .Site.Data.y2019.organizers }}
 
-    {{/* partial "sponsors.html"  .Site.Data.y2017.sponsors */}}
+    {{/* partial "sponsors.html"  .Site.Data.y2019.sponsors */}}
     {{ partial "contact.html" . }}
     </div><!-- container -->
 
@@ -82,7 +82,7 @@
     <div class="agenda" id="agenda">
       <h2>Agenda</h2>
       <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
-      {{ range $index, $talk := .Site.Data.y2017.talks.talks }}
+      {{ range $index, $talk := .Site.Data.y2019.talks.talks }}
       <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
         {{ $path := $talk.type| printf "%s.html" }}
         {{ partial $path $talk }}

@@ -685,88 +685,13 @@ header .menu nav ul {
 .committee .organizers .organizer {
   width:165px;
   display: inline-block;
-  margin: 50px 35px;
+  /* margin: 5px 5px; */
   cursor: pointer;
   vertical-align: top;
 }
-.committee .organizers .organizer .img {
-  background: url("../images/organizing-commitee-2017.png");
-  width: 165px;
-  height: 80px;
-  margin: 0 auto;
-}
-.committee .organizers .organizer.nir .img {
-  background-position: 0 0;
-}
 
-.committee .organizers .organizer.michael .img {
-  background-position: -165px 0;
-}
-.committee .organizers .organizer.shahar .img {
-  background-position: -330px 0;
-}
-.committee .organizers .organizer.erik .img {
-  background-position: -495px 0;
-}
-.committee .organizers .organizer.amit .img {
-  background-position: -660px 0;
-}
-.committee .organizers .organizer.avishai .img {
-  background-position: -825px 0;
-}
-.committee .organizers .organizer.nati .img {
-  background-position: -990px 0;
-}
-.committee .organizers .organizer.elena .img {
-  background-position: -1155px 0;
-}
-.committee .organizers .organizer.ran .img {
-  background-position: -1320px 0;
-}
-
-.committee .organizers .organizer.ofer .img {
-  background-position: -1485px 0;
-}
-
-.committee .organizers .organizer.smintz .img {
-  background-position: -1650px 0;
-}
-
-.committee .organizers .organizer.nir:hover .img {
+.committee .organizers .organizer:hover .img {
   background-position: 0 80px;
-}
-
-.committee .organizers .organizer.michael:hover .img {
-  background-position: -165px 80px;
-}
-.committee .organizers .organizer.shahar:hover .img {
-  background-position: -330px 80px;
-}
-.committee .organizers .organizer.erik:hover .img {
-  background-position: -495px 80px;
-}
-.committee .organizers .organizer.amit:hover .img {
-  background-position: -660px 80px;
-}
-.committee .organizers .organizer.avishai:hover .img {
-  background-position: -825px 80px;
-}
-.committee .organizers .organizer.nati:hover .img {
-  background-position: -990px 80px;
-}
-.committee .organizers .organizer.elena:hover .img {
-  background-position: -1155px 80px;
-}
-.committee .organizers .organizer.ran:hover .img {
-  background-position: -1320px 80px;
-}
-
-.committee .organizers .organizer.ofer:hover .img {
-  background-position: -1485px 80px;
-}
-
-.committee .organizers .organizer.smintz:hover .img {
-  background-position: -1650px 80px;
 }
 
 p.description {
