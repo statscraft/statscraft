@@ -6,14 +6,10 @@
 </div><!-- .important-note ends -->
 
 <main role="main">
-    <div class="row container">
-      <h3 class="">StatsCraft is back! StatsCraft 2019 will be held in May, stay tuned!</h3>
-    </div>
   <div class="container about">
     <h2 id="about">About Statscraft</h2>
     <div class="row">
       <div class="six columns">
-        <h3>This conference is all about making monitoring easier, more accessible and more productive</h3>
         <div class="about-topics-image">
           <div class="imageContainer">
             <img src="{{ .Site.BaseURL }}images/about-topics.png">
@@ -21,8 +17,10 @@
         </div>
       </div>
       <div class="six columns">
-        <p class="description">Monitoring is important. Without monitoring, there can be no feedback, no planning and no improvement. Monitoring is crucial for detecting problems, optimizing performance, capacity planning, improving user experience, improving business impact... the list goes on an on.
-          Yet in many companies, monitoring is an afterthought, neglected and underrated. Companies spend very little time and effort on it, create bad monitoring and then go on to ignore the data they collected completely. We often hear that "monitoring is hard" - and it can be, unless we do something about it.
+        <p class="description description-title"><b>This conference is all about making monitoring easier, more accessible and more productive</b></p>
+        <p class="description">
+          Monitoring is crucial for detecting problems, optimizing performance, capacity planning, improving user experience and business impact...
+          Yet in many companies, monitoring is an afterthought leading companies to miss out on the value of the data they collected. We often hear that "monitoring is hard" - and it can be, unless we do something about it.
         </p>
       </div>
     </div>
@@ -68,8 +66,7 @@
 
     <div class="container cfp">
       <h2 id="cfp">Call For Papers!</h2>
-      <h4>CFP is open! (closes March 1st)</h4>
-      <h3><a href="{{ .Site.Data.y2019.cfp.url }}">Submit</a> your awesome proposal!</h3>
+        <h3>CFP is open! (closes March 1st)<br><a href="{{ .Site.Data.y2019.cfp.url }}">Submit your proposal!</a></h3>          
     </div>
     {{ partial "organizers.html" .Site.Data.y2019.organizers }}
 
