@@ -14,10 +14,10 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@statscraft">
   <meta name="twitter:title" content="StatsCraft monitoring conference">
-  <meta name="twitter:description" content="Israeli monitoring conference, June, Tel Aviv">
+  <meta name="twitter:description" content="Israeli monitoring conference">
   <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
   <meta property="og:title" content="StatsCraft monitoring conference">
-  <meta property="og:description" content="Israeli monitoring conference, June, Tel Aviv">
+  <meta property="og:description" content="Israeli monitoring conference">
   <meta property="og:url" content="http://www.statscraft.org.il/">
   <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
   {{/*
@@ -26,8 +26,8 @@
     "@context": "http://schema.org",
     "@type": "Event",
     "name": "StatsCraft",
-    "startDate": "2016-08-08T08:00",
-    "endDate": "2016-08-08T18:30",
+    "startDate": "{{ (index .Site.Data .Site.Params.current).misc.start_date }}",
+    "endDate": "{{ (index .Site.Data .Site.Params.current).misc.end_date }}",
     "url" : "http://www.statscraft.org.il",
     "location" : {
       "@type" : "Place",
@@ -36,7 +36,7 @@
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://www.eventbrite.com/e/statscraft-monitoring-conference-2016-tickets-26404502578"
+      "url": "{{ (index .Site.Data .Site.Params.current).misc.eventbrite_url }}"
     }
   }
   </script>
@@ -57,4 +57,4 @@
   /></noscript>
   <!-- End Facebook Pixel Code -->
 </head>
-<body class="y{{ .Site.Params.current }}{{ if .Params.padding }} withPadding{{ end }}">
+<body class="{{ .Site.Params.current }}{{ if .Params.padding }} withPadding{{ end }}">

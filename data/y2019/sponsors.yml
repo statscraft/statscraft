@@ -4,18 +4,6 @@ sponsors:
     url: "https://bigpanda.io"
     alt: "BigPanda"
 
-  - name: "Outbrain"
-    url: "http://www.outbrain.com/"
-    alt: "Outbrain"
-
-  - name: "AOL"
-    url: "http://www.aol.co.il"
-    alt: "AOL"
-
-  - name: "Facebook"
-    url: "https://facebook.com"
-    alt: "Facebook"
-
-  - name: "Wix"
-    url: "http://www.wix.engineering/"
-    alt: "Wix"
+  - name: "AppsFlyer"
+    url: "https://www.appsflyer.com/"
+    alt: "AppsFlyer"
