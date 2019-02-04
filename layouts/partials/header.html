@@ -1,4 +1,5 @@
 {{ $baseUrl := .Site.BaseURL }}
+{{ $current := (index .Site.Data .Site.Params.current) }}
 <header>
   <div class="top-head row">
     <div class="logo">
@@ -11,12 +12,18 @@
       <nav>
         <ul>
           <li> <a href="{{ .Site.BaseURL }}#about">About</a> </li>
-          <!-- <li> <a href="#agenda">Agenda</a> </li> -->
-          <!-- <li> <a href="#venue">Venue</a> </li> -->
+          {{ if $current.misc.talks.talks }}
+          <li> <a href="#agenda">Agenda</a> </li>
+          {{ end }}
+          {{ if $current.misc.venue }}
+          <li> <a href="#venue">Venue</a> </li>
+          {{ end }}
           <li> <a href="#committee">Organizers</a> </li>
-          <!-- <li> <a href="#sponsors">Sponsors</a> </li> -->
+          <li> <a href="#sponsors">Sponsors</a> </li>
           <li> <a href="#contact">Contact</a> </li>
-          <!-- <li> <a href="#tickets">Tickets</a> </li> -->
+          {{ if $current.misc.eventbrite_url }}
+          <li> <a href="#tickets">Tickets</a> </li>
+          {{ end }}
           <li> <a href="{{ .Site.BaseURL }}#previous">Previous Events</a> </li>
         </ul>
       </nav>

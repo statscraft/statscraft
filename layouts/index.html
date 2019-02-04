@@ -74,12 +74,12 @@
     {{ partial "contact.html" . }}
     </div><!-- container -->
 
-    {{/*
+    {{ if $current.talks.talks }}
 
     <div class="agenda" id="agenda">
       <h2>Agenda</h2>
       <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
-      {{ range $index, $talk := (index .Site.Data .Site.Params.current).talks.talks }}
+      {{ range $index, $talk := $current.talks.talks }}
       <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
         {{ $path := $talk.type| printf "%s.html" }}
         {{ partial $path $talk }}
@@ -87,8 +87,7 @@
       {{ end }}
     </div><!-- .agenda ends -->
 
-    */}}
-
+    {{ end }}
   </div>
 
 
