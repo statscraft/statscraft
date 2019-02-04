@@ -2,38 +2,38 @@
 organizers:
   - name: Shahar Kedar
     id: shahar
-    company: (BigPanda)
+    company: BigPanda
     linkedin: https://il.linkedin.com/in/shaharke
     image_url: https://media.licdn.com/dms/image/C4D03AQGLTHxr5xM6lg/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=mcP_0bQxfLxc7_4UHvQGl6Zw18pTy2TiMAuw-xmT4hs
 
   - name: Erik Zaadi
     id: erik
-    company: (BigPanda)
+    company: BigPanda
     linkedin: https://il.linkedin.com/in/erikzaadi
     image_url: https://media.licdn.com/dms/image/C4E03AQGZt9ixlRPnNg/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=H5IUeIUUzxYRNrqQyh6fIrHPY1AhpMg8TvdoP4qDRJk
 
   - name: Ofer Schreiber
     id: ofer
-    company: (BigPanda)
+    company: BigPanda
     linkedin: https://www.linkedin.com/in/oferschreiber
     image_url: https://media.licdn.com/dms/image/C4D03AQEUyLZF6FaXBQ/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=yYfrSsoHMiZKmio3NUVZmpoMwGZWPQmUkI4PdNa7loY
 
   - name: Gil Zellner
     id: gil
-    company: (AppsFlyer)
+    company: AppsFlyer
     linkedin: https://www.linkedin.com/in/gilzellner/
     image_url: https://media.licdn.com/dms/image/C5603AQG3L9d2Mtb1ww/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=fVMGOXTp96eM3DEZp78YhymZN4ztIgf5QLlqDsmXUUM
 
   - name: Sharone Raveh-Zitzman
     id: sharon
-    company: (AppsFlyer)
+    company: AppsFlyer
     linkedin: https://www.linkedin.com/in/sharonez/
     image_url: https://media.licdn.com/dms/image/C4E03AQGVqETfGaclAA/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=Xr4ZU9XaEDcFzMN8MF5HxSGMOUlMzxhoKNgnb-arJ2E
 
   - name: Eliran Ben-Zikri
     id: eliran
     linkedin: https://www.linkedin.com/in/eliranbz/
-    company: (SimilarWeb)
+    company: SimilarWeb
     image_url: https://media.licdn.com/dms/image/C4D03AQFagjrn4eQ1bQ/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=hm2tdnQ34ldtlBc-V1Xrcnm6UWFKhlWH2n6xRgTIbhs
 
   - name: Avishai Ish-Shalom
@@ -44,7 +44,7 @@ organizers:
 
   - name: Nati Cohen
     id: nati
-    company: (Here)
+    company: Here
     linkedin: https://il.linkedin.com/in/natict
     image_url: https://media.licdn.com/dms/image/C4D03AQEw_QyVaQYVKw/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=S8dMawwXF-_g76BhCeL3h2KJUQk2mtJWuvGyqkwf5WI
 
@@ -56,12 +56,12 @@ organizers:
 
   - name: Nir Cohen
     id: nir
-    company: (Strigo.io)
+    company: Strigo.io
     linkedin: https://il.linkedin.com/in/nir0s
-    image_url: https://media.licdn.com/dms/image/C4D03AQG-UgbN1FGuBw/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=GsmK4rcYL_tDVjpJvYvwUAGvSVheKysKAwZv0s6FPZI
+    image_url: https://avatars0.githubusercontent.com/u/2003076
 
   - name: Shahar Mintz
     id: smintz
-    company: (Packet)
+    company: Packet
     linkedin: https://www.linkedin.com/in/shaharmintz/
     image_url: https://media.licdn.com/dms/image/C4E03AQEaOVRWLQy4VQ/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=xVJ6p7VNO8eU3_I52pss9KtLxoK8MEjzQOAZ4EVks2M

@@ -11,7 +11,7 @@
       <div class="organizer {{.id}}">
         <div class="img"><img class="organizer" src="{{default (print "images/" .id ".png") .image_url}}" alt=""></div>
         <div class="name">{{.name}}</div>
-        <div class="company">{{.company}}</div>
+        <div class="company">({{.company}})</div>
       </div>
       </a>
       {{ end }}
