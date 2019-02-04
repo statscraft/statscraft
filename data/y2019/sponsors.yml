@@ -2,9 +2,11 @@
 sponsors:
   - name: "BigPanda"
     url: "https://bigpanda.io"
-    alt: "BigPanda"
 
   - name: "AppsFlyer"
     url: "https://www.appsflyer.com/"
-    alt: "AppsFlyer"
     image_url: https://theme.zdassets.com/theme_assets/245528/93810432cc5d4091d430c81f88e7caa671537105.png
+
+  - name: "Floor 28 TLV (AWS)"
+    url: "https://floor28.co.il/"
+    image_url: "https://floor28.co.il/images/floor28/logo-2.png"

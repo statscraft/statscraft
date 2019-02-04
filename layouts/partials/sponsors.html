@@ -3,7 +3,7 @@
       <h2>Sponsors</h2>
       <ul>
         {{ range .sponsors }}
-        <li><a href={{ .url }} target="_blank"><img src="{{ default (print "images/sponsors-" (replace (.name | lower) " " "") ".png") .image_url }}" alt="{{ .alt }}"></a></li>
+        <li><a href={{ .url }} target="_blank"><img src="{{ default (print "images/sponsors-" (replace (.name | lower) " " "") ".png") .image_url }}" alt="{{ default .name .alt }}"></a></li>
         {{ end }}
       </ul>
     </div>
