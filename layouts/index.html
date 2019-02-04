@@ -25,6 +25,7 @@
         </p>
       </div>
     </div>
+  </div>
 
     {{ if $current.misc.eventbrite_url }}
 
@@ -56,7 +57,7 @@
             <h3>{{ if .url }}<a href="{{.url}}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</h3>
             <address>{{ .address }}</address>
             <div id="canvas1" class="map">
-              <iframe src="{{ .map_url }}" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="{{ .map_url }}" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div><!-- venue -->
@@ -88,9 +89,6 @@
     </div><!-- .agenda ends -->
 
     {{ end }}
-  </div>
-
-
 
   <div class="container previous-events">
     <h2 id="previous">Previous Events</h2>

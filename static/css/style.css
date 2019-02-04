@@ -205,7 +205,7 @@ th {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0 35px;
   box-sizing: border-box;
 }
 .column,
@@ -982,17 +982,15 @@ p.description {
   text-align: center;
 }
 .venue {
+  background: #f5f5f5;
   padding-top: 66px;
   padding-bottom: 79px;
-  color: #fff;
-  background: #f6be00 url('images/venue-bg.jpg') no-repeat center top;
   background-size: cover;
 }
 .venue2016 {
   background: #f6be00 none no-repeat center top;
 }
 .venue h2 {
-  color: #fff;
   margin-bottom: 43px;
 }
 .venue h3 {
@@ -1010,6 +1008,7 @@ p.description {
 }
 .venue .map {
   width: 100%;
+  border: 3px solid #ffffff;
   background-color: #E5E3DF;
 }
 
@@ -1020,24 +1019,16 @@ p.description {
   text-align: center;
   background-color: #f1f2ee
 }
-.sponsors ul {
-  margin-bottom: 0;
-}
-.sponsors li {
+.sponsors img {
   width: 30%;
   max-width: 167px;
   min-width: 98px;
-  margin: 0 1% 15px;
+  margin: 0 3% 15px;
   list-style: none;
-  display: inline-block;
   vertical-align: top;
 }
 .y2016 .sponsors .container {
     width: 100%;
-}
-.sponsors li img {
-  width: 100%;
-  display: block;
 }
 /* CONTACT
 -------------------------------------------------- */
@@ -1409,9 +1400,6 @@ there.
 @media (max-width: 650px) {
   h3 {
     font-size:26px;
-  }
-    h4.language {
-    margin-top:-23px!important
   }
   .footer-bottom br {
     display: none;
@@ -1876,10 +1864,8 @@ there.
 	         pointer-events: none;
 		     }
 h4.language {
-    font-size: 16px;
+  font-size: 16px;
   text-align: center;
-  margin-top: -77px;
-  margin-bottom: 77px;
   font-weight: 400;
 }
 .emailSuccess {

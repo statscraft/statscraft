@@ -2,35 +2,35 @@
 organizers:
   - name: Nir Cohen
     id: nir
-    company: (Gigaspaces)
+    company: Gigaspaces
     linkedin: https://il.linkedin.com/in/nir0s
   
   - name: Michael Sverdlik
     id: michael
-    company: (Gigaspaces)
+    company: Gigaspaces
     linkedin: https://il.linkedin.com/in/michaelsverdlik
 
   - name: Shahar Kedar
     id: shahar
-    company: (BigPanda)
+    company: BigPanda
     linkedin: https://il.linkedin.com/in/shaharke
   
   - name: Erik Zaadi
     id: erik
-    company: (BigPanda)
+    company: BigPanda
     linkedin: https://il.linkedin.com/in/erikzaadi
   
   - name: Amit Cohen
     id: amit
-    company: (FewBytes)
+    company: FewBytes
     linkedin: https://il.linkedin.com/in/amitcohe
   
   - name: Avishai Ish-Shalom
     id: avishai
-    company: (FewBytes)
+    company: FewBytes
     linkedin: https://il.linkedin.com/in/nukemberg
 
   - name: Nati Cohen
     id: nati
-    company: (FewBytes)
+    company: FewBytes
     linkedin: https://il.linkedin.com/in/natict
