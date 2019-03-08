@@ -3,7 +3,9 @@
 {{ $current := (index .Site.Data .Site.Params.current) }}
 <div class="important-note">
   <span>Next summit: {{ dateFormat "January 2 2006" $current.misc.start_date }}</span>
+  {{ if $current.misc.cfp_url }}
   <a href="{{ $current.misc.cfp_url }}" class="ticket-btn" title="Submit a talk">Submit a talk</a>
+  {{ end }}
 </div><!-- .important-note ends -->
 
 <main role="main">
@@ -27,14 +29,14 @@
     </div>
   </div>
 
-    {{ if $current.misc.eventbrite_url }}
+    {{ if $current.misc.tickets_url }}
 
     <div class="ticket-section" id="tickets">
         <div class="container">
             <h2>Get your ticket!</h2>
             <p>So you'd like to be a part of Statscaft? <span>We’d love to see you there!</span></p>
             <div class="row">
-                <a href="{{ $current.misc.eventbrite_url}}" target="_blank">
+                <a href="{{ $current.misc.tickets_url}}" target="_blank">
                     <div class="ticket-alert">
                         <div>&nbsp;</div>
                         <div class="your-ticket">
