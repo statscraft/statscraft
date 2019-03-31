@@ -29,6 +29,15 @@
     </div>
   </div>
 
+
+  {{ if $current.misc.cfp_url }}
+  <div class="container cfp">
+    <h2 id="cfp">Call For Papers!</h2>
+      <h3>CFP is open! (closes March 1st)<br><a href="{{ $current.misc.cfp_url }}">Submit your proposal!</a></h3>          
+  </div>
+  {{ end }}
+
+
     {{ if $current.misc.tickets_url }}
 
     <div class="ticket-section" id="tickets">
@@ -50,6 +59,25 @@
         </div>
       </div>
     {{ end }}
+
+    {{ if $current.talks.talks }}
+
+    <div class="container agenda" id="agenda">
+      <h2>Agenda</h2>
+      <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
+      {{ range $index, $talk := $current.talks.talks }}
+      <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
+        {{ $path := $talk.type| printf "%s.html" }}
+        {{ partial $path $talk }}
+      </div><!-- .row ends -->
+      {{ end }}
+    </div><!-- .agenda ends -->
+
+    {{ end }}
+
+    {{ partial "sponsors.html" $current.sponsors }}
+
+    {{ partial "organizers.html" $current.organizers }}
  
     {{ if (isset $current.misc "venue") }}
       {{ with $current.misc.venue }}
@@ -66,31 +94,8 @@
       {{ end }}
     {{ end }}
 
-
-    <div class="container cfp">
-      <h2 id="cfp">Call For Papers!</h2>
-        <h3>CFP is open! (closes March 1st)<br><a href="{{ $current.misc.cfp_url }}">Submit your proposal!</a></h3>          
-    </div>
-    {{ partial "organizers.html" $current.organizers }}
-
-    {{ partial "sponsors.html" $current.sponsors }}
     {{ partial "contact.html" . }}
     </div><!-- container -->
-
-    {{ if $current.talks.talks }}
-
-    <div class="agenda" id="agenda">
-      <h2>Agenda</h2>
-      <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
-      {{ range $index, $talk := $current.talks.talks }}
-      <div class="{{ if $talk.hidetime }}hidetime {{ end }}row{{ if eq $index 0 }} first-border{{ end }}">
-        {{ $path := $talk.type| printf "%s.html" }}
-        {{ partial $path $talk }}
-      </div><!-- .row ends -->
-      {{ end }}
-    </div><!-- .agenda ends -->
-
-    {{ end }}
 
   <div class="container previous-events">
     <h2 id="previous">Previous Events</h2>
