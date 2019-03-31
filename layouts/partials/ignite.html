@@ -8,12 +8,7 @@
     <span class="author">{{ .speaker.name }}</span>
     <div class="comment-box-wrap" style="display:none;">
         <div class="comment-box row">
-            <div class="avatar">
-                <img src="{{ $.Site.BaseURL }}images/{{replace (.speaker.name | lower) " " "" }}.jpg" alt="Avatar">
-            </div>
-            <div class="eight columns">
-                {{ partial "speaker.html" .speaker }}
-            </div>
+            {{ partial "speaker.html" .speaker }}
         </div>
         <h3>Summary</h3>
         <p class="discription">{{ .summary | safeHTML}}</p>

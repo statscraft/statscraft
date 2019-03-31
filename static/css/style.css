@@ -723,11 +723,7 @@ p.description {
   border: 0 none;
   padding-top: 0;
 }
-.agenda .two.columns {
-  float: none;
-  width: 100%;
-  position: static;
-}
+
 .agenda .two span {
   float: left;
   padding:  4px 10px ;
@@ -779,10 +775,6 @@ p.description {
 .agenda .two.columns {
   margin-bottom: 30px;
 }
-.agenda .nine {
-  margin-left: 0;
-  position: relative;
-}
 .agenda .author {
   color: #999999;
   font-size: 20px;
@@ -797,7 +789,6 @@ p.description {
   overflow: hidden;
   white-space: nowrap;
   background: url('images/stripe.png') no-repeat 0 -20px;
-  position: absolute;
   right: 0;
   top: 10px;
 }
@@ -805,13 +796,12 @@ p.description {
   width: 110px;
   height: 110px;
   border-radius: 100px;
-  border: 32px solid #f1f2ee;
+  border: 16px solid #f1f2ee;
   background-color: #fff;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .avatar img {
   width: 100%;
-  display: block;
   border-radius: 100px;
 }
 .agenda .comment-box-wrap {
@@ -824,11 +814,7 @@ p.description {
   width: 100%;
   position: relative;
 }
-.comment-box .avatar {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+
 .comment-box .eight {
   margin-left: 197px;
 }
@@ -990,7 +976,7 @@ p.description {
   text-align: center;
 }
 .venue {
-  background: #f5f5f5;
+  background-color: #f1f2ee;
   padding-top: 66px;
   padding-bottom: 79px;
   background-size: cover;
@@ -1504,10 +1490,6 @@ there.
     padding-left: 11px;
     padding-right: 11px;
   }
-  .agenda .nine {
-    width: 100%;
-    margin-left: 0;
-  }
   .agenda .toggle {
     width: 26px;
     top: 4px;
@@ -1657,9 +1639,6 @@ there.
   .important-note span {
     font-size: 30px;
   }
-  .agenda .nine {
-    width: 100%;
-  }
   .agenda .toggle {
     right: 0px;
   }
@@ -1707,10 +1686,7 @@ there.
   }
 
   .agenda .two.columns {
-    width: 157px;
-    position: absolute;
     left: 0;
-    top: ;
   }
   .agenda .two span {
     height: auto;
@@ -1719,8 +1695,7 @@ there.
     margin-bottom: 0;
   }
   .agenda .nine {
-    width: 79%;
-    margin-left: 190px;
+    margin-left: 10px;
   }
   .agenda .toggle {
     right: 0;
