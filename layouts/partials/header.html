@@ -12,7 +12,10 @@
       <nav>
         <ul>
           <li> <a href="{{ .Site.BaseURL }}#about">About</a> </li>
-          {{ if $current.misc.talks.talks }}
+          {{ if $current.misc.tickets_url }}
+          <li> <a href="#tickets">Tickets</a> </li>
+          {{ end }}
+          {{ if $current.talks.talks }}
           <li> <a href="#agenda">Agenda</a> </li>
           {{ end }}
           {{ if $current.misc.venue }}
@@ -21,9 +24,6 @@
           <li> <a href="#committee">Organizers</a> </li>
           <li> <a href="#sponsors">Sponsors</a> </li>
           <li> <a href="#contact">Contact</a> </li>
-          {{ if $current.misc.eventbrite_url }}
-          <li> <a href="#tickets">Tickets</a> </li>
-          {{ end }}
           <li> <a href="{{ .Site.BaseURL }}#previous">Previous Events</a> </li>
         </ul>
       </nav>
