@@ -38,6 +38,7 @@ talks:
       github: false
       twitter: false
       linkedin: https://www.linkedin.com/in/erezbe/
+      image: https://pbs.twimg.com/profile_images/1085280832699490304/f55O6I3L_400x400.jpg
     summary: >
       2:32 am.  PagerDuty wakes you up. DynamoDB is throttling.  Should you wake up the team and fiercely charge to resolve the issue, or can it wait for tomorrow?  
       Understanding the business impact and the affected users are the key points to making this decision. Those data points are usually not easy to obtain, especially in highly distributed asynchronous architectures like serverless.
@@ -58,8 +59,9 @@ talks:
       about: I’m a passionate developer, with vast experience in network, infrastructure, and cyber-security. Constantly chasing new technologies - as the current one is Serverless. Love sharing open source tools to make everyone lives easier :) In my current role, I’m the co-founder and CTO at Epsagon - monitoring for serverless applications. I love swimming, traveling around the world, and taking breathtaking pictures.
       name: Ran Ribenzaft
       title: Co-Founder & CTO @ Epsagon
-      liknedin: https://www.linkedin.com/in/ran-ribenzaft/
+      linkedin: https://www.linkedin.com/in/ran-ribenzaft/
       twitter: https://twitter.com/ranrib
+      image: https://pbs.twimg.com/profile_images/992479206951997440/yYTyTZ5o_400x400.jpg
     summary: >
       Modern, distributed applications, are often seen as a graph of nodes and edges, each node represents a micro-service, a function, or an API service. Serverless applications take these to the extreme, as each component is smaller than ever. Visualization can help in several key aspects of designing and operating such applications:
       - Design the application and onboarding new team members
@@ -129,6 +131,7 @@ talks:
       title: "DevSecOps Engineer @ Soluto"
       twitter: https://twitter.com/omerlh
       linkedin: https://www.linkedin.com/in/omerlh/
+      image: https://pbs.twimg.com/profile_images/1021467583193796608/9odUKQCb_400x400.jpg
     summary: >
         We all use monitoring - after all, we all want to ensure that our applications are working as expected. But can hackers use it to exploit our application? Join me to explore different ways to exploit application monitoring tools, and what mitigations we can use - including live demos!
 
