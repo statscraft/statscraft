@@ -1,2 +1,203 @@
 ---
 talks:
+  - name: Gathering and signup
+    type: break
+    start: "09:00"
+    end:   "09:30"
+    speaker: "Mengling FTW"
+  - name: Opening Welcome
+    type: talk
+    speaker:
+      name: Statscraft Team
+      title: "The Amazing Statscraft Comittee"
+      about: >
+        This conference is a community effort by and for people who do monitoring daily and care about monitoring.<br/>The organizing committee are all volunteers and sponsorships cover the direct costs of the conference.
+      github: https://github.com/statscraft
+      twitter: https://twitter.com/statscraft
+      linkedin: false
+    start: "09:25"
+    end:   "09:30"
+    summary: >
+        We'll dazzle you with our warming welcome.
+    link: false
+    video: false
+
+  - name: "Monitoring time in a distributed database: a play in three acts"
+    type: talk
+    speaker:
+      name: Shlomi Noach
+      title: Staff Software Engineer @ GitHub
+      github: https://github.com/shlomi-noach
+      twitter: https://twitter.com/ShlomiNoach
+      linkedin: https://www.linkedin.com/in/shlominoach/
+      about: Shlomi is a developer and database geek. He is an active MySQL community member, authors orchestrator, gh-ost, freno and other open source tools, and blogs at http://openark.org. He works at GitHub on the database infrastructure team solving high availability, reliability, enablement problems, running automation and testing. Shlomi is the recipient of MySQL Community Member of the Year, Oracle ACE (Alumni) & Oracle Technologist of the Year awards.
+    start: "09:30"
+    end:   "10:15"
+    summary: >
+        Monitoring time is tricky given its fluid nature. Doing so across distributed database hosts is trickier. Latency, probe intervals, clock synchronization, all affect the metrics, and taking actions based on those metrics makes matters even more complex. How does one measure time? What is the baseline? What accuracy and tradeoffs can we expect? Can we use time itself to affect the outcome? At GitHub, we monitor time in our database topologies for throttling and consistent reads purposes. We present our use case and share how we communicate metric information in our distributed company.
+    link: false
+
+  - name: Break
+    type: break
+    start: "11:00"
+    end:   "11:30"
+    speaker: "Coffee, anyone?"
+
+  - name: ...But what happens when DynamoDB explodes?
+    type: talk
+    start: "11:30"
+    end:   "12:00"
+    speaker:
+      name: Erez Berkner
+      title: "CEO & Co-founder @ Lumigo"
+      about : "Erez is the CEO & co-founder of Lumigo, a startup focusing on simplifying serverless applications troubleshooting, where the entire backend is… 100% serverless. Prior to founding Lumigo, Erez was the R&D director of cloud products at Check Point, heading the company’s cloud strategy & execution."
+      github: false
+      twitter: false
+      linkedin: https://www.linkedin.com/in/erezbe/
+    summary: >
+      2:32 am.  PagerDuty wakes you up. DynamoDB is throttling.  Should you wake up the team and fiercely charge to resolve the issue, or can it wait for tomorrow?  
+      Understanding the business impact and the affected users are the key points to making this decision. Those data points are usually not easy to obtain, especially in highly distributed asynchronous architectures like serverless.
+      In this session, we will share guidelines on what needs to be part of serverless application monitoring in order to be able to answer those questions in a matter of minutes.
+      The main operational questions, when things go bad:
+      - What is the user functionality being affected?
+      - Which users were affected and how?
+      - What is the root cause of these issues?
+
+      Getting a good night sleep is within arm’s reach...
+    link: false
+
+  - name: Visualization in Serverless Applications
+    type: talk
+    start: "11:30"
+    end: "12:00"
+    speaker:
+      about: I’m a passionate developer, with vast experience in network, infrastructure, and cyber-security. Constantly chasing new technologies - as the current one is Serverless. Love sharing open source tools to make everyone lives easier :) In my current role, I’m the co-founder and CTO at Epsagon - monitoring for serverless applications. I love swimming, traveling around the world, and taking breathtaking pictures.
+      name: Ran Ribenzaft
+      title: Co-Founder & CTO @ Epsagon
+      liknedin: https://www.linkedin.com/in/ran-ribenzaft/
+      twitter: https://twitter.com/ranrib
+    summary: >
+      Modern, distributed applications, are often seen as a graph of nodes and edges, each node represents a micro-service, a function, or an API service. Serverless applications take these to the extreme, as each component is smaller than ever. Visualization can help in several key aspects of designing and operating such applications:
+      - Design the application and onboarding new team members
+      - Debugging while developing
+      - Troubleshooting complex issues in production
+      - Identifying bottlenecks of performance and costs
+
+  - name: "Monitoria: A monitoring democracy"
+    type: talk
+    start: "12:00"
+    end:   "12:30"
+    speaker:
+      name: Yaron Idan
+      title: "DevOps @ Soluto"
+      about: Been chopping away at various types of software for 15 years now. After spending ~10 years as a DBA I shifted myself into a DevOps oriented approach and started spending my energy on mastering the toolchain. Currently an essential part of Soluto’s DevOps team and leading the effort of shifting our production workload to kubernetes, along with many other daily challenges.
+      github: false
+      twitter: https://twitter.com/yaronidan
+      linkedin: https://www.linkedin.com/in/yaron-idan/
+    summary: |
+        Monitoring is important - but can also be complicated. At Soluto, we put a lot of effort into this, so we can know that our users get the best experience. We want to share how we transformed monitoring from a one man job to something every employee cares about and actively participates in.
+    link: false
+    
+  - name: "Logging in the cloud: machines first human come second"
+    type: talk
+    start: "12:00"
+    end:   "12:30"
+    speaker:
+      name: Itiel shwartz
+      title: "Lead production engineer @ Rookout"
+      about: >
+        Originally a Backend developer now turned Devops. Started working at eBay but felt it’s too big. Joined a 50 ppl startup (Forter) but it got big again. So now I’m a first developer (Rookout) - hope to make my company big :)
+      github: false
+      twitter: https://twitter.com/itielshwartz
+      linkedin: https://www.linkedin.com/in/itiel-shwartz-18542853/
+    summary: "Our system complexity is growing like crazy, what about our logging? While writing new code we should think about: The (poor) developer trying to debug this in production. Sadly we feel like our code is great - so need to log it :) Come and find out what’s broken in logging design, and how to fix it"
+    link: false
+
+  - name: Lunch
+    type: break
+    start: "12:30"
+    end:   "13:30"
+    speaker: " Yay! Food!"
+
+  - name: Monitoring lessons from Waze SRE team
+    type: talk
+    start: "13:30"
+    end:   "14:00"
+    speaker:
+      name: Yonit Gruber-Hazani
+      title: "Devops Engineer at Waze"
+      about: 
+      github: false
+      twitter: https://twitter.com/yonitgh
+      linkedin: "https://www.linkedin.com/in/yonitgruber/"
+    summary: >
+    link: false
+
+  - name: Exploiting monitoring for fun and profit
+    type: talk
+    start: "13:30"
+    end:   "14:00"
+    speaker:
+      name: Omer Levi Hevroni
+      about: >
+          I’m coding since 4th grade when my dad taught me BASIC and haven’t looked back since. I’m an AppSec/DevSecOps enthusiast, and always curious about integrating more hacking tools into the CI/CD pipeline .I’m always looking for new interesting ways to increase security awareness over the entire R&D – developers, product, and UX. I highly believe in OWASP and a proud member. Besides that, I’m also OWASP Glue project leader. I am an open source addict, using OSS heavily and keep contributing back.
+          Today I’m working at Soluto. And most important – I’m a proud father to two beloved children, and happily married.
+      title: "DevSecOps Engineer @ Soluto"
+      twitter: https://twitter.com/omerlh
+      linkedin: https://www.linkedin.com/in/omerlh/
+    summary: >
+        We all use monitoring - after all, we all want to ensure that our applications are working as expected. But can hackers use it to exploit our application? Join me to explore different ways to exploit application monitoring tools, and what mitigations we can use - including live demos!
+
+  - name: Oncall Rotation Best Practices
+    type: talk
+    start: "14:00"
+    end:   "14:30"
+    speaker:
+      name: Ran Leibman
+      title: "Production Engineer @ Facebook"
+      about: "Ran Leibman of House Facebook, First of His PEs, King of the Monitoring and the First Server, Lord of the Seven Metrics, and Protector of Production."
+      linkedin: https://www.linkedin.com/in/ran-leibman-2b345115/
+    summary: Are you responsible on a production system? Building a strong and efficient oncall rotation is hard and tricky. it could easily become frustrating, time consuming and affect your work-life-balance. Come and get guidelines to make your oncall rotation better, stronger and faster.
+
+  - name: Spanning services - The practical guide to Distributed Tracing
+    type: talk
+    start: "14:00"
+    end:   "14:30"
+    speaker:
+      name: Yair Galler
+      about: >
+        Yair Galler is an engineering team lead at Next Insurance’s backend group. He has over 15 years of full-stack software engineering experience tackling everything from devops and backend challenges to the latest frontend frameworks.
+      title: "Backend Engineering Team Lead @ Next Insurance"
+      linkedin: https://www.linkedin.com/in/yairgaller/
+    summary: >
+      What is distributed tracing and why should I care?
+      This talk will introduce tracing concepts, help you get started with it and share practical dos and don’ts.
+
+  - name: Happy hour and games
+    type: break
+    start: 14:30
+    end: 15:30
+    speaker:
+
+  - name: Ignite talks
+    type: ignite
+    start: "15:30"
+    end:   "16:00"
+
+  - name: "Sensory Friendly Monitoring: Keeping the Noise Down"
+    type: talk
+    start: "16:00"
+    end:   "16:30"
+    speaker:
+      name: Quintessence Anx
+      title: Developer Advocate @ Logz.io
+      about: Quintessence has worked in the IT community for over 10 years, including as a database administrator and a DevOps / Cloud / Infrastructure engineer. She was a core contributor to Stark & Wayne's SHIELD project, which adds backup functionality to Cloud Foundry, as well as a technical reviewer for Learning Go Programming published by Packt Publishing. Currently she is the US Developer Advocate for Logz.io, focusing community engagement related to DevOps with a focus on monitoring and observability. Outside of work she is a leader and co-founder of Inclusive Tech Buffalo to help underrepresented minorities in tech launch careers in development in the Buffalo region.
+      github: false
+      twitter: https://twitter.com/QuintessenceAnx
+      linkedin: https://www.linkedin.com/in/quintessenceanx/
+    summary: >
+        In this workshop we will get a chance to see Riemann in action and get some hands-on experience.
+        We'll start with a brief introduction to Clojure and continue to dive into Riemann's powerful stream processing language.
+        We'll go over some common use cases like monitoring queues, long running processes and scheduled tasks.
+        To conclude we'll learn how to test our Riemann configuration using Riemann's built-in testing framework.
+    link: false

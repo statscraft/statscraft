@@ -1,8 +1,8 @@
 <h2><a href="#" title="{{ .name }}">{{ .name}}</a></h2>
 <span class="designation">{{ .title }}</span>
 <div class="sociallinks">
-    {{ if isset . "github" }}<a target="_blank" href="{{ .github }}"><i class="fa fa-github-alt fa-lg"></i></a>{{ end }}
-    {{ if isset . "twitter" }}<a target="_blank" href="{{ .twitter }}"><i class="fa fa-twitter fa-lg"></i></a>{{ end }}
-    {{ if isset . "linkedin" }}<a target="_blank" href="{{ .linkedin }}"><i class="fa fa-linkedin fa-lg"></i></a>{{ end }}
+    {{ if .github }}<a target="_blank" href="{{ .github }}"><i class="fa fa-github-alt fa-lg"></i></a>{{ end }}
+    {{ if  .twitter }}<a target="_blank" href="{{ .twitter }}"><i class="fa fa-twitter fa-lg"></i></a>{{ end }}
+    {{ if  .linkedin }}<a target="_blank" href="{{ .linkedin }}"><i class="fa fa-linkedin fa-lg"></i></a>{{ end }}
 </div>
 <p>{{ .about | safeHTML }}</p>

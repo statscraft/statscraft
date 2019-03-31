@@ -8,13 +8,15 @@
     <span class="author">{{ .speaker.name }}</span>
     <div class="comment-box-wrap" style="display:none;">
         <div class="comment-box row">
-            <div class="avatar">
                 {{ if .speaker.image }}
-                <img src="{{ $.Site.BaseURL }}images/{{ .speaker.image }}" alt="Avatar">
-                {{ else }}
-                <img src="{{ $.Site.BaseURL }}images/{{replace (.speaker.name | lower) " " "" }}.jpg" alt="Avatar">
+                <div class="avatar">
+                    <img src="{{ $.Site.BaseURL }}images/{{ .speaker.image }}" alt="Avatar">
+                </div>
+                {{ else if (fileExists (print "static/images/" (replace (.speaker.name | lower) " " "") ".jpg")) }}
+                <div class="avatar">
+                    <img src="{{ $.Site.BaseURL }}images/{{replace (.speaker.name | lower) " " "" }}.jpg" alt="Avatar">
+                </div>
                 {{ end }}
-            </div>
             <div class="eight columns">
                 {{ partial "speaker.html" .speaker }}
             </div>
