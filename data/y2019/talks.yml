@@ -4,23 +4,7 @@ talks:
     type: break
     start: "09:00"
     end:   "09:30"
-    speaker: "Mengling FTW"
-  - name: Opening Welcome
-    type: talk
-    speaker:
-      name: Statscraft Team
-      title: "The Amazing Statscraft Comittee"
-      about: >
-        This conference is a community effort by and for people who do monitoring daily and care about monitoring.<br/>The organizing committee are all volunteers and sponsorships cover the direct costs of the conference.
-      github: https://github.com/statscraft
-      twitter: https://twitter.com/statscraft
-      linkedin: false
-    start: "09:25"
-    end:   "09:30"
-    summary: >
-        We'll dazzle you with our warming welcome.
-    link: false
-    video: false
+    speaker: "Mingling FTW"
 
   - name: "Monitoring time in a distributed database: a play in three acts"
     type: talk
@@ -183,6 +167,7 @@ talks:
     type: ignite
     start: "15:30"
     end:   "16:00"
+    summary: 5 ignite (5 minutes, 20 slides) talks, to be announced soon!
 
   - name: "Sensory Friendly Monitoring: Keeping the Noise Down"
     type: talk
