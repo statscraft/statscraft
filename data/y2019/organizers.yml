@@ -1,10 +1,9 @@
 ---
 organizers:
   - name: Shahar Kedar
-    id: shahar
+    id: shaharkedar
     company: BigPanda
     linkedin: https://il.linkedin.com/in/shaharke
-    image_url: https://media.licdn.com/dms/image/C4D03AQGLTHxr5xM6lg/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=mcP_0bQxfLxc7_4UHvQGl6Zw18pTy2TiMAuw-xmT4hs
 
   - name: Erik Zaadi
     id: erik
@@ -19,10 +18,9 @@ organizers:
     image_url: https://media.licdn.com/dms/image/C4D03AQEUyLZF6FaXBQ/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=yYfrSsoHMiZKmio3NUVZmpoMwGZWPQmUkI4PdNa7loY
 
   - name: Gil Zellner
-    id: gil
+    id: gilzellner
     company: AppsFlyer
     linkedin: https://www.linkedin.com/in/gilzellner/
-    image_url: https://media.licdn.com/dms/image/C5603AQG3L9d2Mtb1ww/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=fVMGOXTp96eM3DEZp78YhymZN4ztIgf5QLlqDsmXUUM
 
   - name: Sharone Raveh-Zitzman
     id: sharon
@@ -31,37 +29,31 @@ organizers:
     image_url: https://media.licdn.com/dms/image/C4E03AQGVqETfGaclAA/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=Xr4ZU9XaEDcFzMN8MF5HxSGMOUlMzxhoKNgnb-arJ2E
 
   - name: Eliran Ben-Zikri
-    id: eliran
+    id: eliranben-zikri
     linkedin: https://www.linkedin.com/in/eliranbz/
     company: SimilarWeb
-    image_url: https://media.licdn.com/dms/image/C4D03AQFagjrn4eQ1bQ/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=hm2tdnQ34ldtlBc-V1Xrcnm6UWFKhlWH2n6xRgTIbhs
 
   - name: Avishai Ish-Shalom
-    id: avishai
+    id: avishaiish-shalom
     company: Aleph VC
     linkedin: https://il.linkedin.com/in/nukemberg
-    image_url: https://media.licdn.com/dms/image/C5603AQFmjEWApEM1cg/profile-displayphoto-shrink_200_200/0?e=1551916800&v=beta&t=k3QjS3FiHZZv7PDAPc-RZM471_OQ0g83svDrr1NVvW0
 
   - name: Nati Cohen
-    id: nati
+    id: naticohen
     company: Here
     linkedin: https://il.linkedin.com/in/natict
-    image_url: https://media.licdn.com/dms/image/C4D03AQEw_QyVaQYVKw/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=S8dMawwXF-_g76BhCeL3h2KJUQk2mtJWuvGyqkwf5WI
 
   - name: Elena Levi
-    id: elena
+    id: elenalevi
     company: Panoply.io
     linkedin: https://www.linkedin.com/in/elena-levi-9b240430
-    image_url: https://media.licdn.com/dms/image/C5603AQEOG13ZoNqGZA/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=yRR9HK63Vasqyqj7TbfhqvEl0A5nuQiq5oG-EKKSx88
 
   - name: Nir Cohen
-    id: nir
+    id: nircohen
     company: Strigo.io
     linkedin: https://il.linkedin.com/in/nir0s
-    image_url: https://avatars0.githubusercontent.com/u/2003076
 
   - name: Shahar Mintz
     id: smintz
     company: Packet
     linkedin: https://www.linkedin.com/in/shaharmintz/
-    image_url: https://media.licdn.com/dms/image/C4E03AQEaOVRWLQy4VQ/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=xVJ6p7VNO8eU3_I52pss9KtLxoK8MEjzQOAZ4EVks2M

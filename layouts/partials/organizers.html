@@ -9,7 +9,13 @@
       {{ range .organizers }}
       <a href="{{.linkedin}}" target="_blank">
       <div class="organizer {{.id}}">
-        <div class="img"><img class="organizer" src="{{default (print "images/" .id ".png") .image_url}}" alt=""></div>
+        {{$img := (print "images/" .id ".jpg")}}
+        {{if .image_url}}
+        {{$img = .image_url}}
+        {{else if (fileExists (print "static/images/" .id ".png"))}}
+        {{$img = (print "images/" .id ".png")}}
+        {{end}}
+        <div class="img"><img class="organizer" src="{{$img}}" alt=""></div>
         <div class="name">{{.name}}</div>
         <div class="company">({{.company}})</div>
       </div>
