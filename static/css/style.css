@@ -682,8 +682,15 @@ header .menu nav ul {
   color:black;
   text-decoration: none;
 }
-.committee .organizers .organizer {
+
+img.organizer {
   width:165px;
+  height: 165px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.committee .organizers .organizer {
   display: inline-block;
   /* margin: 5px 5px; */
   cursor: pointer;

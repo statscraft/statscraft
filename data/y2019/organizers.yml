@@ -9,13 +9,13 @@ organizers:
     id: erik
     company: BigPanda
     linkedin: https://il.linkedin.com/in/erikzaadi
-    image_url: https://media.licdn.com/dms/image/C4E03AQGZt9ixlRPnNg/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=H5IUeIUUzxYRNrqQyh6fIrHPY1AhpMg8TvdoP4qDRJk
+    image_url: https://avatars0.githubusercontent.com/u/77775
 
   - name: Ofer Schreiber
     id: ofer
     company: BigPanda
     linkedin: https://www.linkedin.com/in/oferschreiber
-    image_url: https://media.licdn.com/dms/image/C4D03AQEUyLZF6FaXBQ/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=yYfrSsoHMiZKmio3NUVZmpoMwGZWPQmUkI4PdNa7loY
+    image_url: https://secure.meetupstatic.com/photos/member/9/1/b/5/highres_242737301.jpeg
 
   - name: Gil Zellner
     id: gilzellner
@@ -23,10 +23,9 @@ organizers:
     linkedin: https://www.linkedin.com/in/gilzellner/
 
   - name: Sharone Raveh-Zitzman
-    id: sharon
+    id: sharonravehzitzman
     company: AppsFlyer
     linkedin: https://www.linkedin.com/in/sharonez/
-    image_url: https://media.licdn.com/dms/image/C4E03AQGVqETfGaclAA/profile-displayphoto-shrink_800_800/0?e=1551916800&v=beta&t=Xr4ZU9XaEDcFzMN8MF5HxSGMOUlMzxhoKNgnb-arJ2E
 
   - name: Eliran Ben-Zikri
     id: eliranben-zikri
@@ -57,3 +56,4 @@ organizers:
     id: smintz
     company: Packet
     linkedin: https://www.linkedin.com/in/shaharmintz/
+    image_url: https://avatars3.githubusercontent.com/u/811905
