@@ -111,8 +111,8 @@ talks:
     end:   "14:00"
     speaker:
       name: Yonit Gruber-Hazani
-      title: "Devops Engineer at Waze"
-      about: 
+      title: System Operations Engineer, Waze SRE Team
+      about: Yonit is a System Operations Engineer at Google and works on the Waze infrastructure team in Tel Aviv, which manages and monitors thousands of servers in multiple cloud providers. Yonit has more than 20 years of experience in the DevOps world, integrating open source apps into startups and supporting various web stacks.
       github: false
       twitter: https://twitter.com/yonitgh
       linkedin: "https://www.linkedin.com/in/yonitgruber/"
