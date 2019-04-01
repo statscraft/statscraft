@@ -117,6 +117,11 @@ talks:
       twitter: https://twitter.com/yonitgh
       linkedin: "https://www.linkedin.com/in/yonitgruber/"
     summary: >
+        Our monitoring concepts are changing in a world of thousands of servers, from the single pets, to the holistic view of a system as a collection of critical user journeys. 
+        How do you enable developers to self monitor their hundreds of microservices, with hundreds of deployments and configuration changes per day? 
+        Do we really need to monitor every servers cpu? 
+        How many devops do you need to wake in the middle of the night for every disk that dies?
+        What are the lessons we learned while trying to monitor our ever changing system?
     link: false
 
   - name: Exploiting monitoring for fun and profit
