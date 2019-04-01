@@ -772,9 +772,7 @@ p.description {
   font-weight: 300;
   font-style: italic;
 }
-.agenda .two.columns {
-  margin-bottom: 30px;
-}
+
 .agenda .author {
   color: #999999;
   font-size: 20px;
@@ -1470,7 +1468,7 @@ there.
     font-size: 18px;
   }
   .agenda {
-    padding-bottom: 20px;
+    padding: 20px;
   }
   .agenda h1 {
     font-size: 26px;
@@ -1518,8 +1516,8 @@ there.
     margin-top: 28px;
   }
   .agenda .avatar {
-    width: 37px;
-    height: 37px;
+    width: 85px;
+    height: 85px;
     border: 10px solid #f1f2ee;
   }
   .agenda .eight {
@@ -1534,9 +1532,6 @@ there.
     width: 100%;
     margin-top: 0px;
     margin-bottom: 15px;
-  }
-  .ticket-section {
-    padding: 50px 0;
   }
   .ticket-section p {
     font-size: 26px;
