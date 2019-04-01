@@ -188,9 +188,5 @@ talks:
       github: false
       twitter: https://twitter.com/QuintessenceAnx
       linkedin: https://www.linkedin.com/in/quintessenceanx/
-    summary: >
-        In this workshop we will get a chance to see Riemann in action and get some hands-on experience.
-        We'll start with a brief introduction to Clojure and continue to dive into Riemann's powerful stream processing language.
-        We'll go over some common use cases like monitoring queues, long running processes and scheduled tasks.
-        To conclude we'll learn how to test our Riemann configuration using Riemann's built-in testing framework.
+    summary: "The ability to monitor infrastructure has been exploding with new tools on the market and new integrations, so the tools can speak to one another, leading to even more tools, and to a hypothetically very loud monitoring environment with various members of the engineering team finding themselves muting channels, individual alerts, or even alert sources so they can focus long enough to complete other tasks. There has to be a better way - a way to configure comprehensive alerts that send out notifications with the appropriate level of urgency to the appropriate persons at the appropriate time. And in fact there is: during this talk I’ll be walking through different alert patterns and discussing: what we need to know, who needs to know it, as well as how soon and how often do they need to know."
     link: false
