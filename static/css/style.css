@@ -724,10 +724,10 @@ p.description {
   padding-top: 0;
 }
 
-.agenda .two span {
+.agenda .entry {
   float: left;
-  padding:  4px 10px ;
-  height: 40px;
+  font-size: 23px;
+  padding: 4px 10px ;
   margin-bottom: 28px;
   text-align: center;
   display: block;
@@ -737,12 +737,10 @@ p.description {
 }
 .agenda .time {
   color: #333333;
-  font-size: 23px;
   background-color: #f1f2ee;
 }
 .agenda .item {
   color: #fff;
-  font-size: 20px;
   text-transform: uppercase;
 }
 .agenda .talk {
@@ -1480,11 +1478,10 @@ there.
     padding-top: 8px;
     margin-bottom: 16px;
   }
-  .agenda .time {
+  .agenda .entry {
     font-size: 14px;
   }
   .agenda .item {
-    font-size: 13px;
     padding-left: 11px;
     padding-right: 11px;
   }
@@ -1519,6 +1516,7 @@ there.
     width: 85px;
     height: 85px;
     border: 10px solid #f1f2ee;
+    margin-bottom: 10px;
   }
   .agenda .eight {
     width: 73%;
@@ -1678,16 +1676,6 @@ there.
   }
   .important-note span {
     display: inline-block;
-  }
-
-  .agenda .two.columns {
-    left: 0;
-  }
-  .agenda .two span {
-    height: auto;
-    padding: 10px;
-    display: block;
-    margin-bottom: 0;
   }
   .agenda .nine {
     margin-left: 10px;

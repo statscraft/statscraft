@@ -1,8 +1,8 @@
-<div class="two columns">
+<div class="three columns">
     {{ if .hidetime }}
     {{ else }}
-    <span class="time">{{ .start }} - {{ .end }}</span>
-    <span class="item {{ .type }}">{{.type | title }}</span>
+    <span class="time entry">{{ .start }} - {{ .end }}</span>
+    <span class="item entry {{ .type }}">{{.type | title }}</span>
     {{ end }}
 </div>
 <div class="nine columns">
