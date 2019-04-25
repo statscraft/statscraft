@@ -21,6 +21,18 @@ talks:
         Monitoring time is tricky given its fluid nature. Doing so across distributed database hosts is trickier. Latency, probe intervals, clock synchronization, all affect the metrics, and taking actions based on those metrics makes matters even more complex. How does one measure time? What is the baseline? What accuracy and tradeoffs can we expect? Can we use time itself to affect the outcome? At GitHub, we monitor time in our database topologies for throttling and consistent reads purposes. We present our use case and share how we communicate metric information in our distributed company.
     link: false
 
+  - name: How to think like an SRE
+    type: talk
+    speaker:
+      name: Itay Maman
+      title: Principal Engineer @ Wix
+      github: https://github.com/imaman
+      linkedin: https://www.linkedin.com/in/itay-maman/
+      about: Addicted to dark chocolate and refactoring, Itay has been (and still is) coding, designing, debugging, architecting, and solving production outages for ages. He has recently joined Wix's infrastructure group working on Wix's internal build system. Earlier gigs include Testim.io (core data-platform that supports Testim's algorithm and backends), Google (a TL of Google Sites' infrastructure team), a lecturer at the Technion, and a few other places.
+    summary: "SREs (Site Reliability Engineers) are responsible for the reliability and availability of large scale distributed system at organizations such as Google, FB, Twitter, etc. Being a successful SRE requires developing an engineering perspective which takes into account various factors which \"regular\" software engineer are either unaware of, or just don't rank as important enough. In this talk I will highlight several concrete points where the thinking of an SRE and the thinking of a software engineer are likely to be different, across various aspect of system evolvement: Architecture planning, monitoring planning, coding, and operating an incident."
+    start: "10:15"
+    end: "11:00"
+    
   - name: Break
     type: break
     start: "11:00"
