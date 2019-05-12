@@ -1,8 +1,7 @@
-{{ $baseUrl := .Site.BaseURL }}
 <footer role="contentinfo">
   <div class="footer-bottom clearfix">
     <div class="logo">
-      <a href="#" title="Statscraft Monitoring Conference"><img src="{{ $baseUrl }}images/footer-logo.png" alt="Statscraft"></a>
+      <a href="#" title="Statscraft Monitoring Conference"><img src="{{ "images/footer-logo.png" | absURL }}" alt="Statscraft"></a>
     </div>
     <div class="footer-info">
         {{ if isset .Params "old" }}

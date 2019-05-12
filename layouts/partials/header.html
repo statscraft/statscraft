@@ -1,9 +1,8 @@
-{{ $baseUrl := .Site.BaseURL }}
 {{ $current := (index .Site.Data .Site.Params.current) }}
 <header>
   <div class="top-head row">
     <div class="logo">
-      <a href="#" title="Statscraft Monitoring Conference"><img src="{{ $baseUrl }}images/logo.png" alt="StatsCraft"></a>
+      <a href="#" title="Statscraft Monitoring Conference"><img src="{{ "images/logo.png" | absURL }}" alt="StatsCraft"></a>
     </div>
     <div class="menu-wrap menu-icons">
       <a href="#" title="Menu" id="btn-menu" class="btn-menu toggle-switch toggle-switch-ht" data-icon-name="hamburgerCross"><span>Toggle menu</span></a>
@@ -11,7 +10,7 @@
     <div id="menu" class="menu">
       <nav>
         <ul>
-          <li> <a href="{{ .Site.BaseURL }}#about">About</a> </li>
+          <li> <a href="#about">About</a> </li>
           {{ if $current.misc.tickets_url }}
           <li> <a href="#tickets">Tickets</a> </li>
           {{ end }}
@@ -24,7 +23,7 @@
           <li> <a href="#committee">Organizers</a> </li>
           <li> <a href="#sponsors">Sponsors</a> </li>
           <li> <a href="#contact">Contact</a> </li>
-          <li> <a href="{{ .Site.BaseURL }}#previous">Previous Events</a> </li>
+          <li> <a href="#previous">Previous Events</a> </li>
         </ul>
       </nav>
     </div><!-- menu -->

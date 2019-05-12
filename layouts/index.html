@@ -15,7 +15,7 @@
       <div class="six columns">
         <div class="about-topics-image">
           <div class="imageContainer">
-            <img src="{{ .Site.BaseURL }}images/about-topics.png">
+            <img src="{{ "images/about-topics.png" | absURL }}">
           </div>
         </div>
       </div>
@@ -99,8 +99,8 @@
 
   <div class="container previous-events">
     <h2 id="previous">Previous Events</h2>
-    <h3><a href="{{ .Site.BaseURL }}2015/">2015</a></h3>
-    <h3><a href="{{ .Site.BaseURL }}2016/">2016</a></h3>
+    <h3><a href="{{ "2015/" | absURL }}">2015</a></h3>
+    <h3><a href="{{ "2016/" | absURL }}">2016</a></h3>
   </div>
 </div>
 
