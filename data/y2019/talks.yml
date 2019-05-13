@@ -152,16 +152,20 @@ talks:
     summary: >
         We all use monitoring - after all, we all want to ensure that our applications are working as expected. But can hackers use it to exploit our application? Join me to explore different ways to exploit application monitoring tools, and what mitigations we can use - including live demos!
 
-  - name: Oncall Rotation Best Practices
+  - name: Monitoring done wrong
     type: talk
     start: "14:00"
     end:   "14:30"
     speaker:
-      name: Ran Leibman
-      title: "Production Engineer @ Facebook"
-      about: "Ran Leibman of House Facebook, First of His PEs, King of the Monitoring and the First Server, Lord of the Seven Metrics, and Protector of Production."
-      linkedin: https://www.linkedin.com/in/ran-leibman-2b345115/
-    summary: Are you responsible on a production system? Building a strong and efficient oncall rotation is hard and tricky. it could easily become frustrating, time consuming and affect your work-life-balance. Come and get guidelines to make your oncall rotation better, stronger and faster.
+      name: Avishai Ish-Shalom
+      title: "Engineer in Residence @ Aleph VC"
+      about: "Software janitor, data plumber, infrastructure handyman. Will code for scotch."
+      linkedin: https://www.linkedin.com/in/nukemberg/
+      githug: https://github.com/avishai-ish-shalom
+      twitter: https://twitter.com/nukemberg
+    summary: >
+      We've all heard numerous "awesome monitoring @ X" talks; Boring!
+      Join me in exploring monitoring design principles through various fails - because we can learn sooo much more by analyzing cases where monitoring was done wrong :-) 
 
   - name: Spanning services - The practical guide to Distributed Tracing
     type: talk
