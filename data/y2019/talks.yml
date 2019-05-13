@@ -187,11 +187,37 @@ talks:
     end: 15:30
     speaker:
 
-  - name: Ignite talks
+  - name: Zen of production incident management
     type: ignite
     start: "15:30"
     end:   "16:00"
-    summary: 5 ignite (5 minutes, 20 slides) talks, to be announced soon!
+    summary: Zen of production incident management, or to be put it simply, how to handle production incidents at any scale.
+    speaker:
+      name: Dan Yelovitch
+      title: Senior SRE @ ZipRecruiter    
+  - name: Monitoring Driven Debugging
+    start: "15:30"
+    end:   "16:00"
+    type: ignite
+    summary: A different perspective on debugging issues in production
+    speaker:
+      name: Anna Tsibulskaya
+      title: Systems engineer @ Wix
+  - name: Distributed HPC monitoring
+    type: ignite
+    start: "15:30"
+    end:   "16:00"
+    speaker:
+      name: Salo Shp
+      title: Solutions architect @ Tikal
+  - name: Actionable alerts 
+    type: ignite
+    start: "15:30"
+    end:   "16:00"
+    speaker:
+      name: Savva Khalaman
+      title: Backend developer @ Wix
+      image: https://avatars2.githubusercontent.com/u/31562379?s=200&v=4
 
   - name: "Sensory Friendly Monitoring: Keeping the Noise Down"
     type: talk

@@ -10,8 +10,10 @@
         <div class="comment-box row">
             {{ partial "speaker.html" .speaker }}
         </div>
+        {{ if .summary }}
         <h3>Summary</h3>
         <p class="discription">{{ .summary | safeHTML}}</p>
+        {{ end }}
         {{ if .link }}
         <h4><a href="{{.link}}" target="_blank">Slides</a></h4>
         {{ end }}
