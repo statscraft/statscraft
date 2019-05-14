@@ -218,6 +218,13 @@ talks:
       name: Savva Khalaman
       title: Backend developer @ Wix
       image: https://avatars2.githubusercontent.com/u/31562379?s=200&v=4
+  - name: Defining KPIs Like a Pro
+    type: ignite
+    start: "15:30"
+    end: "16:00"
+    speaker:
+      name: Elena Levi
+      title: Product Manager @ AppsFlyer
 
   - name: "Sensory Friendly Monitoring: Keeping the Noise Down"
     type: talk
