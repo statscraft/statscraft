@@ -1,0 +1,48 @@
+---
+organizers:
+  - name: Shahar Kedar
+    id: shaharkedar
+    company: RiseUp
+    linkedin: https://il.linkedin.com/in/shaharke
+
+  - name: Erik Zaadi
+    id: erik
+    company: BigPanda
+    linkedin: https://il.linkedin.com/in/erikzaadi
+    image_url: https://avatars0.githubusercontent.com/u/77775
+
+  - name: Ofer Schreiber
+    id: ofer
+    company: BigPanda
+    linkedin: https://www.linkedin.com/in/oferschreiber
+    image_url: https://secure.meetupstatic.com/photos/member/9/1/b/5/highres_242737301.jpeg
+
+  - name: Gil Zellner
+    id: gilzellner
+    company: AppsFlyer
+    linkedin: https://www.linkedin.com/in/gilzellner/
+
+  - name: Sharone Raveh-Zitzman
+    id: sharonravehzitzman
+    company: AppsFlyer
+    linkedin: https://www.linkedin.com/in/sharonez/
+
+  - name: Avishai Ish-Shalom
+    id: avishaiishshalom
+    company: Aleph VC
+    linkedin: https://il.linkedin.com/in/nukemberg
+
+  - name: Nati Cohen
+    id: naticohen
+    company: Here
+    linkedin: https://il.linkedin.com/in/natict
+
+  - name: Elena Levi
+    id: elenalevi
+    company: AppsFlyer
+    linkedin: https://www.linkedin.com/in/elena-levi-9b240430
+
+  - name: Tal Kimhi
+    id: talkimhi
+    company: BigPanda
+    linkedin: https://www.linkedin.com/in/talkimhi/

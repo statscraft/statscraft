@@ -1,22 +1,9 @@
 {{ partial "bodystart.html" . }}
 {{ partial "header.html" . }}
-{{ $current := (index .Site.Data .Site.Params.current) }}
-{{with $current.misc}}
+{{ $current := (index .Site.Data (print "y" .Params.event_year) )}}
 <div class="important-note">
-  <span>Next summit: {{if .date_text}}
-    {{.date_text}}
-    {{else if .start_date }}
-    {{dateFormat "January 2 2006" .start_date}}
-    {{else}}
-    TBD
-    {{end}}
-    </span>
-    
-    {{ if .cfp_url }}
-    <a href="{{ .cfp_url }}" class="ticket-btn" title="Submit a talk">Submit a talk</a>
-    {{ end }}
-  </div><!-- .important-note ends -->
-{{end}}
+  <span>Date: {{ .Params.event_date |safeHTML | default (dateFormat "January 2 2006" $current.misc.start_date)}}</span>
+</div><!-- .important-note ends -->
 
 <main role="main">
   <div class="container about">
@@ -38,37 +25,6 @@
       </div>
     </div>
   </div>
-
-
-  {{ if $current.misc.cfp_url }}
-  <div class="container cfp">
-    <h2 id="cfp">Call For Papers!</h2>
-      <h3>CFP is open! (closes March 1st)<br><a href="{{ $current.misc.cfp_url }}">Submit your proposal!</a></h3>
-  </div>
-  {{ end }}
-
-
-    {{ if $current.misc.tickets_url }}
-
-    <div class="ticket-section" id="tickets">
-        <div class="container">
-            <h2>Get your ticket!</h2>
-            <p class="description">So you'd like to be a part of Statscraft? <span>We’d love to see you there!</span></p>
-            <div class="row">
-                <a href="{{ $current.misc.tickets_url}}" target="_blank">
-                    <div class="ticket-alert">
-                        <div>&nbsp;</div>
-                        <div class="your-ticket">
-                            <span>Get Yours</span>
-                        </div>
-                    </div>
-                </a>
-                <div>
-                </div><!-- .container ends -->
-            </div><!-- .ticket-section ends -->
-        </div>
-      </div>
-    {{ end }}
 
     {{ if $current.talks.talks }}
 
@@ -105,16 +61,8 @@
         </div><!-- venue -->
       {{ end }}
     {{ end }}
-
-    {{ partial "contact.html" . }}
     </div><!-- container -->
 
-  <div class="container previous-events">
-    <h2 id="previous">Previous Events</h2>
-    {{ range where .Site.Pages "Section" "event" }}
-    <h3><a href="{{ .Permalink }}">{{ .Params.event_year }}</a></h3>
-    {{ end }}
-  </div>
 </div>
 </main><!-- main ends -->
 
