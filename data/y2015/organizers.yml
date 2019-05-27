@@ -1,7 +1,7 @@
 ---
 organizers:
   - name: Nir Cohen
-    id: nir
+    id: nircohen
     company: Gigaspaces
     linkedin: https://il.linkedin.com/in/nir0s
   
@@ -9,28 +9,30 @@ organizers:
     id: michael
     company: Gigaspaces
     linkedin: https://il.linkedin.com/in/michaelsverdlik
+    image_url: https://avatars2.githubusercontent.com/u/1589008
 
   - name: Shahar Kedar
-    id: shahar
+    id: shaharkedar
     company: BigPanda
     linkedin: https://il.linkedin.com/in/shaharke
-  
+
   - name: Erik Zaadi
     id: erik
     company: BigPanda
     linkedin: https://il.linkedin.com/in/erikzaadi
-  
+    image_url: https://avatars0.githubusercontent.com/u/77775
+
   - name: Amit Cohen
-    id: amit
+    id: amitcohen
     company: FewBytes
     linkedin: https://il.linkedin.com/in/amitcohe
   
   - name: Avishai Ish-Shalom
-    id: avishai
+    id: avishaiishshalom
     company: FewBytes
     linkedin: https://il.linkedin.com/in/nukemberg
 
   - name: Nati Cohen
-    id: nati
+    id: naticohen
     company: FewBytes
     linkedin: https://il.linkedin.com/in/natict

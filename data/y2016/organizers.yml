@@ -1,7 +1,7 @@
 ---
 organizers:
   - name: Shahar Kedar
-    id: shahar
+    id: shaharkedar
     company: BigPanda
     linkedin: https://il.linkedin.com/in/shaharke
 
@@ -9,33 +9,35 @@ organizers:
     id: erik
     company: BigPanda
     linkedin: https://il.linkedin.com/in/erikzaadi
+    image_url: https://avatars0.githubusercontent.com/u/77775
 
   - name: Ofer Schreiber
     id: ofer
     company: BigPanda
     linkedin: https://www.linkedin.com/in/oferschreiber
+    image_url: https://secure.meetupstatic.com/photos/member/9/1/b/5/highres_242737301.jpeg
 
   - name: Amit Cohen
-    id: amit
+    id: amitcohen
     company: Strigo.io
     linkedin: https://il.linkedin.com/in/amitcohe
 
   - name: Avishai Ish-Shalom
-    id: avishai
+    id: avishaiishshalom
     company: Independent
     linkedin: https://il.linkedin.com/in/nukemberg
 
   - name: Nati Cohen
-    id: nati
+    id: naticohen
     company: SimilarWeb
     linkedin: https://il.linkedin.com/in/natict
 
   - name: Elena Levi
-    id: elena
+    id: elenalevi
     company: Singular
     linkedin: https://www.linkedin.com/in/elena-levi-9b240430
 
   - name: Ran Leibman
-    id: ran
+    id: ranleibman
     company: Facebook
     linkedin: https://www.linkedin.com/in/ran-leibman-2b345115
