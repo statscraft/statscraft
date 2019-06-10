@@ -17,6 +17,9 @@
         {{ if .link }}
         <h4><a href="{{.link}}" target="_blank">Slides</a></h4>
         {{ end }}
+        {{ if .pdf }}
+        <h4><a href="slides/{{.pdf}}.pdf" target="_blank">Slides (PDF)</a></h4>
+        {{ end }}
         {{ if .video }}
         <h4><a href="{{.video}}" target="_blank">YouTube Video</a></h4>
         {{ end }}

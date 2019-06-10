@@ -19,7 +19,8 @@ talks:
     end:   "10:15"
     summary: >
         Monitoring time is tricky given its fluid nature. Doing so across distributed database hosts is trickier. Latency, probe intervals, clock synchronization, all affect the metrics, and taking actions based on those metrics makes matters even more complex. How does one measure time? What is the baseline? What accuracy and tradeoffs can we expect? Can we use time itself to affect the outcome? At GitHub, we monitor time in our database topologies for throttling and consistent reads purposes. We present our use case and share how we communicate metric information in our distributed company.
-    link: false
+    link: https://speakerdeck.com/shlominoach/monitoring-time-in-a-distributed-database-a-play-in-three-acts
+    video: https://youtu.be/ZVBmTgIMOCA
 
   - name: How to think like an SRE
     type: talk
@@ -32,6 +33,7 @@ talks:
     summary: "SREs (Site Reliability Engineers) are responsible for the reliability and availability of large scale distributed system at organizations such as Google, FB, Twitter, etc. Being a successful SRE requires developing an engineering perspective which takes into account various factors which \"regular\" software engineer are either unaware of, or just don't rank as important enough. In this talk I will highlight several concrete points where the thinking of an SRE and the thinking of a software engineer are likely to be different, across various aspects of system evolvement: Architecture planning, monitoring planning, coding, and operating an incident."
     start: "10:15"
     end: "11:00"
+    video: https://youtu.be/yaPyRGdHoqc
 
   - name: Break
     type: break
@@ -62,6 +64,7 @@ talks:
 
       Getting a good night sleep is within arm’s reach...
     link: false
+    video: https://youtu.be/i0ooKp1czSE
 
   - name: Visualization in Serverless Applications
     type: talk
@@ -80,6 +83,8 @@ talks:
       - Debugging while developing
       - Troubleshooting complex issues in production
       - Identifying bottlenecks of performance and costs
+    video: https://youtu.be/EC2seBbSgRo
+    pdf: 2019-visualization-in-serverless-applications
 
   - name: "Monitoria: A monitoring democracy"
     type: talk
@@ -94,7 +99,8 @@ talks:
       linkedin: https://www.linkedin.com/in/yaron-idan/
     summary: |
         Monitoring is important - but can also be complicated. At Soluto, we put a lot of effort into this, so we can know that our users get the best experience. We want to share how we transformed monitoring from a one man job to something every employee cares about and actively participates in.
-    link: false
+    pdf: 2019-monitoria
+    video: https://youtu.be/AvhK4nMhEtE
     
   - name: "Logging in the cloud: machines first human come second"
     type: talk
@@ -109,7 +115,8 @@ talks:
       twitter: https://twitter.com/itielshwartz
       linkedin: https://www.linkedin.com/in/itiel-shwartz-18542853/
     summary: "Our system complexity is growing like crazy, what about our logging? While writing new code we should think about: The (poor) developer trying to debug this in production. Sadly we feel like our code is great - so need to log it :) Come and find out what’s broken in logging design, and how to fix it"
-    link: false
+    pdf: 2019-logging-in-the-cloud
+    video: https://youtu.be/AvhK4nMhEtE
 
   - name: Lunch
     type: break
@@ -134,7 +141,8 @@ talks:
         Do we really need to monitor every servers cpu? 
         How many devops do you need to wake in the middle of the night for every disk that dies?
         What are the lessons we learned while trying to monitor our ever changing system?
-    link: false
+    link: https://www.slideshare.net/yonitg/monitoring-lessons-from-waze-sre-team
+    video: https://youtu.be/iSs4lTrUyI8
 
   - name: Exploiting monitoring for fun and profit
     type: talk
@@ -151,6 +159,8 @@ talks:
       image: https://pbs.twimg.com/profile_images/1021467583193796608/9odUKQCb_400x400.jpg
     summary: >
         We all use monitoring - after all, we all want to ensure that our applications are working as expected. But can hackers use it to exploit our application? Join me to explore different ways to exploit application monitoring tools, and what mitigations we can use - including live demos!
+    video: https://youtu.be/_B4q-4tEY3I
+    link: https://www.slideshare.net/SolutoTLV/the-dark-side-of-monitoring
 
   - name: Monitoring done wrong
     type: talk
@@ -165,7 +175,9 @@ talks:
       twitter: https://twitter.com/nukemberg
     summary: >
       We've all heard numerous "awesome monitoring @ X" talks; Boring!
-      Join me in exploring monitoring design principles through various fails - because we can learn sooo much more by analyzing cases where monitoring was done wrong :-) 
+      Join me in exploring monitoring design principles through various fails - because we can learn sooo much more by analyzing cases where monitoring was done wrong :-)
+    link: https://slides.com/nukemberg/monitoring-done-wrong
+    video: https://youtu.be/u3fUlrpHQnw 
 
   - name: Spanning services - The practical guide to Distributed Tracing
     type: talk
@@ -180,6 +192,8 @@ talks:
     summary: >
       What is distributed tracing and why should I care?
       This talk will introduce tracing concepts, help you get started with it and share practical dos and don’ts.
+    pdf: 2019-spanning-services
+    video: https://youtu.be/mGzwYP9QIuA
 
   - name: Happy hour and games
     type: break
@@ -195,6 +209,9 @@ talks:
     speaker:
       name: Dan Yelovitch
       title: Senior SRE @ ZipRecruiter    
+    pdf: 2019-the-zen-of-production-incident-management
+    video: https://youtu.be/hCSV-3M-42Q
+
   - name: Monitoring Driven Debugging
     start: "15:30"
     end:   "16:00"
@@ -203,6 +220,9 @@ talks:
     speaker:
       name: Anna Tsibulskaya
       title: Systems engineer @ Wix
+    pdf: 2019-monitoring-driven-debugging
+    video: https://youtu.be/yk1mnrhYZRE
+
   - name: Distributed HPC monitoring
     type: ignite
     start: "15:30"
@@ -210,6 +230,8 @@ talks:
     speaker:
       name: Salo Shp
       title: Solutions architect @ Tikal
+    video: https://youtu.be/Tgz8jp0VXEk
+
   - name: Actionable alerts 
     type: ignite
     start: "15:30"
@@ -218,6 +240,9 @@ talks:
       name: Savva Khalaman
       title: Backend developer @ Wix
       image: https://avatars2.githubusercontent.com/u/31562379?s=200&v=4
+    video: https://youtu.be/CLLFqgiQk3w
+    pdf: 2019-keep-alerts-actionable
+
   - name: Defining KPIs Like a Pro
     type: ignite
     start: "15:30"
@@ -225,6 +250,7 @@ talks:
     speaker:
       name: Elena Levi
       title: Product Manager @ AppsFlyer
+    video: https://youtu.be/zJly0qQJTIo
 
   - name: "Sensory Friendly Monitoring: Keeping the Noise Down"
     type: talk
@@ -238,4 +264,5 @@ talks:
       twitter: https://twitter.com/QuintessenceAnx
       linkedin: https://www.linkedin.com/in/quintessenceanx/
     summary: "The ability to monitor infrastructure has been exploding with new tools on the market and new integrations, so the tools can speak to one another, leading to even more tools, and to a hypothetically very loud monitoring environment with various members of the engineering team finding themselves muting channels, individual alerts, or even alert sources so they can focus long enough to complete other tasks. There has to be a better way - a way to configure comprehensive alerts that send out notifications with the appropriate level of urgency to the appropriate persons at the appropriate time. And in fact there is: during this talk I’ll be walking through different alert patterns and discussing: what we need to know, who needs to know it, as well as how soon and how often do they need to know."
-    link: false
+    link: https://noti.st/quintessence/2sobkr/sensory-friendly-monitoring-keeping-the-noise-down
+    video: https://youtu.be/hh2AxMqEWFY
