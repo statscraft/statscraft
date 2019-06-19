@@ -64,7 +64,7 @@ talks:
       - What is the root cause of these issues?
 
       Getting a good night sleep is within arm’s reach...
-    link: false
+    link: https://lumigo.io/resources/when-dynamodb-explodes/
     video: https://youtu.be/i0ooKp1czSE
 
   - name: Visualization in Serverless Applications
@@ -253,6 +253,7 @@ talks:
       name: Elena Levi
       title: Product Manager @ AppsFlyer
     video: https://youtu.be/zJly0qQJTIo
+    pdf: 2019-defining-kpis-like-a-pro
 
   - name: "Sensory Friendly Monitoring: Keeping the Noise Down"
     type: talk
