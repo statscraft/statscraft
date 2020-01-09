@@ -51,3 +51,8 @@ organizers:
     id: hilafish
     company: Pipl
     linkedin: https://www.linkedin.com/in/hila-fish-863949a/
+    
+  - name: Robert Barron
+    id: robertbarron
+    company: IBM
+    linkedin: https://www.linkedin.com/in/flyingbarron/
