@@ -3,8 +3,11 @@ go:
   - 1.11.4
 sudo: false
 install:
-- mkdir -p "$TRAVIS_BUILD_DIR/gosrc"
-- go get -v github.com/gohugoio/hugo
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.62.2/hugo_extended_0.62.2_Linux-64bit.tar.gz
+  - tar xzf hugo_extended_0.62.2_Linux-64bit.tar.gz
+  - mkdir -p $HOME/bin
+  - mv ./hugo $HOME/bin
+  - export PATH=$PATH:$HOME/bin
 script: ./travis.sh
 after_success: find public \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' \)
   -exec gzip -9 -n {} \; -exec mv {}.gz {} \;

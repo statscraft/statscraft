@@ -1,3 +1,3 @@
 dev:
-	$(GOPATH)/bin/hugo serve --watch
+	hugo serve --watch
 	# pushd public; python -m SimpleHTTPServer; popd
