@@ -21,8 +21,8 @@ jobs:
 
       - name: Build
         run: |
-            hugo --minify -b https://www.statscraft.org.il/
-            echo wwww.statscraft.org.il > ./public/CNAME
+            hugo --minify
+            echo www.statscraft.org.il > ./public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2
