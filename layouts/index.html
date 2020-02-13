@@ -15,6 +15,9 @@
     {{ if .cfp_url }}
     <a href="{{ .cfp_url }}" class="ticket-btn" title="Submit a talk">Submit a talk</a>
     {{ end }}
+    {{ if .tickets_url }}
+    <a href="{{ .tickets_url }}" class="ticket-btn" title="Register">Register</a>
+    {{ end }}
   </div><!-- .important-note ends -->
 {{end}}
 
