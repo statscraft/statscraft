@@ -3,22 +3,10 @@
 {{ $current := (index .Site.Data .Site.Params.current) }}
 {{with $current.misc}}
 <div class="important-note">
-  <span>Next summit: {{if .date_text}}
-    {{.date_text}}
-    {{else if .start_date }}
-    {{dateFormat "January 2 2006" .start_date}}
-    {{else}}
-    TBD
-    {{end}}
-    </span>
-    
-    {{ if .cfp_url }}
-    <a href="{{ .cfp_url }}" class="ticket-btn" title="Submit a talk">Submit a talk</a>
-    {{ end }}
-    {{ if .tickets_url }}
-    <a href="{{ .tickets_url }}" class="ticket-btn" title="Register">Register</a>
-    {{ end }}
-  </div><!-- .important-note ends -->
+  <span>We are joining for the forces with DEV community TLV for out next event</span>
+  <h3><a href="http://tlvcommunity.dev/">Check out community summit TLV | Decemeber 17th, 2020</a></h3>
+
+</div><!-- .important-note ends -->
 {{end}}
 
 <main role="main">
