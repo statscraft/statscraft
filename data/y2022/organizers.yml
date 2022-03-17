@@ -1,0 +1,31 @@
+---
+organizers:
+  - name: Gil Zellner
+    id: gilzellner
+    company: Wix.com
+    linkedin: https://www.linkedin.com/in/gilzellner/
+
+  - name: Sharone Revah-Zitzman
+    id: sharonravehzitzman
+    company: RTFM Please Ltd.
+    linkedin: https://www.linkedin.com/in/sharonez/
+
+  - name: Avishai Ish-Shalom
+    id: avishaiishshalom
+    company: Independent
+    linkedin: https://il.linkedin.com/in/nukemberg
+
+  # - name: Tal Kimhi
+  #   id: talkimhi
+  #   company: BigPanda
+  #   linkedin: https://www.linkedin.com/in/talkimhi/
+
+  - name: Hila Fish
+    id: hilafish
+    company: Pipl
+    linkedin: https://www.linkedin.com/in/hila-fish-863949a/
+
+  - name: Dan Yelovitch
+    id: danyelovitch
+    company: Develeap
+    linkedin: https://www.linkedin.com/in/dan-yelovitch-15b92036/
