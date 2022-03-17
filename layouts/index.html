@@ -1,15 +1,20 @@
 {{ partial "bodystart.html" . }}
 {{ partial "header.html" . }}
 {{ $current := (index .Site.Data .Site.Params.current) }}
-{{with $current.misc}}
+{{ if $current.misc.conf_text }}
 <div class="important-note">
-  <span>We are joining for the forces with DEV community TLV for out next event</span>
-  <h3><a href="http://tlvcommunity.dev/">Check out community summit TLV | Decemeber 17th, 2020</a></h3>
+{{ $current.misc.conf_text }}
 
 </div><!-- .important-note ends -->
 {{end}}
 
 <main role="main">
+  {{ if $current.misc.cfp_url }}
+  <div class="container cfp">
+    <h2 id="cfp">Call For Papers!</h2>
+      <h3>CFP is open! {{ $current.misc.cfp_text }}<br><a href="{{ $current.misc.cfp_url }}">Submit your proposal!</a></h3>
+  </div>
+  {{ end }}
   <div class="container about">
     <h2 id="about">About Statscraft</h2>
     <div class="row">
@@ -21,9 +26,6 @@
         </div>
       </div>
       <div class="six columns">
-        <p class="description description-title"><b>
-          As disappointing as this is for us, we have made the difficult decision to postpone Statscraft until the COVID-19 crisis is behind us.
-        </b></p>
 
         <p class="description description-title"><b>This conference is all about making monitoring easier, more accessible and more productive</b></p>
         <p class="description">
@@ -33,14 +35,6 @@
       </div>
     </div>
   </div>
-
-
-  {{ if $current.misc.cfp_url }}
-  <div class="container cfp">
-    <h2 id="cfp">Call For Papers!</h2>
-      <h3>CFP is open! (closes March 15th)<br><a href="{{ $current.misc.cfp_url }}">Submit your proposal!</a></h3>
-  </div>
-  {{ end }}
 
 
     {{ if $current.misc.tickets_url }}
