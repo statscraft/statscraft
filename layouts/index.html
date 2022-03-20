@@ -1,18 +1,24 @@
+{{ $current := index .Site.Data (print "y" .Site.Params.current) }}
+{{ $current_page := .Site.GetPage (print "/event/" .Site.Params.current)}}
 {{ partial "bodystart.html" . }}
-{{ partial "header.html" . }}
-{{ $current := (index .Site.Data .Site.Params.current) }}
-{{ if $current.misc.conf_text }}
+{{ partial "header.html" $current_page }}
+{{ if $current_page.Params.conf_text }}
 <div class="important-note">
-{{ $current.misc.conf_text }}
-
+  {{ if .Params.event_date }}
+  <span>Date: {{ $current_page.Params.event_date | safeHTML }}</span>
+  {{ else if $current_page.Params.start_date }}
+  <span>Date: {{ $date := dateFormat "January 2nd 2006" $current_page.Params.start_date }}</span>
+  {{ end }}
+  
+  {{ $current_page.conf_text }}
 </div><!-- .important-note ends -->
 {{end}}
 
 <main role="main">
-  {{ if $current.misc.cfp_url }}
+  {{ if $current_page.Params.cfp_url }}
   <div class="container cfp">
     <h2 id="cfp">Call For Papers!</h2>
-      <h3>CFP is open! {{ $current.misc.cfp_text }}<br><a href="{{ $current.misc.cfp_url }}">Submit your proposal!</a></h3>
+      <h3>CFP is open! {{ $current_page.Params.cfp_text }}<br><a href="{{ $current_page.Params.cfp_url }}">Submit your proposal!</a></h3>
   </div>
   {{ end }}
   <div class="container about">
@@ -37,14 +43,14 @@
   </div>
 
 
-    {{ if $current.misc.tickets_url }}
+    {{ if $current_page.Params.tickets_url }}
 
     <div class="ticket-section" id="tickets">
         <div class="container">
             <h2>Get your ticket!</h2>
             <p class="description">So you'd like to be a part of Statscraft? <span>We’d love to see you there!</span></p>
             <div class="row">
-                <a href="{{ $current.misc.tickets_url}}" target="_blank">
+                <a href="{{ $current_page.Params.tickets_url}}" target="_blank">
                     <div class="ticket-alert">
                         <div>&nbsp;</div>
                         <div class="your-ticket">
@@ -80,8 +86,8 @@
 
     {{ partial "organizers.html" $current.organizers }}
 
-    {{ if (isset $current.misc "venue") }}
-      {{ with $current.misc.venue }}
+    {{ if (isset $current_page.Params "venue") }}
+      {{ with $current_page.Params.venue }}
         <div id="venue" class="venue venue2019 text-center">
           <div class="container">
             <h2>Venue</h2>

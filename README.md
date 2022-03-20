@@ -8,7 +8,7 @@ Hugo based static website of the [StatsCraft](https://www.statscraft.org.il) mon
 Create the event content md page
 ```
 hugo new content/event/2023.md -k event
-mkdir data/y2023
+mkdir data/2023
 ```
 Change `params.current` in `config/_default/config.yml` 
 

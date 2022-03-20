@@ -1,4 +1,4 @@
-{{ $current := (index .Site.Data .Site.Params.current) }}
+{{ $current := index .Site.Data (print "y" .Params.event_year) }}
 <header>
   <div class="top-head row">
     <div class="logo">
@@ -11,13 +11,13 @@
       <nav>
         <ul>
           <li> <a href="#about">About</a> </li>
-          {{ if $current.misc.tickets_url }}
+          {{ if .Params.tickets_url }}
           <li> <a href="#tickets">Tickets</a> </li>
           {{ end }}
           {{ if $current.talks.talks }}
           <li> <a href="#agenda">Agenda</a> </li>
           {{ end }}
-          {{ if $current.misc.venue }}
+          {{ if .Params.venue }}
           <li> <a href="#venue">Venue</a> </li>
           {{ end }}
           <li> <a href="#committee">Organizers</a> </li>
@@ -25,7 +25,6 @@
           <li> <a href="#contact">Contact</a> </li>
           <li> <a href="#previous">Previous Events</a> </li>
         </ul>
-      </nav>
     </div><!-- menu -->
   </div><!-- .top-head ends -->
   <div class="banner">

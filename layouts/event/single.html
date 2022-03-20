@@ -1,11 +1,11 @@
+{{ $current := (index .Site.Data (print "y" .Params.event_year) )}}
 {{ partial "bodystart.html" . }}
 {{ partial "header.html" . }}
-{{ $current := (index .Site.Data (print "y" .Params.event_year) )}}
 <div class="important-note">
   {{ if .Params.event_date }}
   <span>Date: {{ .Params.event_date | safeHTML }}</span>
-  {{ else if $current.misc.start_date }}
-  <span>Date: {{ $date := dateFormat "January 2nd 2006" $current.misc.start_date }}</span>
+  {{ else if .Params.start_date }}
+  <span>Date: {{ $date := dateFormat "January 2nd 2006" .Params.start_date }}</span>
   {{ end }}
 </div><!-- .important-note ends -->
 
@@ -51,8 +51,8 @@
 
     {{ partial "organizers.html" $current.organizers }}
 
-    {{ if (isset $current.misc "venue") }}
-      {{ with $current.misc.venue }}
+    {{ if (isset .Params "venue") }}
+      {{ with .Params.venue }}
         <div id="venue" class="venue venue2019 text-center">
           <div class="container">
             <h2>Venue</h2>
