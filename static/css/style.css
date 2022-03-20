@@ -1902,14 +1902,13 @@ h4.language {
   }
 }
 
-.cfp, .previous-events {
+.previous-events {
     padding-top: 90px;
 }
 
 .cfp h3, .previous-events h3, .cfp h4{
     text-align: center;
 }
-
 
 .cfsponsors h3{
     text-align: center;

@@ -2,17 +2,13 @@
 {{ $current_page := .Site.GetPage (print "/event/" .Site.Params.current)}}
 {{ partial "bodystart.html" . }}
 {{ partial "header.html" $current_page }}
-{{ if $current_page.Params.conf_text }}
 <div class="important-note">
-  {{ if .Params.event_date }}
+  {{ if $current_page.Params.event_date }}
   <span>Date: {{ $current_page.Params.event_date | safeHTML }}</span>
   {{ else if $current_page.Params.start_date }}
   <span>Date: {{ $date := dateFormat "January 2nd 2006" $current_page.Params.start_date }}</span>
   {{ end }}
-  
-  {{ $current_page.conf_text }}
 </div><!-- .important-note ends -->
-{{end}}
 
 <main role="main">
   {{ if $current_page.Params.cfp_url }}
