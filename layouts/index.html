@@ -100,7 +100,7 @@
 
   <div class="container previous-events">
     <h2 id="previous">Previous Events</h2>
-    {{ range where .Site.Pages "Section" "event" }}
+    {{ range where (where .Site.Pages "Section" "event") "Params.old" true }}
     <h3><a href="{{ .Permalink }}">{{ .Params.event_year }}</a></h3>
     {{ end }}
   </div>

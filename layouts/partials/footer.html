@@ -4,11 +4,9 @@
       <a href="#" title="Statscraft Monitoring Conference"><img src="{{ "images/footer-logo.png" | absURL }}" alt="Statscraft"></a>
     </div>
     <div class="footer-info">
-        {{ if isset .Params "old" }}
-	    <p>Tel-Aviv {{ safeHTML .Params.event_date }} </br>{{ .Params.event_year }} </p>
-        {{ else }}
-	    <p>Tel-Aviv May </br>2019</p>
-        {{ end }}
+      {{ if .Params.event_date }}
+	    <p>Tel-Aviv {{ safeHTML .Params.event_date }}</p>
+      {{ end }}
     </div>
     <ul class="social">
       <li><a href="https://www.facebook.com/statscraft.il" title="Facebook" class="facebook" target="_blank">Facebook</a></li>
