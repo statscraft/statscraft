@@ -51,7 +51,7 @@
 
     {{ partial "organizers.html" $current.organizers }}
 
-    {{ if (isset .Params "venue") }}
+    {{ if (and (not .Params.old) (isset .Params "venue")) }}
       {{ with .Params.venue }}
         <div id="venue" class="venue venue2019 text-center">
           <div class="container">
