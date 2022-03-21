@@ -12,6 +12,9 @@
         <div class="img"><img class="organizer" src="{{(.image_url | default (print "images/" .id ".jpg"))}}" alt=""></div>
         <div class="name">{{.name}}</div>
         <div class="company">({{.company}})</div>
+        {{if .role}}
+        <div class="role">{{.role}}</div>
+        {{end}}
       </div>
       </a>
       {{ end }}

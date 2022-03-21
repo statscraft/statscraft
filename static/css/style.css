@@ -701,6 +701,10 @@ img.organizer {
   background-position: 0 80px;
 }
 
+.committee .organizer .role {
+  color: #666666;
+}
+
 p.description-title {
   margin-bottom: 0.5em;
 }
