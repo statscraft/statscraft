@@ -18,43 +18,8 @@
   <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
   <meta property="og:title" content="StatsCraft monitoring conference">
   <meta property="og:description" content="Israeli monitoring conference">
-  <meta property="og:url" content="http://www.statscraft.org.il/">
+  <meta property="og:url" content="{{.Site.BaseURL}}">
   <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
-  {{/*
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Event",
-    "name": "StatsCraft",
-    "startDate": "{{ (index .Site.Data .Site.Params.current).misc.start_date }}",
-    "endDate": "{{ (index .Site.Data .Site.Params.current).misc.end_date }}",
-    "url" : "http://www.statscraft.org.il",
-    "location" : {
-      "@type" : "Place",
-      "name" : "TBD",
-      "address" : "Tel Aviv, Israel"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "{{ (index .Site.Data .Site.Params.current).misc.eventbrite_url }}"
-    }
-  }
-  </script>
-  */}}
   <base href="{{ .Site.BaseURL }}">
-  <!-- Facebook Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1198986813464953');
-  fbq('track', "PageView");
-  fbq('track', 'Lead');</script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1198986813464953&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
 </head>
-<body class="{{ .Site.Params.current }}{{ if .Params.padding }} withPadding{{ end }}">
+<body>
