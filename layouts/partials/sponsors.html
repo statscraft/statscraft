@@ -1,14 +1,12 @@
-<div class="sponsors" id="sponsors">
-    <div class="container">
-      <h2>Sponsors</h2>
-      {{ range .sponsors }}
-      {{ $image := "" }}
-      {{ $image_file := (print "sponsors-" (replace (replace (.name | lower) " " "") "-" "") ".jpg")}}  
-      {{ if (not (fileExists (print "static/images/" $image_file )))}}
-      {{ $image_file = (print "sponsors-" (replace (replace (.name | lower) " " "") "-" "") ".png")}}  
-      {{ end }}
-      {{ $image = (relURL (print "images/" $image_file)) }}
-      <a href={{ .url }} target="_blank"><img src="{{ default $image .image_url }}" alt="{{ default .name .alt }}"></a>
-      {{ end }}
-    </div>
+<div class="sponsors container" id="sponsors">
+    <h2>Sponsors</h2>
+    {{ range .sponsors }}
+    {{ $image := "" }}
+    {{ $image_file := (print "sponsors-" (replace (replace (.name | lower) " " "") "-" "") ".jpg")}}  
+    {{ if (not (fileExists (print "static/images/" $image_file )))}}
+    {{ $image_file = (print "sponsors-" (replace (replace (.name | lower) " " "") "-" "") ".png")}}  
+    {{ end }}
+    {{ $image = (relURL (print "images/" $image_file)) }}
+    <a href={{ .url }} target="_blank"><img src="{{ default $image .image_url }}" alt="{{ default .name .alt }}"></a>
+    {{ end }}
 </div><!-- .sponsors ends -->

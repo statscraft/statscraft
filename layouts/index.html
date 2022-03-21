@@ -79,6 +79,12 @@
     {{ if $current.sponsors.sponsors }}
     {{ partial "sponsors.html" $current.sponsors }}
     {{ end }}
+    {{ if (and (not $current_page.Params.old) $current_page.Params.cfs_url)}}
+    <div class="container">
+      <p>Call for sponsors is open!</p>
+      <p><a href="{{$current_page.Params.cfs_url}}">Contact us </a>for sponsoring</p>
+    </div>
+    {{end}}
 
     {{ partial "organizers.html" $current.organizers }}
 
