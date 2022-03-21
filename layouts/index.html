@@ -6,7 +6,7 @@
   {{ if $current_page.Params.event_date }}
   <span>Date: {{ $current_page.Params.event_date | safeHTML }}</span>
   {{ else if $current_page.Params.start_date }}
-  <span>Date: {{ $date := dateFormat "January 2nd 2006" $current_page.Params.start_date }}</span>
+  <span>Date: {{ dateFormat "January 2, 2006" $current_page.Params.start_date }}</span>
   {{ end }}
 </div><!-- .important-note ends -->
 

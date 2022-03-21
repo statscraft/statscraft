@@ -5,7 +5,9 @@
     </div>
     <div class="footer-info">
       {{ if .Params.event_date }}
-	    <p>Tel-Aviv {{ safeHTML .Params.event_date }}</p>
+	    <p>Tel-Aviv<wbr> {{ safeHTML .Params.event_date }}</p>
+      {{ else if .Params.start_date}}
+      <p>Tel-Aviv<wbr> {{dateFormat "August 2, 2006" .Params.start_date}}</p>
       {{ end }}
     </div>
     <ul class="social">
