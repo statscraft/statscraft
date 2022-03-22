@@ -1,5 +1,5 @@
+{{define "body"}}
 {{ $current := (index .Site.Data (print "y" .Params.event_year) )}}
-{{ partial "bodystart.html" . }}
 {{ partial "header.html" . }}
 <div class="important-note">
   {{ if .Params.event_date }}
@@ -69,6 +69,4 @@
 
 </div>
 </main><!-- main ends -->
-
-{{ partial "footer.html" . }}
-{{ partial "bodyend.html" . }}
+{{end}}

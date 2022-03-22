@@ -1,4 +1,4 @@
-{{ partial "bodystart.html" . }}
+{{define "body"}}
 {{ partial "header.html" . }}
 
 <main role="main">
@@ -8,10 +8,9 @@
         <p>If you're not redirected, please click <a href="{{ .Site.BaseURL }}">here</a></p>
     </div>
 </main>
-{{ partial "footer.html" . }}
 <script>
 setTimeout(function(){
     window.location.href = "{{ .Site.BaseURL }}";
 }, 2000);
 </script>
-{{ partial "bodyend.html" . }}
+{{ end }}

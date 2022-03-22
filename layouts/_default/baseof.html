@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>StatsCraft</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+    <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
+    <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}favicon.png">
+    
+    <!-- Application-specific meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@statscraft">
+    <meta name="twitter:title" content="StatsCraft monitoring conference">
+    <meta name="twitter:description" content="Israeli monitoring conference">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
+    <meta property="og:title" content="StatsCraft monitoring conference">
+    <meta property="og:description" content="Israeli monitoring conference">
+    <meta property="og:url" content="{{.Site.BaseURL}}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
+    <base href="{{ .Site.BaseURL }}">
+</head>
+<body>
+    
+    {{block "body" .}}
+    {{end}}
+    
+    {{ partial "footer.html" . }}
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ "css/social-share-kit.css" | absURL }}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="{{ "js/jquery-1.11.2.min.js" | absURL }}"></script>
+    <script src="{{ "js/modernizr-2.8.3.min.js" | absURL }}"></script>
+    <script src="{{ "js/menu.js" | absURL }}"></script>
+    <script src="{{ "js/Eventbrite.jquery.js" | absURL }}"></script>
+    <script src="{{ "js/main.js" | absURL }}"></script>
+    <script src="{{ "js/social-share-kit.js" | absURL }}"></script>
+    <script>
+        $('.toggle').click(function(){
+            $(this).parent().children('.comment-box-wrap').slideToggle('slow');
+            $(this).toggleClass('active');
+            return false
+        });
+        $('.toggle + h1').click(function(){
+            $(this).parent().children('.toggle').toggleClass('active');
+            $(this).parent().children('.comment-box-wrap').slideToggle('slow');
+            return false
+        });
+        SocialShareKit.init();
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', '{{ .Site.Params.gaTrackingID }}', 'auto');
+        ga('send', 'pageview');
+        
+    </script>
+</body>
+</html>
