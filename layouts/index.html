@@ -1,3 +1,7 @@
+{{define "head"}}
+{{partial "jsonld_event" .Site.GetPage (print "/event/" .Site.Params.current)}}
+{{end}}
+
 {{define "body"}}
 {{ $current := index .Site.Data (print "y" .Site.Params.current) }}
 {{ $current_page := .Site.GetPage (print "/event/" .Site.Params.current)}}

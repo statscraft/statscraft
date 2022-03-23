@@ -1,3 +1,7 @@
+{{define "head"}}
+{{partial "jsonld_event" .}}
+{{end}}
+
 {{define "body"}}
 {{ $current := (index .Site.Data (print "y" .Params.event_year) )}}
 {{ partial "header.html" . }}

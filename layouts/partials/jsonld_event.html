@@ -1,0 +1,23 @@
+{{if .Params.start_date -}}
+<script type="application/ld+json">
+{{$data := newScratch -}}
+{{$data.Set "@context" "https://schema.org"|safeJS -}}
+{{$data.Set "@type" "Event"|safeJS -}}
+{{$data.Set "name" (print "StatsCraft " .Params.event_year)|safeJS -}}
+{{$data.Set "startDate" .Params.start_date|safeJS -}}
+{{$data.Set "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode"|safeJS -}}
+{{$data.Set "eventStatus" "https://schema.org/EventScheduled"|safeJS -}}
+{{$data.Set "description" "StatsCraft: The Hebrew monitoring conference"|safeJS -}}
+{{if .Params.end_date -}}
+{{$data.Set "endDate" .Params.end_date|safeJS -}}
+{{end -}}
+{{if .Params.venue -}}
+{{$data.SetInMap "location" "@type" "Place"|safeJS -}}
+{{$data.SetInMap "location" "@name" .Params.venue.name|safeJS -}}
+{{$data.SetInMap "location" "hasMap" .Params.venue.map_url|safeJS -}}
+{{$data.SetInMap "location" "address" .Params.venue.address|safeJS -}}
+{{$data.SetInMap "location" "url" .Params.venue.url|safeJS -}}
+{{end -}}
+{{ jsonify $data.Values|safeJS }}
+</script>
+{{end -}}
