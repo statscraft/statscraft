@@ -4,28 +4,30 @@
     <div class="logo">
       <a href="#" title="Statscraft Monitoring Conference"><img src="{{ "images/logo.png" | absURL }}" alt="StatsCraft"></a>
     </div>
-    <div class="menu-wrap menu-icons">
-      <a href="#" title="Menu" id="btn-menu" class="btn-menu toggle-switch toggle-switch-ht" data-icon-name="hamburgerCross"><span>Toggle menu</span></a>
-    </div>
-    <div id="menu" class="menu">
-      <nav>
-        <ul>
-          <li> <a href="#about">About</a> </li>
-          {{ if (and (not .Params.old) .Params.tickets_url) }}
-          <li> <a href="#tickets">Tickets</a> </li>
-          {{ end }}
-          {{ if $current.talks.talks }}
-          <li> <a href="#agenda">Agenda</a> </li>
-          {{ end }}
-          {{ if (and (not .Params.old) .Params.venue) }}
-          <li> <a href="#venue">Venue</a> </li>
-          {{ end }}
-          <li> <a href="#committee">Organizers</a> </li>
-          <li> <a href="#sponsors">Sponsors</a> </li>
-          <li> <a href="/#contact">Contact</a> </li>
-          <li> <a href="/#previous">Previous Events</a> </li>
-        </ul>
-    </div><!-- menu -->
+    <nav class="menu">
+        <div class="menuToggle" id="menuToggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu" class="menu-items">
+            <li> <a href="#about">About</a> </li>
+            {{ if (and (not .Params.old) .Params.tickets_url) }}
+            <li> <a href="#tickets">Tickets</a> </li>
+            {{ end }}
+            {{ if $current.talks.talks }}
+            <li> <a href="#agenda">Agenda</a> </li>
+            {{ end }}
+            {{ if (and (not .Params.old) .Params.venue) }}
+            <li> <a href="#venue">Venue</a> </li>
+            {{ end }}
+            <li> <a href="#committee">Organizers</a> </li>
+            <li> <a href="#sponsors">Sponsors</a> </li>
+            <li> <a href="/#contact">Contact</a> </li>
+            <li> <a href="/#previous">Previous Events</a> </li>
+          </ul>
+        </div>
+      </nav>
   </div><!-- .top-head ends -->
   <div class="banner">
     <div class="container">

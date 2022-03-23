@@ -21,6 +21,7 @@ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -360,24 +361,18 @@ h2 {
   margin-left: 10px;
   display: inline-block;
 }
-.social li:first-child {
-  margin-left: 0;
-}
-.social a {
-  height: 48px;
-  display: block;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  background: url('images/stripe.png') no-repeat 0 -42px;
-}
-.social a.twitter {
-  background-position: 0 -94px;
-}
-.social a.mail {
-  background-position: 0 -144px;
+
+svg.fa-twitter {
+  fill: #00aced;
 }
 
+svg.fa-linkedin {
+  fill: #007bb6;
+}
+
+svg.fa-facebook {
+  fill: #3b5998;
+}
 /* Header
 -------------------------------------------------- */
 header {
@@ -423,155 +418,161 @@ header h1{
   font-weight: 400;
   transition: all .5s ease-in;
 }
-/* Navigation
--------------------------------------------------- */
-/* SAHIB - HEADER MENU
--------------------------------------------------- */
-.menu {
-  background: none repeat scroll 0 0 rgba(0, 159, 77, 0.85);
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  overflow-y: scroll;
+/* menu */
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+nav.menu {
   position: fixed;
-  top: 0;
-  transition: all .2s ease;
-  visibility: hidden;
-  width: 100%;
-  z-index: 10;
-}
-header .menu nav {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-header .menu ul {
-  display: inline-block;
-  height: 100%;
-  list-style: outside none none;
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-}
-header .menu ul li {
-  display: block;
-  padding: 10px 0;
-}
-header .menu ul li a {
-  color: #fff;
-  display: block;
-  font-size: 32px;
-  text-decoration: none;
-  transition: color 0.2s ease 0s;
-}
-header .menu ul li a:focus, .header .menu ul li a:hover {
-  color: #888;
-}
-header .menu.open {
-  opacity: 1;
-  visibility: visible;
-}
-header .menu.open nav ul {
-  opacity: 1;
-  transform: rotateX(0deg);
-}
-header .menu.close nav ul {
-  transform: translateY(25%) rotateX(-35deg);
-}
-header .menu nav {
-  perspective: 1200px;
-}
-header .menu nav ul {
-  opacity: 0.4;
-  transform: translateY(-25%) rotateX(35deg);
-  transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
-}
-.btn-menu {
-  float: right;
-  position: relative;
-  display: block;
-}
-.toggle-switch {
-  position: fixed;
-  right:50px;
-  z-index: 999;
-  display: block;
-  font-size: 0;
-  margin: 0;
-  padding: 0;
-  width: 56px;
-  height: 56px;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  border: medium none;
-  cursor: pointer;
-  box-shadow: none;
-  transition: background 0.3s ease 0s;
-  -moz-appearance: none;
-  appearance: none;
-}
-.toggle-switch:focus {
-  outline: medium none;
-}
-.toggle-switch span {
-  background-color: white;
-  display: block;
-  height: 3px;
-  left: 16px;
-  position: absolute;
-  width: 22px;
-  top: 26px;
-}
-.toggle-switch span::before, .toggle-switch span::after {
-    background-color: white;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-}
-.toggle-switch span::before {
-    top: -6px;
-}
-.toggle-switch span::after {
-    bottom: -6px;
-}
-.toggle-switch-ht {
-    background-color: #868686;
-}
-.toggle-switch-ht:hover {
-    background-color: #333;
-}
-.toggle-switch-ht span:before,
-.toggle-switch-ht span:after {
-    transition-duration: 0.3s, 0.3s;
-}
-.toggle-switch-ht span:before {
-    transition-property: top, transform;
-}
-.toggle-switch-ht span::after {
-    transition-property: bottom, transform;
-}
-.toggle-switch-ht.active {
-    background-color: #26ad68;
-}
-.toggle-switch-ht.active span {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-.toggle-switch-ht.active span:before {
-    top: 0;
-    transform: rotate(45deg);
-}
-.toggle-switch-ht.active span:after {
-    bottom: 0;
-    transform: rotate(-45deg);
-}
-.toggle-switch-ht.active span:before,
-.toggle-switch-ht.active span:after {
-  background-color: #fff;
-}
+  right: 0px;
+  z-index: 100;
+ }
+
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 50px;
+   right: 0px;
+   z-index: 1;
+   -webkit-user-select: none;
+   user-select: none;
+   direction: rtl;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: rgb(66, 66, 66);
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: tomato;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -5px;
+   right: 15px;
+   cursor: pointer;
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 32px;
+   height: 4px;
+   right: 19px;
+   margin-bottom: 5px;
+   position: relative;
+   background: #a7a7a7;
+   border-radius: 3px;
+   z-index: 1;
+   transform-origin: 4px 0px;
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0px 0 0;
+   padding: 50px;
+   padding-top: 125px;
+   border-radius: 10px;
+   /* background: #377e47; */
+   background: white;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* opacity: 0.9; */
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    box-shadow 0.5s ease-out;
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+  box-shadow: 0px 0px 15px #1EAEDB;
+  transform: none;
+ }
+
 .important-note {
   width: 100%;
   max-width: 970px;
@@ -592,7 +593,6 @@ header .menu nav ul {
   margin-right: 16px;
   margin-bottom: 10px;
   display: block;
-  vertical-align: bottom;
 }
 .important-note .ticket-btn {
   min-width: 168px;
@@ -612,51 +612,6 @@ header .menu nav ul {
 }
 /* Main
 -------------------------------------------------- */
-.sociallinks {
-  margin-bottom: 32px;
-  margin-top: 5px;
-}
-.sociallinks .linkedin {
-  background: url("../images/sociallinks.png");
-  height: 16px;
-  width: 16px;
-  background-position: 16px 0;
-  display: inline-block;
-  vertical-align: top;
-}
-.sociallinks .linkedin:hover {
-  background-position: 16px 16px;
-}
-.sociallinks .github {
-  display: inline-block;
-  vertical-align: top;
-  background: url("../images/sociallinks.png");
-  height: 16px;
-  width: 16px;
-  background-position: 0px 0;
-}
-.sociallinks .github:hover {
-  background-position: 0px 16px;
-}
-
-.sociallinks .twitter {
-  display: inline-block;
-  vertical-align: top;
-  background: url("../images/sociallinks.png");
-  height: 16px;
-  width: 16px;
-  margin:0 3px;
-  background-position: 32px 0;
-}
-.sociallinks .twitter:hover {
-  background-position: 32px 16px;
-}
-.sociallinks a {
-  color: #2B2B2B;
-}
-.sociallinks a:hover {
-  color: #1EAEDB;
-}
 .content-list {
   list-style: none;
 }
@@ -788,7 +743,6 @@ p.description {
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: url('images/stripe.png') no-repeat 0 -20px;
   right: 0;
   top: 10px;
 }

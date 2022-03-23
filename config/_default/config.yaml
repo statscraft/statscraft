@@ -1,6 +1,6 @@
 ---
 baseURL: "/"
 metadataformat: "yaml"
-gaTrackingID: "UA-63345088-1"
+googleAnalytics: "UA-63345088-1"
 params:
     current: "2022"
