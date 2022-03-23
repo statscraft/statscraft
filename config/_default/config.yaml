@@ -5,3 +5,4 @@ googleAnalytics: "UA-63345088-1"
 disableKinds: ["section", "taxonomy", "term"]
 params:
     current: "2022"
+    contactFormURL: https://hooks.zapier.com/hooks/catch/12159090/bs0ejf7/

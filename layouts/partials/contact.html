@@ -2,15 +2,15 @@
 <div id="contact" class="contact text-center">
     <div class="container">
         <h2>Contact</h2>
-        <form accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate id="contact-form">
+        <form accept-charset="UTF-8" id="contact-form">
 
             <div class="inline">
                 <div class="form-row">
-                    <input id="contact-name" name="name" type="text" placeholder="Name" value="" maxlength="255" tabindex="1" onkeyup=""/>
+                    <input id="contact-name" required name="name" type="text" placeholder="Name" value="" maxlength="255" tabindex="1" onkeyup=""/>
                 </div><!-- form-row -->
 
                 <div class="form-row">
-                    <input id="contact-email" name="email" type="email" spellcheck="false" placeholder="Email" value="" maxlength="255" tabindex="2"/>
+                    <input id="contact-email" required name="email" type="email" spellcheck="false" placeholder="Email" value="" maxlength="255" tabindex="2"/>
                 </div><!-- form-row -->
 
                 <div class="form-row">
@@ -18,11 +18,27 @@
                 </div><!-- form-row -->
             </div><!-- inline -->
             <div class="form-row">
-                <textarea id="contact-feedback" name="feedback" placeholder="Sponsor us - Ask us - Provide feedback" spellcheck="true" onkeyup="" tabindex="4"></textarea>
+                <textarea id="contact-feedback" required name="feedback" placeholder="Sponsor us - Ask us - Provide feedback" spellcheck="true" onkeyup="" tabindex="4"></textarea>
                 
             </div><!-- form-row -->
             <input id="contact-submit" name="saveForm" class="contact-submit" value="Send" type="submit" tabindex="5"/>
-            <h3 class="emailSuccess hidden">Message Sent!</h3>
-            <h3 class="emailError hidden">Error! Please verify all of the fields and try again.</h3>
+            <h3 id="form-success" class="emailSuccess hidden">Message Sent!</h3>
+            <h3 id="form-failure" class="emailError hidden">Error! Try reaching out via <a href="#social">social networks</a></h3>
         </form>
+        <script>
+            const form = document.querySelector("form#contact-form");
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const data = new URLSearchParams(new FormData(form));
+                fetch("{{.Site.Params.contactFormURL}}", {method: 'post', body: data})
+                    .then(() => {
+                        document.querySelector("#form-success").classList.remove("hidden");
+                        document.querySelector("#form-failure").classList.add("hidden");
+                    })
+                    .catch(() => {
+                        document.querySelector("#form-success").classList.add("hidden");
+                        document.querySelector("#form-failure").classList.remove("hidden");
+                    });
+            });
+        </script>
     </div>
