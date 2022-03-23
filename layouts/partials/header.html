@@ -7,9 +7,11 @@
     <nav class="menu">
         <div class="menuToggle" id="menuToggle">
           <input type="checkbox">
-          <span></span>
-          <span></span>
-          <span></span>
+          <div class="menuHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <ul id="menu" class="menu-items">
             <li> <a href="#about">About</a> </li>
             {{ if (and (not .Params.old) .Params.tickets_url) }}
