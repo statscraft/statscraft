@@ -22,7 +22,9 @@
             <li> <a href="#venue">Venue</a> </li>
             {{ end }}
             <li> <a href="#committee">Organizers</a> </li>
+            {{ if (or $current.sponsors.sponsors (and (not .Params.old) .Params.cfs_url)) }}
             <li> <a href="#sponsors">Sponsors</a> </li>
+            {{ end }}
             <li> <a href="/#contact">Contact</a> </li>
             <li> <a href="/#previous">Previous Events</a> </li>
           </ul>

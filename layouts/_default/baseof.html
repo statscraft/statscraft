@@ -20,7 +20,6 @@
     <meta property="og:description" content="Israeli monitoring conference">
     <meta property="og:url" content="{{.Site.BaseURL}}">
     <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-meta.png">
-    <base href="{{ .Site.BaseURL }}">
 </head>
 <body>
     
@@ -38,7 +37,8 @@
                 setTimeout(() => {
                     document.querySelector('#menuToggle input').checked = false;
                 }, 200);
-        })
+            })
+        });
     </script>
 </body>
 </html>

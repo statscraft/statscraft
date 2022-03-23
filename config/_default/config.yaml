@@ -2,5 +2,6 @@
 baseURL: "/"
 metadataformat: "yaml"
 googleAnalytics: "UA-63345088-1"
+disableKinds: ["section", "taxonomy", "term"]
 params:
     current: "2022"
