@@ -562,13 +562,11 @@ div.menuHamburger {
    top: 60px;
    margin: -100px 0px 0 0;
    padding: 50px;
-   padding-top: 125px;
+   padding-top: 85px;
    border-radius: 10px;
-   /* background: #377e47; */
    background: white;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
-   /* opacity: 0.9; */
    /* to stop flickering of text in safari */
    transform: none; 
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -586,7 +584,7 @@ div.menuHamburger {
   */
  #menuToggle input:checked ~ #menu
  {
-  box-shadow: 0px 0px 15px #1EAEDB;
+  box-shadow: 0px 0px 15px #40806a;
   transform: translate(-100%, 0);
  }
 
