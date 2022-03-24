@@ -333,7 +333,7 @@ a {
   color: #1EAEDB;
 }
 a:hover {
-  color: #0FA0CE;
+  color: #52c8ec;
 }
 /* Body
 -------------------------------------------------- */
@@ -360,6 +360,11 @@ h2 {
   width: 46px;
   margin-left: 10px;
   display: inline-block;
+}
+
+.social a:hover svg {
+  box-shadow: 0px 0px 5px white;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 svg.fa-twitter {
