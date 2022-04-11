@@ -2,7 +2,7 @@
 organizers:
 
   - name: Hila Fish
-    role: Conference Chair (Lead)
+    role: Conference Chair - Lead
     id: hilafish
     company: Wix.com
     linkedin: https://www.linkedin.com/in/hila-fish/
@@ -20,7 +20,7 @@ organizers:
     linkedin: https://www.linkedin.com/in/gilzellner/
 
   - name: Sharone Revah-Zitzman
-    role: Logistics Advisor
+    role: Logistics, Finance & Comittee member
     id: sharonravehzitzman
     company: RTFM Please Ltd.
     linkedin: https://www.linkedin.com/in/sharonez/
@@ -31,8 +31,8 @@ organizers:
     company: Independent
     linkedin: https://il.linkedin.com/in/nukemberg
 
-  - name: Tal Kimhi
-    role: Comittee
-    id: talkimhi
-    company: BigPanda
-    linkedin: https://www.linkedin.com/in/talkimhi/
+  # - name: Tal Kimhi
+  #   role: Comittee
+  #   id: talkimhi
+  #   company: BigPanda
+  #   linkedin: https://www.linkedin.com/in/talkimhi/
