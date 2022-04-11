@@ -995,6 +995,18 @@ p.description {
   list-style: none;
   vertical-align: top;
 }
+.sponsor {
+  max-width: 310px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 15px rgb(126, 198, 201);
+}
+
+.sponsor h4 {
+  margin-bottom: 0;
+}
+
 .y2016 .sponsors .container {
     width: 100%;
 }
