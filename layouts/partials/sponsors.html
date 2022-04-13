@@ -1,14 +1,25 @@
 <div class="sponsors container" id="sponsors">
     <h2>Sponsors</h2>
     {{ range .sponsors }}
-        {{ $image := "" }}
-        {{ $image_file := (print "sponsors-" (replace (replace (.name | lower) " " "") "-" "") ".jpg")}}  
-        {{ if (not (fileExists (print "static/images/" $image_file )))}}
-        {{ $image_file = (print "sponsors-" (replace (replace (.name | lower) " " "") "-" "") ".png")}}  
+        {{ $image_file := "" }}
+        {{ $image_file_default_name := (print "sponsors-" (.name | lower | replaceRE "[ -()]+" ""))}}
+        {{ $image_png := (print "images/" $image_file_default_name ".png")}}
+        {{ $image_jpg := (print "images/" $image_file_default_name ".jpg")}}
+
+        {{ if .image_file }}
+        {{ $image_file = .image_file }}
+        {{ else if (fileExists (print "static/" $image_jpg)) }}
+        {{ $image_file = $image_jpg }}
+        {{ else if (fileExists (print "static/" $image_png)) }}
+        {{ $image_file = $image_png }}
         {{ end }}
-        {{ $image = (relURL (print "images/" $image_file)) }}
+        
+        {{ if $image_file}}
+        {{ $image_file = (relURL $image_file)}}
+        {{ end }}
+
         <div class="sponsor">
-            <a href={{ .url }} target="_blank"><img src="{{ default $image .image_url }}" alt="{{ default .name .alt }}"></a>
+            <a href={{ .url }} target="_blank"><img src="{{ default $image_file .image_url }}" alt="{{ default .name .alt }}"></a>
             {{ if .description}}
             <h4>{{.description}}</h4>
             {{ end }}
