@@ -991,15 +991,16 @@ p.description {
   min-width: 98px;
   max-height: 167px;
   max-width: 300px;
-  margin: 0 3% 15px;
   list-style: none;
   vertical-align: top;
 }
 .sponsor {
-  max-width: 310px;
+  display: inline-block;
+  margin: 10px;
+  max-width: 350px;
   padding: 10px;
   border-radius: 15px;
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 0px 0px 15px rgb(126, 198, 201);
 }
 
