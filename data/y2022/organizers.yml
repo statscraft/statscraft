@@ -7,6 +7,12 @@ organizers:
     company: Wix.com
     linkedin: https://www.linkedin.com/in/hila-fish/
 
+  - name: Sharone Revah-Zitzman
+    role: Conference Chair
+    id: sharonravehzitzman
+    company: RTFM Please Ltd.
+    linkedin: https://www.linkedin.com/in/sharonez/    
+
   - name: Dan Yelovitch
     role: Conference Chair 
     id: danyelovitch
@@ -18,12 +24,6 @@ organizers:
     id: gilzellner
     company: Wix.com
     linkedin: https://www.linkedin.com/in/gilzellner/
-
-  - name: Sharone Revah-Zitzman
-    role: Logistics, Finance & Comittee member
-    id: sharonravehzitzman
-    company: RTFM Please Ltd.
-    linkedin: https://www.linkedin.com/in/sharonez/
 
   - name: Avishai Ish-Shalom
     role: Bugus Maximus
