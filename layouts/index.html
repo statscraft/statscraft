@@ -21,6 +21,12 @@
       <h3>CFP is open! {{ $current_page.Params.cfp_text }}<br><a href="{{ $current_page.Params.cfp_url }}">Submit your proposal!</a></h3>
   </div>
   {{ end }}
+  {{ if $current_page.Params.tickets_url }}
+  <div class="container registration">
+    <h2 id="cfp">Ticket sales are OPEN!</h2>
+      <h3>Get your tickets today! <br><a href="{{ $current_page.Params.tickets_url }}">Register now!</a></h3>
+  </div>
+  {{ end }}  
   <div class="container about">
     <h2 id="about">About Statscraft</h2>
     <div class="row">
