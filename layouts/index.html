@@ -20,12 +20,26 @@
     <h2 id="cfp">Call For Papers!</h2>
       <h3>CFP is open! {{ $current_page.Params.cfp_text }}<br><a href="{{ $current_page.Params.cfp_url }}">Submit your proposal!</a></h3>
   </div>
-  {{ end }}
+  {{ end }} 
   {{ if $current_page.Params.tickets_url }}
-  <div class="container registration">
-    <h2 id="cfp">Ticket sales are OPEN!</h2>
-      <h3>Get your tickets today! <br><a href="{{ $current_page.Params.tickets_url }}">Register now!</a></h3>
-  </div>
+  <div class="ticket-section" id="tickets">
+      <div class="container">
+          <h2>Registration is open! Get your ticket!</h2>
+          <p class="description"><span>We’d love to see you there!</span></p>
+          <div class="row">
+              <a href="{{ $current_page.Params.tickets_url}}" target="_blank">
+                  <div class="ticket-alert">
+                      <div>&nbsp;</div>
+                      <div class="your-ticket">
+                          <span>Get ticket!</span>
+                      </div>
+                  </div>
+              </a>
+              <div>
+              </div><!-- .container ends -->
+          </div><!-- .ticket-section ends -->
+      </div>
+    </div>
   {{ end }}  
   <div class="container about">
     <h2 id="about">About Statscraft</h2>
@@ -48,31 +62,7 @@
     </div>
   </div>
 
-
-    {{ if $current_page.Params.tickets_url }}
-
-    <div class="ticket-section" id="tickets">
-        <div class="container">
-            <h2>Get your ticket!</h2>
-            <p class="description">So you'd like to be a part of Statscraft? <span>We’d love to see you there!</span></p>
-            <div class="row">
-                <a href="{{ $current_page.Params.tickets_url}}" target="_blank">
-                    <div class="ticket-alert">
-                        <div>&nbsp;</div>
-                        <div class="your-ticket">
-                            <span>Get Yours</span>
-                        </div>
-                    </div>
-                </a>
-                <div>
-                </div><!-- .container ends -->
-            </div><!-- .ticket-section ends -->
-        </div>
-      </div>
-    {{ end }}
-
-    {{ if $current.talks.talks }}
-
+  {{ if $current.talks.talks }}
     <div class="container agenda" id="agenda">
       <h2>Agenda</h2>
       <h4 class="language">*this conference is Kosher and all talks are in biblical Hebrew</h4>
