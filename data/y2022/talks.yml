@@ -1,0 +1,29 @@
+---
+talks:
+  - name: Gathering and signup
+    type: break
+    start: "08:00"
+    end:   "09:30"
+    speaker: "Mingling FTW"
+
+  - name: "Monitoring Like a Human With Synthetics"
+    type: talk
+    speaker:
+      name: Ben Greenberg
+      title: Lead Developer Relations Engineer - EMEA @ New Relic
+      github: 
+      twitter: 
+      linkedin: https://www.linkedin.com/in/rabbigreenberg/
+      about:  
+    start: "09:30"
+    end:   "09:50"
+    summary: >
+        "Oftentimes, the biggest issues in our applications are caused 
+        by the people that use them. The real human users of our services can 
+        cause us big headaches. A robust synthetics monitoring suite can step 
+        into the place of a human user and save us before the real humans ever 
+        show up and mess up our perfectly working applications! Come and learn 
+        how to effectively use synthetics to detect issues before anyone else does. 
+        Once you embrace synthetics monitoring, you'll never want to go back!"
+    link: 
+    video: 
