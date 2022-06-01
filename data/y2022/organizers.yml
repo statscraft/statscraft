@@ -1,6 +1,12 @@
 ---
 organizers:
 
+  - name: Gil Zellner
+    role: Content Lead
+    id: gilzellner
+    company: HourOne.ai
+    linkedin: https://www.linkedin.com/in/gilzellner/    
+
   - name: Hila Fish
     role: Conference Chair - Lead
     id: hilafish
@@ -18,12 +24,6 @@ organizers:
     id: danyelovitch
     company: Develeap
     linkedin: https://www.linkedin.com/in/dan-yelovitch-15b92036/
-    
-  - name: Gil Zellner
-    role: Content Lead
-    id: gilzellner
-    company: Wix.com
-    linkedin: https://www.linkedin.com/in/gilzellner/
 
   - name: Avishai Ish-Shalom
     role: Bugus Maximus
