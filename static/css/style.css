@@ -618,7 +618,7 @@ div.menuHamburger {
 .collapse-box > label.collapse-box-label {
   display: block;
   cursor: pointer;
-  color: #333;
+  color: #33e;
 }
 
 .collapse-box > label.collapse-box-label:hover {
@@ -1485,6 +1485,9 @@ there.
     height: 52px;
     font-size: 18px;
     line-height: 52px;
+  }
+  .about {
+    padding: 20px;
   }
   .agenda {
     padding: 20px;
