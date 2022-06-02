@@ -2,17 +2,21 @@
     <span class="time entry">{{ .start }} - {{ .end }}</span>
     <span class="item entry {{ .type }}">{{.type | title }}</span>
 </div>
-<div class="nine columns">
-    <a href="#" class="toggle ">toggle</a>
+<div class="nine columns collapse-box">
+    
     <h1>{{ .name }}</h1>
     <span class="author">{{ .speaker.name }}</span>
-    <div class="comment-box-wrap" style="display:none;">
+
+    <input type="checkbox" id="ignite-{{ .name | md5 }}">
+    <label for="ignite-{{ .name | md5 }}" class="collapse-box-label"></label>
+
+    <div class="collapse-box-content collapse-box-collapsed">
         <div class="comment-box row">
             {{ partial "speaker.html" .speaker }}
         </div>
         {{ if .summary }}
         <h3>Summary</h3>
-        <p class="discription">{{ .summary | safeHTML}}</p>
+        <p class="description">{{ .summary | safeHTML}}</p>
         {{ end }}
         {{ if .link }}
         <h4><a href="{{.link}}" target="_blank">Slides</a></h4>
