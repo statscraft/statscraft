@@ -1,29 +1,29 @@
 ---
 organizers:
 
+  - name: Gil Zellner
+    role: Content Lead
+    id: gilzellner
+    company: HourOne.ai
+    linkedin: https://www.linkedin.com/in/gilzellner/    
+
+  - name: Sharone Revah-Zitzman
+    role: Conference Chair
+    id: sharonravehzitzman
+    company: RTFM Please Ltd.
+    linkedin: https://www.linkedin.com/in/sharonez/        
+
   - name: Hila Fish
     role: Conference Chair - Lead
     id: hilafish
     company: Wix.com
     linkedin: https://www.linkedin.com/in/hila-fish/
 
-  - name: Sharone Revah-Zitzman
-    role: Conference Chair
-    id: sharonravehzitzman
-    company: RTFM Please Ltd.
-    linkedin: https://www.linkedin.com/in/sharonez/    
-
   - name: Dan Yelovitch
     role: Content & Committee 
     id: danyelovitch
     company: Develeap
     linkedin: https://www.linkedin.com/in/dan-yelovitch-15b92036/
-    
-  - name: Gil Zellner
-    role: Content Lead
-    id: gilzellner
-    company: Wix.com
-    linkedin: https://www.linkedin.com/in/gilzellner/
 
   - name: Avishai Ish-Shalom
     role: Bugus Maximus

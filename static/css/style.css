@@ -294,7 +294,6 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
 }
 
 body.withPadding {
@@ -334,12 +333,6 @@ a {
 }
 a:hover {
   color: #52c8ec;
-}
-/* Body
--------------------------------------------------- */
-body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
 }
 h2 {
   color: #333333;
@@ -593,6 +586,59 @@ div.menuHamburger {
   transform: translate(-100%, 0);
  }
 
+ /*
+  * Collapsible box 
+ */
+.collapse-box-content {
+  transition: all 0.3s ease-in-out;
+}
+
+.collapse-box-collapsed {
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.collapse-box > input[type='checkbox']:checked ~ .collapse-box-content {
+  max-height: 150vh;
+}
+
+.collapse-box > input[type='checkbox']:checked + .collapse-box-label::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapse-box > input[type='checkbox']:checked + .collapse-box-label {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.collapse-box > input[type='checkbox'] {
+  display: none;
+}
+
+.collapse-box > label.collapse-box-label {
+  display: block;
+  cursor: pointer;
+}
+
+.collapse-box > label.collapse-box-label:hover {
+  color: #52c8ec;
+}
+
+.collapse-box > label.collapse-box-label::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
 .important-note {
   width: 100%;
   max-width: 970px;
@@ -686,9 +732,7 @@ p.description-title {
 
 p.description {
   color: #333;
-  font-size: 20px;
   line-height: 1.7;
-  padding: 30px;
 }
 .agenda {
   padding-bottom: 50px;
@@ -754,33 +798,20 @@ p.description {
   color: #999999;
   font-size: 20px;
   display: block;
-  margin-bottom: 48px;
-}
-.agenda .toggle {
-  width: 36px;
-  height: 19px;
-  display: block;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  right: 0;
-  top: 10px;
 }
 .avatar {
-  width: 110px;
-  height: 110px;
-  border-radius: 100px;
-  border: 16px solid #f1f2ee;
+  width: fit-content;
+  display: inline-block;
   background-color: #fff;
-  /* overflow: hidden; */
 }
 .avatar img {
-  width: 100%;
-  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  object-fit: scale-down;
+  border: 16px solid #f1f2ee;
+  border-radius: 50%;
 }
-.agenda .comment-box-wrap {
-  display: none;
-}
+
 .agenda h2 + .row .comment-box-wrap {
   display: block;
 }
@@ -843,7 +874,7 @@ p.description {
   text-align: center;
 }
 
-.pre-talk .discription {
+.pre-talk .description {
   margin-top: -27px;
 }
 
@@ -1454,9 +1485,6 @@ there.
     font-size: 18px;
     line-height: 52px;
   }
-  p.discription {
-    font-size: 18px;
-  }
   .agenda {
     padding: 20px;
   }
@@ -1477,14 +1505,6 @@ there.
     padding-left: 11px;
     padding-right: 11px;
   }
-  .agenda .toggle {
-    width: 26px;
-    top: 4px;
-    background-position: 0 -214px;
-  }
-  .agenda .toggle.active {
-    background-position: 0 -196px;
-  }
   .agenda > .row {
     padding-top: 20px;
   }
@@ -1498,16 +1518,10 @@ there.
   .comment-box .designation {
     margin-bottom: 0;
   }
-  .agenda .author {
-    margin-bottom: 20px;
-  }
   .agenda .comment-box-wrap {
     margin-top: 28px;
   }
   .agenda .avatar {
-    width: 85px;
-    height: 85px;
-    border: 10px solid #f1f2ee;
     margin-bottom: 10px;
   }
   .agenda .eight {
