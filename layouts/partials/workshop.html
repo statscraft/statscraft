@@ -5,16 +5,18 @@
     <span class="item entry {{ .type }}">{{.type | title }}</span>
     {{ end }}
 </div>
-<div class="nine columns">
-    <a href="#" class="toggle ">toggle</a>
+<div class="nine columns collapse-box">
     <h1>{{ .name }}</h1>
     <span class="author">{{ .speaker.name }}</span>
-    <div class="comment-box-wrap" style="display:none;">
+
+    <input type="checkbox" id="workshop-{{.name | md5}}">
+    <label for="workshop-{{.name | md5}}" class="collapse-box-label"></label>
+    <div class="comment-box-wrap collapse-box-content collapse-box-collapsed" >
         <div class="comment-box row">
                 {{ partial "speaker.html" .speaker }}
         </div>
         <h3>Summary</h3>
-        <p class="discription">{{ .summary | safeHTML }}</p>
+        <p class="description">{{ .summary | safeHTML }}</p>
         {{ if .link }}
         <h4><a href="{{.link}}" target="_blank">Slides</a></h4>
         {{ end }}
