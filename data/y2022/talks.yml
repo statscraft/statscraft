@@ -12,7 +12,7 @@ talks:
       name: Ben Greenberg
       title: Lead Developer Relations Engineer - EMEA @ New Relic
       github: 
-      twitter: 
+      twitter: https://twitter.com/RabbiGreenberg
       linkedin: https://www.linkedin.com/in/rabbigreenberg/
       about:  
     start: "09:30"
@@ -26,4 +26,184 @@ talks:
         how to effectively use synthetics to detect issues before anyone else does. 
         Once you embrace synthetics monitoring, you'll never want to go back!"
     link: 
-    video: 
+    video:
+
+  - name: "The way to build truly Infrastructure As Code starts with building Monitoring As Code"
+    type: talk
+    speaker:
+      name: Alon Dotan
+      title: Infrastructure Team Lead @ Starkware
+      github: 
+      twitter: 
+      linkedin: https://www.linkedin.com/in/alon-dotan-3a2b4232/
+      about: >
+        "עובד בחברת סטארקוויר במשך שלושת השנים האחרונות, 
+        עברתי מאיש דבאופס יחיד שדי הקים את התחום בחברה לראש צוות תשתיות, 
+        לפני חברת סטארקוויר עבדתי בחברות סטארטאפ שונות ומגוונות בעולמות של סייבר סקיוריטי \ טלקום,
+        הגעתי לעולם ההיטק לאחר שירות קרבי, מגדיר את עצמי איש אופן סורס נלהב, 
+        נשוי ואב לשלושה ילדים, פעם כשהיה לי גם קצת זמן לעצמי אהבתי מאוד לטייל ולצלם, 
+        יש כאלו שהיו מגדירים אותי היום כאחד שלקח את האהבה שלו לקפה קצת רחוק מדי..." 
+    start: "09:50"
+    end:   "10:10"
+    summary: >
+        "בשנים האחרונות עולם תשתיות מבוססות הקוד תופס יותר ויותר תאוצה מסיבות נכונות וברורות, 
+        אם אנחנו יודעים לנהל קוד בצורה דטרמיניסטית, מטודית, מבוססת תהליכים הכוללים תהליכי ריוויו, 
+        אוטומציה אין שום סיבה שלא נעשה את זה גם בעולם התשתיות
+
+        אני רוצה להתמקד בעולם הניטור שהוא נגזרת של תשתיות בצורה עקרונית, 
+        אנחנו בעצם מתחזקים ומפתחים את כל עולם הניטור שלנו ע“י תשתית מבוססת קוד בשונה מעולמות שבהם
+        מערכת הניטור מתוחזקת ידנית \ בצורה מנותקת מהקוד אותו היא באה לנטר, מה אנחנו מקבלים מזה?
+        תחזוקה קלה ונכונה יותר
+        גמישות גבוהה יותר
+        תהליך בקרה וריוויו מטודים ויעילים יותר
+        תאימות מושלמת בין מערכת הניטור לבין המוצר אותו היא מנטרת" 
+    link: 
+    video:      
+
+  - name: "Building your monitoring in the MultiCloud"
+    type: talk
+    speaker:
+      name: Shalom Yerushalmi
+      title: Devops Team Leader @ Cyera
+      github: 
+      twitter: https://twitter.com/yershalom
+      linkedin: https://www.linkedin.com/in/yershalom
+      about: Experienced Team Lead with a demonstrated history of working in the internet industry. Skilled in Linux System Administration, Bash, DevOps, Mobile Applications, and Java.
+    start: "10:10"
+    end:   "10:30"
+    summary: >
+        "If it is not monitored then it does not work. This is one of the first rules I learned when I started working in the field.
+        How to find and find the common denominator for each cloud? Use open source tools that can run regardless of the cloud?
+        What metrics do you need and what logs do you want and need?
+        How to set the alerts to be as understandable as possible when there are several areas in several different clouds.
+        Join me for the adventure in the multicloud of madness." 
+    link: 
+    video:     
+
+  - name: ""
+    type: talk
+    speaker:
+      name: 
+      title: 
+      github: 
+      twitter: 
+      linkedin: 
+      about:  
+    start: ""
+    end:   ""
+    summary: >
+        "" 
+    link: 
+    video:   
+
+  - name: ""
+    type: talk
+    speaker:
+      name: 
+      title: 
+      github: 
+      twitter: 
+      linkedin: 
+      about:  
+    start: ""
+    end:   ""
+    summary: >
+        "" 
+    link: 
+    video:   
+
+  - name: ""
+    type: talk
+    speaker:
+      name: 
+      title: 
+      github: 
+      twitter: 
+      linkedin: 
+      about:  
+    start: ""
+    end:   ""
+    summary: >
+        "" 
+    link: 
+    video:   
+
+  - name: ""
+    type: talk
+    speaker:
+      name: 
+      title: 
+      github: 
+      twitter: 
+      linkedin: 
+      about:  
+    start: ""
+    end:   ""
+    summary: >
+        "" 
+    link: 
+    video:               
+
+  - name: ""
+    type: talk
+    speaker:
+      name: 
+      title: 
+      github: 
+      twitter: 
+      linkedin: 
+      about:  
+    start: ""
+    end:   ""
+    summary: >
+        "" 
+    link: 
+    video:       
+
+  - name: ""
+    type: talk
+    speaker:
+      name: 
+      title: 
+      github: 
+      twitter: 
+      linkedin: 
+      about:  
+    start: ""
+    end:   ""
+    summary: >
+        "" 
+    link: 
+    video:       
+
+  - name: ""
+    type: talk
+    speaker:
+      name: 
+      title: 
+      github: 
+      twitter: 
+      linkedin: 
+      about:  
+    start: ""
+    end:   ""
+    summary: >
+        "" 
+    link: 
+    video:   
+
+  - name: ""
+    type: talk
+    speaker:
+      name: 
+      title: 
+      github: 
+      twitter: 
+      linkedin: 
+      about:  
+    start: ""
+    end:   ""
+    summary: >
+        "" 
+    link: 
+    video:   
