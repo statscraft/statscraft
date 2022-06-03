@@ -1,7 +1,7 @@
 ---
 talks:
   - name: Gathering and signup
-    type: break
+    type: gathering
     start: "08:00"
     end:   "09:30"
     speaker: "Mingling FTW"
