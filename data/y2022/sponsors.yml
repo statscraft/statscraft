@@ -1,14 +1,17 @@
 ---
 sponsors:
-  - name: Riskified
-    description: 
-    url: https://www.riskified.com/
   - name: MoovingOn
     description: 
     url: https://www.moovingon.com/
+  - name: Jit
+    description: 
+    url: https://www.jit.io/    
   - name: Wix
     description: 
     url: https://www.wix.com/
   - name: Lumigo
     description: 
     url: https://lumigo.io/    
+  - name: Riskified
+    description: 
+    url: https://www.riskified.com/    
