@@ -776,6 +776,12 @@ p.description {
 .agenda .break {
   background-color: #e6635a;
 }
+.agenda .gathering {
+  background-color: #f6be00;
+}
+.agenda .keynote {
+  background-color: #20b2aa;
+}
 
 .agenda .ignite {
   background-color: #bada55;
@@ -885,6 +891,7 @@ p.description {
   padding:0 25px;
   margin: 10px 0 76px 0;
 }
+
 /* TICKET SECTION
 -------------------------------------------------- */
 .ticket-section {
@@ -976,6 +983,7 @@ p.description {
 .share a:first-child {
   margin-left: 0;
 }
+
 /* VENUE
 -------------------------------------------------- */
 .text-center {
@@ -1043,6 +1051,7 @@ p.description {
 .y2016 .sponsors .container {
     width: 100%;
 }
+
 /* CONTACT
 -------------------------------------------------- */
 .contact {
