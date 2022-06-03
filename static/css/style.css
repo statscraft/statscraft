@@ -618,7 +618,7 @@ div.menuHamburger {
 .collapse-box > label.collapse-box-label {
   display: block;
   cursor: pointer;
-  color: #33e;
+  color: #333;
 }
 
 .collapse-box > label.collapse-box-label:hover {
