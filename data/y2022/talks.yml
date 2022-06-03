@@ -83,7 +83,7 @@ talks:
     end:   "10:40"
     speaker: "Short break"
 
-  - name: "KEYNOTE - Navigating In The Dark"
+  - name: "Navigating In The Dark"
     type: keynote
     speaker: 
       name: Nati Cohen
