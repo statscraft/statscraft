@@ -84,7 +84,7 @@ talks:
     speaker: "Short break"
 
   - name: "KEYNOTE - Navigating In The Dark"
-    type: talk
+    type: keynote
     speaker: 
       name: Nati Cohen
       title: Solutions Architect @ AWS
