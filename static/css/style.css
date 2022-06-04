@@ -218,18 +218,6 @@ th {
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
-    width: 80%;
-  }
-  .column,
-  .columns {
-    margin-left: 4%;
-  }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0;
-  }
-
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
@@ -344,9 +332,7 @@ h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
-.container {
-  width: 100%;
-}
+
 /* SOCIAL BUTTON
 -------------------------------------------------- */
 .social li {
@@ -397,7 +383,6 @@ header .logo img {
   display: block;
 }
 header h1{
-
   font-size: 50px;
   margin:40px 0;
   font-family: 'Lato', sans-serif;
@@ -806,6 +791,17 @@ p.description {
   font-size: 20px;
   display: block;
 }
+
+.agenda .time-entry {
+  width: fit-content;
+}
+
+.agenda .session-details {
+  width: 72%;
+  float: right;
+  box-sizing: border-box;
+}
+
 .avatar {
   width: fit-content;
   display: inline-block;
@@ -1548,6 +1544,10 @@ there.
     font-size: 17px;
     margin-bottom: 8px;
   }
+  .agenda .session-details {
+    float: left;
+    width: auto;
+  }
   .separator {
     width: 100%;
     margin-top: 0px;
@@ -1599,45 +1599,19 @@ there.
    margin: 0 auto;
   }
 }
-/*@media (max-width: 480px) {
-  header .menu nav {
-    top: 0;
-    transform: translateY(10%)
+@media (max-width: 850px) {
+  .agenda .session-details {
+    float: left;
+    width: auto;
   }
-  header .menu ul li {
-    margin-bottom: 0;
+  .container {
+    width: 90%;
   }
-  header .menu ul li a {
-    font-size: 24px;
-  }
-  .agenda h1 {
-    font-size: 25px;
-  }
-  .comment-box h2 {
-    font-size: 20px;
-  }
-  .agenda .author,
-  .comment-box .designation {
-    font-size: 15px;
-  }
-  .agenda .avatar {
-    position: static;
-    margin-bottom: 20px;
-  }
-  .agenda .eight {
-    float: none;
-    width: 100%;
-    margin-left: 0;
-  }
-}*/
-
+}
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 650px) {
   .imageContainer {
     width:357px;
-  }
-  .container {
-    width: 90%;
   }
   /* h2 {
     margin-bottom: 50px;
@@ -1653,12 +1627,6 @@ there.
   }
   .important-note span {
     font-size: 30px;
-  }
-  .agenda .toggle {
-    right: 0px;
-  }
-  .agenda .toggle.active {
-    background-position: 0 0;
   }
   .venue .map {
     width: 100%;
@@ -1698,12 +1666,6 @@ there.
   }
   .important-note span {
     display: inline-block;
-  }
-  .agenda .nine {
-    margin-left: 10px;
-  }
-  .agenda .toggle {
-    right: 0;
   }
   .ticket-alert {
     width: 384px;
@@ -1758,9 +1720,6 @@ there.
 
 /* Larger than desktop */
 @media (min-width: 1140px) {
-  .container {
-    width: 80%;
-  }
   .imageContainer {
     width:420px;
   }
@@ -1810,12 +1769,7 @@ there.
     padding-right: 3%;
   }
 }
-@media (min-width: 1280px) {
-  .agenda .toggle {
-    right: -20px;
-  }
 
-}
 @media (min-width: 1440px) {
   .top-head {
     background: url('images/hero-bg.png') no-repeat center bottom;
@@ -1848,9 +1802,7 @@ there.
     margin:20px 5px!important;
   }
 }
- .scrolloff {
-	         pointer-events: none;
-		     }
+
 h4.language {
   font-size: 16px;
   text-align: center;
@@ -1889,7 +1841,7 @@ h4.language {
 .ticket-link h3 {
   margin-left:20px
 }
-@media (max-width: 1139px) {
+@media (max-width: 1140px) {
   .ticket-link h3 {
     font-size:27px;
   }
