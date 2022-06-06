@@ -281,8 +281,8 @@ talks:
     end:   "14:35"
     speaker: "Short break before Ignites!"
 
-  - name: "Triple Ignite - Trace-Based Testing with OpenTelemetry"
-    type: ignite
+  - name: "Trace-Based Testing with OpenTelemetry"
+    type: lighttalk
     speaker:
       name: Michael Haberman
       title: Co-founder and CTO @ Aspecto
@@ -311,8 +311,8 @@ talks:
     link: 
     video:   
 
-  - name: "Double Ignite - I Have an APM Addiction"
-    type: ignite
+  - name: "I Have an APM Addiction"
+    type: lighttalk
     speaker:
       name: Boris Cherkasky
       title: Software Engineer and Production Advocate @ Riskified
@@ -341,8 +341,8 @@ talks:
     video:   
 
 
-  - name: "Double Ignite - 17 Metrics to Accelerate Delivery Without Damaging Culture"
-    type: ignite
+  - name: "17 Metrics to Accelerate Delivery Without Damaging Culture"
+    type: lighttalk
     speaker:
       name: Yishai Beeri
       title: CTO @ LinearB
@@ -367,8 +367,8 @@ talks:
     link: 
     video:     
 
-  - name: "Double Ignite - The Polyglot Cloud Native Debugger - Going Beyond APM and Logs"
-    type: ignite
+  - name: "The Polyglot Cloud Native Debugger - Going Beyond APM and Logs"
+    type: lighttalk
     speaker:
       name: Shai Almog
       title: Developer Advocate @ Lightrun
@@ -400,7 +400,7 @@ talks:
     link: 
     video:         
 
-  - name: "Ignite - Peaceful production oncall - it's not a dream"
+  - name: "Peaceful production oncall - it's not a dream"
     type: ignite
     speaker:
       name: Dalia Simons
@@ -426,7 +426,7 @@ talks:
     link: 
     video:             
 
-  - name: "Ignite - How to alert on high cardinality data with Grafana Loki"
+  - name: "How to alert on high cardinality data with Grafana Loki"
     type: ignite
     speaker:
       name: Amnon Heiman
@@ -446,7 +446,7 @@ talks:
     link: 
     video:             
 
-  - name: "Ignite - The Golden Metrics - One Metric to Rule Them All"
+  - name: "The Golden Metrics - One Metric to Rule Them All"
     type: ignite
     speaker:
       name: Alon Nativ

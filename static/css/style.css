@@ -769,8 +769,13 @@ p.description {
 }
 
 .agenda .ignite {
+  background-color: #00BFFF;
+}
+
+.agenda .lighttalk {
   background-color: #bada55;
 }
+
 .agenda h1 {
   color: #333;
   font-size: 40px;
