@@ -8,9 +8,12 @@
 {{ partial "header.html" $current_page }}
 <div class="important-note">
   {{ if $current_page.Params.event_date }}
-  <span>Date: {{ $current_page.Params.event_date | safeHTML }}</span>
+  <span>Date: {{ $current_page.Params.event_date | safeHTML }}</span></br>
   {{ else if $current_page.Params.start_date }}
   <span>Date: {{ dateFormat "January 2, 2006" $current_page.Params.start_date }}</span>
+  {{ end }}
+  {{ if $current_page.Params.event_location }}
+  <span>Location: {{ $current_page.Params.event_location | safeHTML }}</span>  
   {{ end }}
 </div><!-- .important-note ends -->
 
