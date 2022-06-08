@@ -398,7 +398,64 @@ talks:
         and “step into” as if we were using a local debugger without interrupting the server flow. 
         In this session I will demonstrate such an approach and how everything integrates with common production frameworks.
     link: 
-    video:         
+    video:                   
+
+  - name: "Microservices Optimized Monitoring & Observability FTW!"
+    type: ignite
+    speaker:
+      name: Itiel Shwartz
+      title: Co-founder & CTO @ Komodor
+      github: 
+      twitter: 
+      linkedin: https://www.linkedin.com/in/itiel-shwartz-18542853/
+      about: >
+          Itiel is the CTO and Co-founder of Komodor, a startup building the first k8s-native troubleshooting platform. 
+          He’s a big believer in dev empowerment and moving fast. He previously worked at eBay (Forter) 
+          and at Rookout as the first developer. A backend and infra developer turned “DevOps”, 
+          he’s an avid public speaker that loves talking about things such as cloud infrastructure, kubernetes,
+          python, observability, and R&D culture.
+    start: "15:20"
+    end:   "15:25"
+    summary: >
+        Microservices systems are extremely powerful - providing highly distributed and sometimes infinite scale. 
+        However, this can also be a double-edged sword from an operations and management perspective.   
+
+        This talk will dive into some good practices for designing and embedding monitoring and observability 
+        best practices from day one for complex microservices operations. These life lessons were earned firsthand 
+        from working with large-scale, microservices systems daily for the last four years, and experiencing
+        the challenges of ultimately troubleshooting and maintaining this complex system at scale - 
+        tips I wish someone had shared with me when I was just getting started with microservices.
+    link: 
+    video:             
+
+  - name: "Monitoring Kubernetes Vs. Serverless based applications"
+    type: ignite
+    speaker:
+      name: Erez Berkner 
+      title: CEO & co-founder @ Lumigo
+      github: 
+      twitter: 
+      linkedin: https://www.linkedin.com/in/erezbe/
+      about: >
+          Erez is the CEO & co-founder of Lumigo, a startup focusing on simplifying 
+          serverless applications troubleshooting, where the entire backend is... 100% serverless.
+          Prior to founding Lumigo, Erez was the R&D director of cloud products at 
+          CheckPoint, heading the company’s cloud strategy & execution.
+    start: "15:25"
+    end:   "15:30"
+    summary: >
+        The software we write does not always work as smoothly as we would like. 
+        In order to know if something went wrong, understand the root cause and fix the problem, 
+        we need to monitor our system and get alerts whenever issues pop up. 
+        There are many useful tools and practices for Kubernetes-based applications. 
+        As we adopt serverless architecture can we continue to use the same practice? Unfortunately, the answer is no.
+
+        In this session we will discuss:
+        The differences between monitoring Kubernetes and serverless based applications
+        Best practices for serverless monitoring
+        Methods to efficiently troubleshoot serverless based applications
+    link: 
+    video:  
 
   - name: "Peaceful production oncall - it's not a dream"
     type: ignite
@@ -411,8 +468,8 @@ talks:
       about: >
           I'm an experienced software engineer, writing backend code has been my passion and my career for the last 16 years.
           I believe that keeping your code simple and readable is the key to easily maintaining it over time
-    start: "15:20"
-    end:   "15:25"
+    start: "15:30"
+    end:   "15:35"
     summary: >
         It’s 5:03 AM, You’re fast asleep, but your phone rings and cruelly wakes you up. 
         Who can that be??? Oh no, you’re on-call this week!
@@ -424,7 +481,7 @@ talks:
         I will cover alert fatigue, service ownership, finding root cause, service maintenance so that 
         you can improve your on-call and sleep well at night.
     link: 
-    video:             
+    video:   
 
   - name: "How to alert on high cardinality data with Grafana Loki"
     type: ignite
@@ -435,8 +492,8 @@ talks:
       twitter: https://twitter.com/AmnonHeiman
       linkedin: https://www.linkedin.com/in/amnon-heiman-939421
       about: 
-    start: "15:25"
-    end:   "15:30"
+    start: "15:35"
+    end:   "15:40"
     summary: >
         Metric based alerts are an important tool when it comes to monitoring systems.
         A common problem a lot of us are facing is- How do we add data to alerts without
@@ -460,8 +517,8 @@ talks:
           and the process of making an impact, always looking for a way to improve the development process and optimize the system.
           A Public speaker, talking about development at the reversim podcast (for ~8 years), mentoring managers & speakers,
           And most importantly - Father of 3 kids and husband of an amazing wife :)
-    start: "15:30"
-    end:   "15:35"
+    start: "15:40"
+    end:   "15:45"
     summary: >
         We all love creating metrics! it’s fun and helpful. But sometimes we are missing some metrics. 
         What happens if I’ll tell that you can create only one metrics to each server? 
