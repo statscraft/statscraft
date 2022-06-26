@@ -341,7 +341,7 @@ talks:
     video:   
 
 
-  - name: "17 Metrics to Accelerate Delivery Without Damaging Culture"
+  - name: "The Only Two Metrics You Should Show to Your CEO"
     type: lighttalk
     speaker:
       name: Yishai Beeri
@@ -360,10 +360,9 @@ talks:
     start: "15:00"
     end:   "15:10"
     summary: >
-        IT IS possible to run a highly data-driven organization without without killing your culture. 
-        In this talk I will share 17 team-based metrics you can use to accelerate delivery, remove process friction, 
-        and maintain positive team culture. I'll describe how we were able to cut the cycle time down by 38% 
-        by embedding data into our day-to-day practices.
+        The business cares about two things when it comes to engineering projects: 
+        Is the project on time? Can we speed it up? 
+        In this session I will give you the two metrics that matter most when answering these questions.
     link: 
     video:     
 
