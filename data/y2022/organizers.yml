@@ -1,6 +1,12 @@
 ---
 organizers:
 
+  - name: Erik Zaadi
+    role: Content Moderator
+    id: erikzaadi
+    company: Salto
+    linkedin: https://www.linkedin.com/in/erikzaadi/   
+
   - name: Gil Zellner
     role: Content Lead
     id: gilzellner
@@ -30,3 +36,9 @@ organizers:
     id: avishaiishshalom
     company: Independent
     linkedin: https://il.linkedin.com/in/nukemberg
+
+  - name: Jonathann Zenou
+    role: Content Moderator
+    id: jonathannzenou
+    company: Windward
+    linkedin: https://www.linkedin.com/in/jonathann-zenou-7b384727/    
