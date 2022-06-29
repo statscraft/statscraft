@@ -1,10 +1,16 @@
 ---
 talks:
-  - name: Gathering and signup
+  - name: Gathering and Signup
     type: gathering
     start: "08:00"
-    end:   "09:30"
+    end:   "09:15"
     speaker: "Registration & Mingling FTW"
+
+  - name: Opening Words
+    type: gathering
+    start: "09:15"
+    end:   "09:30"
+    speaker: "StatsCraft Opening Words"
 
   - name: "Monitoring Like a Human With Synthetics"
     type: talk
@@ -33,7 +39,7 @@ talks:
     link: 
     video:
 
-  - name: "The way to build truly Infrastructure As Code starts with building Monitoring As Code"
+  - name: "The Way to Truly Build Infrastructure as Code Starts With Building Monitoring as Code"
     type: talk
     speaker:
       name: Alon Dotan
