@@ -7,6 +7,7 @@
 {{ $current_page := .Site.GetPage (print "/event/" .Site.Params.current)}}
 {{ partial "header.html" $current_page }}
 <div class="important-note">
+  <h2>That's a wrap! Thanks for joining us on StatsCraft 2022!<br></h2>
   {{ if $current_page.Params.event_date }}
   <span>Date: {{ $current_page.Params.event_date | safeHTML }}</span></br>
   {{ else if $current_page.Params.start_date }}
