@@ -625,11 +625,23 @@ div.menuHamburger {
   transition: transform .2s ease-out;
 }
 
+.farewell {
+  text-align: center;
+  display: block;
+  font-size: 34px;
+  font-family: 'Lato', sans-serif;
+  color: #6f6f6f;
+}
+
+main {
+  margin-top: 40px;
+}
+
 .important-note {
   width: 100%;
   max-width: 970px;
   margin: 0 auto;
-  margin-bottom: 77px;
+  margin-bottom: 20px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1484,7 +1496,7 @@ there.
     font-size: 20px;
   }
   .important-note {
-    margin-bottom: 55px;
+    margin-bottom: 20px;
     padding: 21px 15px 30px;
   }
   .important-note span {

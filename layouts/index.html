@@ -7,7 +7,6 @@
 {{ $current_page := .Site.GetPage (print "/event/" .Site.Params.current)}}
 {{ partial "header.html" $current_page }}
 <div class="important-note">
-  <h2>That's a wrap! Thanks for joining us on StatsCraft 2022!<br></h2>
   {{ if $current_page.Params.event_date }}
   <span>Date: {{ $current_page.Params.event_date | safeHTML }}</span></br>
   {{ else if $current_page.Params.start_date }}
@@ -18,6 +17,12 @@
   {{ end }}
 </div><!-- .important-note ends -->
 
+{{if $current_page.Params.old}}
+<div class="farewell">
+  <p>That's a wrap! Thanks for joining us for StatsCraft {{$current_page.Params.event_year}}!</p>
+</div>
+{{end}}
+
 <main role="main">
   {{ if $current_page.Params.cfp_url }}
   <div class="container cfp">
@@ -25,7 +30,7 @@
       <h3>CFP is open! {{ $current_page.Params.cfp_text }}<br><a href="{{ $current_page.Params.cfp_url }}">Submit your proposal!</a></h3>
   </div>
   {{ end }} 
-  {{ if $current_page.Params.tickets_url }}
+  {{ if (and (not $current_page.Params.old) $current_page.Params.tickets_url) }}
   <div class="ticket-section" id="tickets">
       <div class="container">
           <h2>Registration is open! Get your ticket!</h2>
