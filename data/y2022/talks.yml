@@ -258,7 +258,7 @@ talks:
         We’ll talk about how we measure the usage of all of our features, how we have a dedicated person to do this (me) 
         and how we actually monitor this data - in dashboards presenting visualized data, via processes implemented in our CRM and more.
     link: 
-    video:       
+    video: https://www.youtube.com/watch?v=e1ANc7hU-cs&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=9      
 
   - name: "Monitoring Road Traffic, Monitoring Internet Traffic - Why Not Both?"
     type: talk
