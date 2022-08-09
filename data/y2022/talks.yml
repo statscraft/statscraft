@@ -11,6 +11,7 @@ talks:
     start: "09:15"
     end:   "09:30"
     speaker: "StatsCraft Opening Words"
+    video: https://www.youtube.com/watch?v=MqE5x4hAqIw&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=1
 
   - name: "Monitoring Like a Human With Synthetics"
     type: talk
@@ -37,7 +38,7 @@ talks:
         how to effectively use synthetics to detect issues before anyone else does. 
         Once you embrace synthetics monitoring, you'll never want to go back!
     link: 
-    video:
+    video: https://www.youtube.com/watch?v=AKCJ--EDWYo&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=2
 
   - name: "The Way to Truly Build Infrastructure as Code Starts With Building Monitoring as Code"
     type: talk
@@ -61,7 +62,7 @@ talks:
         higher flexibility, more efficient and methodical review processes and a perfect compatibility
         between the monitoring system and the product it monitors.
     link: 
-    video:      
+    video: https://www.youtube.com/watch?v=YGmMFiApL_c&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=3     
 
   - name: "Building your monitoring in the MultiCloud"
     type: talk
@@ -81,7 +82,7 @@ talks:
         How to set the alerts to be as understandable as possible when there are several areas in several different clouds.
         Join me for the adventure in the multicloud of madness.
     link: 
-    video:     
+    video: https://www.youtube.com/watch?v=8Vjry2MEsvo&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=4    
 
   - name: "Break #1"
     type: break
@@ -110,7 +111,7 @@ talks:
         In this talk we will review the different ways we can find ourselves flying blind, 
         what other systems and processes are likely to suffer a correlated failure, and what can we do about it.
     link: 
-    video:   
+    video: https://www.youtube.com/watch?v=r9meWLaTgKg&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=5   
 
   - name: "Into the Flamegraph - From the Primitives through Advanced Concepts"
     type: talk
@@ -138,7 +139,7 @@ talks:
         code performance profiling over time, and even how to provide feedback loops for developers 
         to optimize performance from the foundations of their code.
     link: 
-    video:   
+    video: https://www.youtube.com/watch?v=c8Fhs9XrHfc&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=6  
 
   - name: "A Log Story: Improving Testing Quality through Proper Analysis"
     type: talk
@@ -171,7 +172,7 @@ talks:
         This talk will walk you through this use case from the problem, through the final implementation, 
         and how to think about solving similar problems in your systems.
     link: 
-    video:   
+    video: https://www.youtube.com/watch?v=xtdqqxL3Fi0&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=7  
 
   - name: "Context propagation in OpenTelemetry: Beyond “Hello World” examples"
     type: talk
@@ -201,7 +202,7 @@ talks:
         I Hope you’ll be able to easily identify where context breaks in your system and encourage you to get 
         creative with propagating context, so that you can, too, benefit from the advantages distributed tracing offers.
     link: 
-    video:               
+    video: https://www.youtube.com/watch?v=hEmDhP2Ya0g&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=8              
 
   - name: "Break #2 - Lunch"
     type: break
@@ -232,7 +233,7 @@ talks:
         I will share my vast experience in startups as well large enterprise with the audience, 
         I will talk about the alignment needed during a growth of the company from a young startup to a mature operation.
     link: 
-    video:       
+    video: https://www.youtube.com/watch?v=PAoLTkPXl8s&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=9      
 
   - name: "Are your customers utilizing your product's potential?"
     type: talk
@@ -279,7 +280,7 @@ talks:
         Furthermore, we use video cameras, Radar and other sensors for information gathering.
         This lecture is relevant for people in the fields of software, operations, product, or anyone who is interested in this field
     link: 
-    video:   
+    video: https://www.youtube.com/watch?v=zelcIFgtdpg&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=10  
 
   - name: "Break #3"
     type: break
@@ -315,7 +316,7 @@ talks:
         By the end of this session, you will know how to use trace-based testing to increase
         your tests’ reliability and possibly prevent issues early in the development cycle.
     link: 
-    video:   
+    video: https://www.youtube.com/watch?v=lIwiojd-dBU&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=11  
 
   - name: "I Have an APM Addiction"
     type: lighttalk
@@ -344,7 +345,7 @@ talks:
         We’ll cover the pitfalls of using APMs, while on the other hand - 
         exploring where APMs are a must and will save your on-call nights.
     link: 
-    video:   
+    video: https://www.youtube.com/watch?v=mAiO8wfcT0E&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=12  
 
 
   - name: "The Only Two Metrics You Should Show to Your CEO"
@@ -370,7 +371,7 @@ talks:
         Is the project on time? Can we speed it up? 
         In this session I will give you the two metrics that matter most when answering these questions.
     link: 
-    video:     
+    video: https://www.youtube.com/watch?v=ezlIEZY-oO8&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=13    
 
   - name: "The Polyglot Cloud Native Debugger - Going Beyond APM and Logs"
     type: lighttalk
@@ -403,7 +404,7 @@ talks:
         and “step into” as if we were using a local debugger without interrupting the server flow. 
         In this session I will demonstrate such an approach and how everything integrates with common production frameworks.
     link: 
-    video:                   
+    video: https://www.youtube.com/watch?v=RkB9SlPSzww&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=14                  
 
   - name: "Microservices Optimized Monitoring & Observability FTW!"
     type: ignite
@@ -431,7 +432,7 @@ talks:
         the challenges of ultimately troubleshooting and maintaining this complex system at scale - 
         tips I wish someone had shared with me when I was just getting started with microservices.
     link: 
-    video:             
+    video: https://www.youtube.com/watch?v=uMPHFqQkCGQ&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=15            
 
   - name: "Monitoring Kubernetes Vs. Serverless based applications"
     type: ignite
@@ -460,7 +461,7 @@ talks:
         Best practices for serverless monitoring
         Methods to efficiently troubleshoot serverless based applications
     link: 
-    video:  
+    video: https://www.youtube.com/watch?v=a6Vy7SZWUds&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=16  
 
   - name: "Peaceful production oncall - it's not a dream"
     type: ignite
@@ -486,7 +487,7 @@ talks:
         I will cover alert fatigue, service ownership, finding root cause, service maintenance so that 
         you can improve your on-call and sleep well at night.
     link: 
-    video:   
+    video: https://www.youtube.com/watch?v=e_U5uDZU6Pw&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=17  
 
   - name: "How to alert on high cardinality data with Grafana Loki"
     type: ignite
@@ -506,7 +507,7 @@ talks:
         In this talk I will demonstrate how to use Grafana’s Loki, in combination with Prometheus,
         in order to create informative alerts, and maximize our use of Loki & Prometheus.
     link: 
-    video:             
+    video: https://www.youtube.com/watch?v=BDGo5NYJ6Wo&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=18            
 
   - name: "The Golden Metrics - One Metric to Rule Them All"
     type: ignite
@@ -535,7 +536,7 @@ talks:
         the monitors that we had and what did we miss. How the golden metrics approach change the way that
         we write and talk about our metrics.
     link: 
-    video:   
+    video: https://www.youtube.com/watch?v=yzSE04IUlIU&list=PLlhgd2ycH2eUw506cLHM-DXyQ1NmaqlD6&index=19  
 
   - name: "End Of Day - HAPPY HOUR"
     type: break
